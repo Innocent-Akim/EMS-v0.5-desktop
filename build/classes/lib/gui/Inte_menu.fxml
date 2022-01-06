@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.icons525.Icons525View?>
+<?import de.jensd.fx.glyphs.octicons.OctIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.chart.AreaChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="547.0" prefWidth="964.0" style="-fx-background-color: #fff;" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lib.controler.Inte_menuController">
+   <children>
+      <Label alignment="CENTER" layoutX="6.0" layoutY="29.0" prefHeight="17.0" prefWidth="65.0" text="Ets EM's" textFill="#fb0505">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="6.0" text="EM AUTO SERVICE">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <VBox layoutX="12.0" layoutY="59.0" style="-fx-background-color: #E6EAEF;" styleClass="AllBord" stylesheets="@../css/Object_Style.css" AnchorPane.bottomAnchor="13.0" AnchorPane.leftAnchor="12.0" AnchorPane.topAnchor="57.0">
+         <children>
+            <HBox prefHeight="85.0" prefWidth="210.0" style="-fx-background-color: #fff;" styleClass="Bt" stylesheets="@../css/Object_Style.css">
+               <children>
+                  <VBox prefHeight="83.0" prefWidth="206.0" style="-fx-background-color: #FFF;">
+                     <children>
+                        <Label prefHeight="19.0" prefWidth="206.0" styleClass="BtnSelected" stylesheets="@../css/Object_Style.css" text="Nbre Produits Disponible" textFill="#787878">
+                           <font>
+                              <Font name="System Bold" size="13.0" />
+                           </font>
+                           <graphic>
+                              <Icons525View fill="WHITE" glyphName="STOPWATCH" />
+                           </graphic>
+                           <effect>
+                              <DropShadow color="#ff9800" />
+                           </effect>
+                        </Label>
+                        <Label fx:id="LblDisponible" prefHeight="81.0" prefWidth="211.0" text="5.00000" textFill="#dd1a1a">
+                           <font>
+                              <Font name="System Bold" size="20.0" />
+                           </font>
+                           <graphic>
+                              <OctIconView fill="#dd1a1a" glyphName="TRIANGLE_RIGHT" size="15" />
+                           </graphic>
+                           <VBox.margin>
+                              <Insets left="5.0" />
+                           </VBox.margin>
+                        </Label>
+                     </children>
+                  </VBox>
+               </children>
+               <VBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </VBox.margin>
+               <effect>
+                  <DropShadow color="#ff9800" radius="4.75" width="0.0" />
+               </effect>
+            </HBox>
+            <HBox prefHeight="85.0" prefWidth="210.0" style="-fx-background-color: #fff;" styleClass="Bt" stylesheets="@../css/Object_Style.css">
+               <children>
+                  <VBox prefHeight="83.0" prefWidth="206.0" style="-fx-background-color: #FFF;">
+                     <children>
+                        <Label prefHeight="17.0" prefWidth="205.0" styleClass="BtnSelected" stylesheets="@../css/Object_Style.css" text="Nbre Produits Non Disponible" textFill="#787878">
+                           <font>
+                              <Font name="System Bold" size="13.0" />
+                           </font>
+                           <graphic>
+                              <Icons525View fill="WHITE" glyphName="INFO_CIRCLE2" />
+                           </graphic>
+                           <effect>
+                              <DropShadow color="#ff9800" />
+                           </effect>
+                        </Label>
+                        <Label fx:id="LblNondisponible" prefHeight="81.0" prefWidth="211.0" text="5.00000" textFill="#dd1a1a">
+                           <font>
+                              <Font name="System Bold" size="20.0" />
+                           </font>
+                           <graphic>
+                              <OctIconView fill="#dd1a1a" glyphName="TRIANGLE_RIGHT" size="15" />
+                           </graphic>
+                           <VBox.margin>
+                              <Insets left="5.0" right="5.0" />
+                           </VBox.margin>
+                        </Label>
+                     </children>
+                  </VBox>
+               </children>
+               <VBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </VBox.margin>
+               <effect>
+                  <DropShadow color="#ff9800" radius="4.75" width="0.0" />
+               </effect>
+            </HBox>
+            <HBox prefHeight="85.0" prefWidth="210.0" style="-fx-background-color: #fff;" styleClass="Bt" stylesheets="@../css/Object_Style.css">
+               <children>
+                  <VBox prefHeight="83.0" prefWidth="206.0" style="-fx-background-color: #FFF;">
+                     <children>
+                        <Label prefHeight="19.0" prefWidth="206.0" styleClass="BtnSelected" stylesheets="@../css/Object_Style.css" text="Montant Jour" textFill="#787878">
+                           <font>
+                              <Font name="System Bold" size="13.0" />
+                           </font>
+                           <graphic>
+                              <Icons525View fill="WHITE" glyphName="FLICKR2" />
+                           </graphic>
+                           <effect>
+                              <DropShadow color="#ff9800" />
+                           </effect>
+                        </Label>
+                        <Label fx:id="LblMontantjour" prefHeight="81.0" prefWidth="211.0" text="5.00000" textFill="#dd1a1a">
+                           <font>
+                              <Font name="System Bold" size="20.0" />
+                           </font>
+                           <graphic>
+                              <OctIconView fill="#dd1a1a" glyphName="TRIANGLE_RIGHT" size="15" />
+                           </graphic>
+                           <VBox.margin>
+                              <Insets left="5.0" />
+                           </VBox.margin>
+                        </Label>
+                     </children>
+                  </VBox>
+               </children>
+               <VBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </VBox.margin>
+               <effect>
+                  <DropShadow color="#ff9800" radius="4.75" width="0.0" />
+               </effect>
+            </HBox>
+            <HBox prefHeight="85.0" prefWidth="210.0" style="-fx-background-color: #fff;" styleClass="Bt" stylesheets="@../css/Object_Style.css">
+               <children>
+                  <VBox prefHeight="83.0" prefWidth="206.0" style="-fx-background-color: #FFF;">
+                     <children>
+                        <Label prefHeight="19.0" prefWidth="206.0" styleClass="BtnSelected" stylesheets="@../css/Object_Style.css" text="Taux Jour" textFill="#787878">
+                           <font>
+                              <Font name="System Bold" size="13.0" />
+                           </font>
+                           <graphic>
+                              <Icons525View fill="WHITE" glyphName="INFINITY" />
+                           </graphic>
+                           <effect>
+                              <DropShadow color="#ff9800" />
+                           </effect>
+                        </Label>
+                        <Label fx:id="LblTauxJour" prefHeight="81.0" prefWidth="211.0" text="5.00000" textFill="#dd1a1a">
+                           <font>
+                              <Font name="System Bold" size="20.0" />
+                           </font>
+                           <graphic>
+                              <OctIconView fill="#dd1a1a" glyphName="TRIANGLE_RIGHT" size="15" />
+                           </graphic>
+                           <VBox.margin>
+                              <Insets left="5.0" />
+                           </VBox.margin>
+                        </Label>
+                     </children>
+                  </VBox>
+               </children>
+               <VBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </VBox.margin>
+               <effect>
+                  <DropShadow color="#ff9800" radius="4.75" width="0.0" />
+               </effect>
+            </HBox>
+            <HBox prefHeight="85.0" prefWidth="210.0" style="-fx-background-color: #fff;" styleClass="Bt" stylesheets="@../css/Object_Style.css">
+               <children>
+                  <VBox prefHeight="83.0" prefWidth="206.0" style="-fx-background-color: #FFF;">
+                     <children>
+                        <Label prefHeight="19.0" prefWidth="206.0" styleClass="BtnSelected" stylesheets="@../css/Object_Style.css" text="Nbre Utilisateurs" textFill="#787878">
+                           <font>
+                              <Font name="System Bold" size="13.0" />
+                           </font>
+                           <graphic>
+                              <Icons525View fill="WHITE" glyphName="STOPWATCH" />
+                           </graphic>
+                           <effect>
+                              <DropShadow color="#772828" />
+                           </effect>
+                        </Label>
+                        <Label fx:id="NbrUtilisateur" prefHeight="81.0" prefWidth="211.0" text="5.00000" textFill="#dd1a1a">
+                           <font>
+                              <Font name="System Bold" size="20.0" />
+                           </font>
+                           <graphic>
+                              <OctIconView fill="#dd1a1a" glyphName="TRIANGLE_RIGHT" size="15" />
+                           </graphic>
+                           <VBox.margin>
+                              <Insets left="5.0" />
+                           </VBox.margin>
+                        </Label>
+                     </children>
+                  </VBox>
+               </children>
+               <VBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </VBox.margin>
+               <effect>
+                  <DropShadow color="#ff9800" radius="4.75" width="0.0" />
+               </effect>
+            </HBox>
+         </children>
+      </VBox>
+      <VBox layoutX="237.0" layoutY="57.0" prefHeight="477.0" prefWidth="715.0" style="-fx-background-color: #E6EAEF;" AnchorPane.bottomAnchor="13.0" AnchorPane.leftAnchor="237.0" AnchorPane.rightAnchor="12.0" AnchorPane.topAnchor="57.0">
+         <children>
+            <AreaChart fx:id="StatistiqueVenteParDate" alternativeColumnFillVisible="true" prefHeight="477.0" prefWidth="712.0">
+              <xAxis>
+                <CategoryAxis side="BOTTOM" />
+              </xAxis>
+              <yAxis>
+                <NumberAxis side="LEFT" />
+              </yAxis>
+            </AreaChart>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

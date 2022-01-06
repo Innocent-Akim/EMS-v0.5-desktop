@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import com.jfoenix.controls.JFXListView?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import de.jensd.fx.glyphs.materialdesignicons.MaterialDesignIconView?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.Group?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<StackPane xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lib.source.ApproController">
+   <children>
+      <AnchorPane prefHeight="555.0" prefWidth="879.0" style="-fx-background-color: #FFFFFF;">
+         <children>
+            <GridPane hgap="4.0" layoutX="11.0" layoutY="44.0" prefHeight="235.0" prefWidth="266.0" vgap="4.0" AnchorPane.leftAnchor="13.0">
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <children>
+                  <HBox prefHeight="27.0" prefWidth="246.0" style="-fx-border-color: #c2c2c2c2; -fx-border-width: 0.5px;" GridPane.rowIndex="1">
+                     <children>
+                        <TextField fx:id="dateen" prefHeight="25.0" prefWidth="223.0" promptText="Entrer la date" style="-fx-background-color: Transparent;" />
+                        <JFXDatePicker fx:id="date_e" defaultColor="#029fd4" prefHeight="25.0" prefWidth="29.0">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </JFXDatePicker>
+                     </children>
+                  </HBox>
+                  <ComboBox fx:id="nomfss" onAction="#charge_code_fss" prefHeight="27.0" prefWidth="269.0" promptText="Fournisseur" style="-fx-background-color: Transparent; -fx-border-color: #c2c2c2c2; -fx-border-width: 0.5px;" GridPane.rowIndex="2" />
+                  <TextField fx:id="designation" onKeyReleased="#rechercher_produit_" prefHeight="25.0" prefWidth="246.0" promptText="Entrer le designation" style="-fx-background-color: Transparent; -fx-border-color: #c2c2c2c2; -fx-border-width: 0.5px;" GridPane.rowIndex="4" />
+                  <TextField fx:id="p_initiale" onKeyReleased="#isNumerique_pro" prefHeight="25.0" prefWidth="246.0" promptText="Entrer le p.initiale" style="-fx-background-color: Transparent; -fx-border-color: #c2c2c2c2; -fx-border-width: 0.5px;" GridPane.rowIndex="8" />
+                  <TextField fx:id="qte_fourni" onKeyReleased="#isNumerique_quantite" prefHeight="25.0" prefWidth="246.0" promptText="Entrer la quantite" style="-fx-background-color: Transparent; -fx-border-color: #c2c2c2c2; -fx-border-width: 0.5px;" GridPane.rowIndex="6" />
+                  <Label text="Designation" GridPane.rowIndex="3" />
+                  <Label text="Prix unitaire" GridPane.rowIndex="7" />
+                  <Label text="Quantité" GridPane.rowIndex="5" />
+                  <Label text="Date" />
+               </children>
+            </GridPane>
+            <Group layoutX="15.0" layoutY="300.0">
+               <children>
+                  <JFXButton fx:id="btn_valide" layoutX="15.0" layoutY="12.0" onAction="#enregistre_" prefHeight="23.0" prefWidth="74.0" style="-fx-background-color: #029fd4;" text="Valide" textFill="WHITE">
+                     <font>
+                        <Font name="Century Gothic" size="10.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton fx:id="nveaucommande" layoutX="15.0" layoutY="49.0" onAction="#nouveauCommende" prefHeight="23.0" prefWidth="74.0" style="-fx-background-color: #029fd4;" text="Commande" textFill="WHITE">
+                     <font>
+                        <Font name="Century Gothic" size="10.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton fx:id="imprimerBtn" layoutX="128.0" layoutY="49.0" onAction="#nouveauCommende" prefHeight="23.0" prefWidth="74.0" style="-fx-background-color: #029fd4;" text="Imprimer" textFill="WHITE">
+                     <font>
+                        <Font name="Century Gothic" size="10.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton fx:id="btAdd1" layoutX="128.0" layoutY="11.0" prefHeight="25.0" prefWidth="74.0" style="-fx-background-color: #029fd4;" text="Modifer" textFill="WHITE">
+                     <font>
+                        <Font size="10.0" />
+                     </font>
+                  </JFXButton>
+               </children>
+            </Group>
+            <JFXTextField fx:id="idProduit" editable="false" labelFloat="true" layoutX="136.0" maxWidth="295.0" minWidth="237.0" opacity="0.0" prefHeight="31.0" prefWidth="277.0" promptText="Id Produit">
+               <font>
+                  <Font name="Century Gothic" size="12.0" />
+               </font>
+            </JFXTextField>
+            <Label layoutX="279.0" layoutY="17.0" style="-fx-background-color: #029fd4;" text="COMMANDE-ID-" textFill="WHITE" AnchorPane.leftAnchor="279.0">
+               <font>
+                  <Font name="Century Gothic Bold" size="13.0" />
+               </font>
+            </Label>
+            <Label fx:id="IdCommande" layoutX="383.0" layoutY="17.0" prefHeight="16.0" prefWidth="153.0" style="-fx-background-color: #029fd4;" text="0.0" textFill="WHITE" AnchorPane.leftAnchor="383.0">
+               <font>
+                  <Font name="Century Gothic Bold" size="13.0" />
+               </font>
+            </Label>
+            <TextField fx:id="rechercher_v" layoutX="621.0" layoutY="5.0" onKeyReleased="#rechercher_produit" prefHeight="26.0" prefWidth="255.0" promptText="Rechercher" style="-fx-background-color: Transparent; -fx-border-color: #c2c2c2c2; -fx-border-width: 0.5px;" AnchorPane.rightAnchor="3.0" AnchorPane.topAnchor="5.0">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </TextField>
+            <JFXButton alignment="CENTER" contentDisplay="CENTER" layoutX="848.0" layoutY="7.0" prefHeight="25.0" prefWidth="24.0" style="-fx-background-color: D83B01; -fx-background-radius: 15px;" text="." textFill="#f5f5f500" AnchorPane.rightAnchor="3.0" AnchorPane.topAnchor="7.0">
+               <graphic>
+                  <FontAwesomeIconView fill="WHITE" glyphName="SEARCH" />
+               </graphic>
+            </JFXButton>
+            <Label fx:id="code_fss" layoutX="13.0" layoutY="8.0" prefHeight="17.0" prefWidth="204.0" textFill="WHITE" />
+            <JFXListView fx:id="listdata" focusTraversable="false" layoutX="286.0" layoutY="60.0" prefHeight="478.0" prefWidth="587.0" style="-fx-background-color: Transparent;" AnchorPane.bottomAnchor="17.0" AnchorPane.leftAnchor="286.0" AnchorPane.rightAnchor="6.0" AnchorPane.topAnchor="60.0" />
+            <AnchorPane layoutX="279.0" layoutY="37.0" prefHeight="23.0" prefWidth="594.0">
+               <children>
+                  <Label alignment="CENTER_RIGHT" contentDisplay="RIGHT" layoutY="3.0" prefHeight="17.0" prefWidth="47.0" text="Prefix" textFill="#d4cccc" AnchorPane.leftAnchor="0.0">
+                     <graphic>
+                        <MaterialDesignIconView fill="#0861f2" glyphName="CHEVRON_DOWN" />
+                     </graphic>
+                  </Label>
+                  <Label alignment="BASELINE_LEFT" contentDisplay="RIGHT" layoutX="56.0" layoutY="3.0" prefHeight="17.0" prefWidth="91.0" text="Designation" textFill="#d4cccc" AnchorPane.leftAnchor="56.0">
+                     <graphic>
+                        <MaterialDesignIconView fill="#0861f2" glyphName="CHEVRON_DOWN" />
+                     </graphic>
+                  </Label>
+                  <Label alignment="CENTER_RIGHT" contentDisplay="RIGHT" layoutX="482.0" layoutY="2.0" prefHeight="17.0" prefWidth="109.0" text="Fournisseur" textFill="#d4cccc" AnchorPane.rightAnchor="3.0">
+                     <graphic>
+                        <MaterialDesignIconView fill="#0861f2" glyphName="CHEVRON_DOWN" />
+                     </graphic>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <ListView fx:id="searchPiece" layoutX="12.0" layoutY="177.0" prefHeight="379.0" prefWidth="475.0" style="-fx-background-color: Transparent;" AnchorPane.bottomAnchor="-1.0" AnchorPane.leftAnchor="12.0" AnchorPane.topAnchor="177.0" />
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>

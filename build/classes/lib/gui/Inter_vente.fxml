@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXPopup?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import de.jensd.fx.glyphs.materialicons.MaterialIconView?>
+<?import de.jensd.fx.glyphs.octicons.OctIconView?>
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ContextMenu?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.SeparatorMenuItem?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="547.0" prefWidth="964.0" style="-fx-background-color: #fff;" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lib.controler.Inte_venteController">
+   <children>
+      <TableView fx:id="tbprouit" layoutX="14.0" layoutY="191.0" onMouseClicked="#SelectTab" prefHeight="322.0" prefWidth="937.0" stylesheets="@../css/tableSking.css" AnchorPane.bottomAnchor="34.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="13.0" AnchorPane.topAnchor="191.0">
+         <columns>
+            <TableColumn prefWidth="462.3333435058594" text="C1" />
+            <TableColumn prefWidth="464.6666564941406" text="C2" />
+         </columns>
+         <contextMenu>
+            <ContextMenu>
+               <items>
+                  <MenuItem fx:id="MenuUpdate" mnemonicParsing="false" onAction="#Allactionner" text="Modification                ">
+                     <graphic>
+                        <OctIconView glyphName="INFO" size="15" />
+                     </graphic>
+                  </MenuItem>
+                  <SeparatorMenuItem mnemonicParsing="false">
+                     <content>
+                        <JFXPopup fx:id="PopupModifier" />
+                     </content></SeparatorMenuItem>
+                  <MenuItem fx:id="MenuAnnuler" mnemonicParsing="false" onAction="#Allactionner" text="Annuler                           ">
+                     <graphic>
+                        <OctIconView glyphName="SYNC" size="15" />
+                     </graphic>
+                  </MenuItem>
+               </items>
+            </ContextMenu>
+         </contextMenu>
+         <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+         </columnResizePolicy>
+      </TableView>
+      <HBox layoutX="18.0" layoutY="14.0" prefHeight="41.0" prefWidth="548.0" style="-fx-background-color: #fff;" styleClass="AllBord" stylesheets="@../css/Object_Style.css" AnchorPane.leftAnchor="18.0" AnchorPane.topAnchor="14.0">
+         <children>
+            <Button fx:id="Btnaddarticle" mnemonicParsing="false" prefHeight="37.0" prefWidth="36.0" style="-fx-background-radius: 4em; -fx-border-radius: 4em;" stylesheets="@../css/Object_Style.css">
+               <HBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </HBox.margin>
+               <cursor>
+                  <Cursor fx:constant="DEFAULT" />
+               </cursor>
+               <styleClass>
+                  <String fx:value="BtnSelected" />
+                  <String fx:value="HandCursor" />
+               </styleClass>
+               <graphic>
+                  <MaterialIconView fill="WHITE" glyphName="ADD_SHOPPING_CART" size="14" />
+               </graphic>
+            </Button>
+            <Label prefHeight="25.0" prefWidth="99.0" text="FACTURE N°" textFill="#cf1616">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="10.0" right="10.0" top="6.0" />
+               </HBox.margin>
+            </Label>
+            <Label fx:id="LblFacture" prefHeight="27.0" prefWidth="130.0" text="00" textFill="#787878">
+               <HBox.margin>
+                  <Insets left="10.0" right="10.0" top="6.0" />
+               </HBox.margin>
+               <font>
+                  <Font name="System Bold" size="19.0" />
+               </font>
+            </Label>
+            <Label prefHeight="25.0" prefWidth="101.0" text="CLIENT N°" textFill="#cf1616">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="10.0" right="10.0" top="6.0" />
+               </HBox.margin>
+               <graphic>
+                  <FontAwesomeIconView fill="#cf1616" glyphName="SHOPPING_CART" size="14" />
+               </graphic>
+            </Label>
+            <Label fx:id="LblClient" prefHeight="27.0" prefWidth="139.0" text="1" textFill="#787878">
+               <font>
+                  <Font name="System Bold" size="19.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="10.0" right="10.0" top="6.0" />
+               </HBox.margin>
+            </Label>
+         </children>
+      </HBox>
+      <HBox layoutX="719.0" layoutY="159.0" prefHeight="28.0" prefWidth="230.0" styleClass="textfiled" stylesheets="@../css/Object_Style.css" AnchorPane.rightAnchor="15.0">
+         <children>
+            <TextField fx:id="TdfSearch" onKeyReleased="#Search" prefHeight="30.0" prefWidth="270.0" promptText="Rechercher une vente" style="-fx-background-color: white;" styleClass="SimpleTxt" stylesheets="@../css/Object_Style.css">
+               <HBox.margin>
+                  <Insets left="7.0" right="1.0" top="1.0" />
+               </HBox.margin>
+               <font>
+                  <Font name="Century Gothic" size="12.0" />
+               </font>
+            </TextField>
+            <Label>
+               <graphic>
+                  <FontAwesomeIconView fill="#d3d3d3" glyphName="SEARCH" size="15" />
+               </graphic>
+               <HBox.margin>
+                  <Insets top="3.0" />
+               </HBox.margin>
+            </Label>
+         </children>
+      </HBox>
+      <HBox layoutX="23.0" layoutY="94.0" styleClass="AllBord" stylesheets="@../css/Object_Style.css" AnchorPane.leftAnchor="23.0">
+         <children>
+            <TextField fx:id="Tfdbarcode" onKeyReleased="#KeyChargerLeprix" prefHeight="25.0" prefWidth="261.0" promptText="Barcode" styleClass="textfiled" stylesheets="@../css/Object_Style.css">
+               <HBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </HBox.margin>
+               <contextMenu>
+                  <ContextMenu>
+                    <items>
+                      <MenuItem mnemonicParsing="false" onAction="#choixProduit" text="Click ici pour choisir le produit">
+                           <graphic>
+                              <MaterialIconView glyphName="ADD_SHOPPING_CART" />
+                           </graphic>
+                        </MenuItem>
+                    </items>
+                  </ContextMenu>
+               </contextMenu>
+            </TextField>
+            <TextField fx:id="Tfdquantite" onKeyReleased="#MethodeFalidation" prefHeight="25.0" prefWidth="261.0" promptText="Quantite" styleClass="textfiled" stylesheets="@../css/Object_Style.css">
+               <HBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </HBox.margin>
+            </TextField>
+            <TextField fx:id="TfdprixUnitaire" onKeyReleased="#IsNumeriquePunitaire" prefHeight="25.0" prefWidth="261.0" promptText="PUnitaire" styleClass="textfiled" stylesheets="@../css/Object_Style.css">
+               <HBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </HBox.margin>
+            </TextField>
+         </children>
+      </HBox>
+      <HBox layoutX="23.0" layoutY="146.0" prefHeight="31.0" prefWidth="507.0" styleClass="AllBord" stylesheets="@../css/Object_Style.css" AnchorPane.leftAnchor="23.0">
+         <children>
+            <Button fx:id="BtnFacture" mnemonicParsing="false" onAction="#Actionnerventer" prefHeight="25.0" prefWidth="98.0" text="Nouvelle">
+               <HBox.margin>
+                  <Insets bottom="2.0" left="5.0" right="5.0" top="2.0" />
+               </HBox.margin>
+               <graphic>
+                  <MaterialIconView fill="WHITE" glyphName="VERTICAL_ALIGN_BOTTOM" size="15" />
+               </graphic>
+               <styleClass>
+                  <String fx:value="BtnSelected" />
+                  <String fx:value="HandCursor" />
+               </styleClass>
+            </Button>
+            <Button fx:id="Btnvalider" mnemonicParsing="false" onAction="#Actionnerventer" prefHeight="25.0" prefWidth="98.0" text="Valider">
+               <HBox.margin>
+                  <Insets bottom="2.0" left="5.0" right="5.0" top="2.0" />
+               </HBox.margin>
+               <graphic>
+                  <MaterialIconView fill="WHITE" glyphName="SEND" size="15" />
+               </graphic>
+               <styleClass>
+                  <String fx:value="BtnSelected" />
+                  <String fx:value="HandCursor" />
+               </styleClass>
+            </Button>
+            <Button fx:id="Btnprint" mnemonicParsing="false" onAction="#Actionnerventer" prefHeight="25.0" prefWidth="98.0" text="Imprimer">
+               <HBox.margin>
+                  <Insets bottom="2.0" left="5.0" right="5.0" top="2.0" />
+               </HBox.margin>
+               <graphic>
+                  <MaterialIconView fill="WHITE" glyphName="LOCAL_PRINTSHOP" size="15" />
+               </graphic>
+               <styleClass>
+                  <String fx:value="BtnSelected" />
+                  <String fx:value="HandCursor" />
+               </styleClass>
+               <contextMenu>
+                  <ContextMenu>
+                    <items>
+                        <MenuItem fx:id="menuFacture" mnemonicParsing="false" onAction="#ActionFacturenormal" text="Format Facture 20Cm                ">
+                           <graphic>
+                              <FontAwesomeIconView glyphName="PRINT" />
+                           </graphic>
+                        </MenuItem>
+                      <MenuItem fx:id="menuFactureA4" mnemonicParsing="false" onAction="#ActionFactureA4" text="Format Normal A4                  ">
+                           <graphic>
+                              <FontAwesomeIconView glyphName="PRINT" />
+                           </graphic>
+                        </MenuItem>
+                    </items>
+                  </ContextMenu>
+               </contextMenu>
+            </Button>
+            <Button fx:id="BtnAnnuler" mnemonicParsing="false" onAction="#Actionnerventer" prefHeight="25.0" prefWidth="98.0" text="Annuler">
+               <HBox.margin>
+                  <Insets bottom="2.0" left="5.0" right="5.0" top="2.0" />
+               </HBox.margin>
+               <graphic>
+                  <MaterialIconView fill="WHITE" glyphName="REPLAY" size="15" />
+               </graphic>
+               <styleClass>
+                  <String fx:value="BtnSelected" />
+                  <String fx:value="HandCursor" />
+               </styleClass>
+            </Button>
+            <Button fx:id="BtnAnnuler1" mnemonicParsing="false" onAction="#Actionnerventer" prefHeight="25.0" prefWidth="98.0" text="Actualiser">
+               <graphic>
+                  <MaterialIconView fill="WHITE" glyphName="AUTORENEW" size="15" />
+               </graphic>
+               <styleClass>
+                  <String fx:value="BtnSelected" />
+                  <String fx:value="HandCursor" />
+               </styleClass>
+            </Button>
+         </children>
+      </HBox>
+      <TextField fx:id="TfdClient" layoutX="27.0" layoutY="60.0" onKeyReleased="#ActionClient" prefHeight="25.0" prefWidth="261.0" promptText="Choisir un client" styleClass="textfiled" stylesheets="@../css/Object_Style.css" />
+      <TextField fx:id="Tfdarticle" layoutX="305.0" layoutY="60.0" onKeyReleased="#KeyIsReleased" prefHeight="25.0" prefWidth="261.0" promptText="Chercher l'article" styleClass="textfiled" stylesheets="@../css/Object_Style.css" />
+      <AnchorPane layoutX="21.0" layoutY="521.0" prefHeight="25.0" prefWidth="928.0" style="-fx-background-color: #fff;" styleClass="AllBord" stylesheets="@../css/Object_Style.css" AnchorPane.bottomAnchor="2.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <children>
+            <Label layoutX="8.0" layoutY="4.0" prefHeight="17.0" prefWidth="112.0" text="Quantite disponible" textFill="#cf1616" />
+            <Label fx:id="StockDisponible" layoutX="128.0" layoutY="4.0" prefHeight="17.0" prefWidth="51.0" text="0.0">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></Label>
+            <Label layoutX="183.0" layoutY="4.0" prefHeight="17.0" prefWidth="105.0" text="Montant à payer $" textFill="#cf1616" />
+            <Label fx:id="LblMontantdollars" layoutX="297.0" layoutY="4.0" prefHeight="17.0" prefWidth="112.0" text="0.0">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></Label>
+            <Label fx:id="date" layoutX="651.0" layoutY="4.0" prefHeight="17.0" prefWidth="80.0" text="date du jour" textFill="#787878">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></Label>
+            <Label fx:id="heure" layoutX="742.0" layoutY="4.0" prefHeight="17.0" prefWidth="80.0" text="Heure " textFill="#787878">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></Label>
+            <Label layoutX="817.0" layoutY="4.0" text="Taux du jour" textFill="#cf1616" />
+            <Label fx:id="LblTaux" layoutX="883.0" layoutY="4.0" prefHeight="17.0" prefWidth="61.0" text="1650">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></Label>
+            <Label layoutX="942.0" layoutY="4.0" text="FC" />
+            <Label layoutX="414.0" layoutY="4.0" prefHeight="17.0" prefWidth="105.0" text="Montant à payer FC" textFill="#cf1616" />
+            <Label fx:id="LblMontantFc" layoutX="528.0" layoutY="4.0" prefHeight="17.0" prefWidth="105.0" text="0.0">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="576.0" layoutY="13.0" prefHeight="74.0" prefWidth="261.0" styleClass="AllBord" stylesheets="@../css/Object_Style.css" AnchorPane.leftAnchor="576.0">
+         <children>
+            <TextField fx:id="TfdPaiement" alignment="CENTER" layoutX="93.0" layoutY="2.0" nodeOrientation="RIGHT_TO_LEFT" onKeyReleased="#ActionPaiement" prefHeight="39.0" prefWidth="163.0" style="-fx-background-color: Transparent;" styleClass="AllBord" stylesheets="@../css/Object_Style.css" text="0.0">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </TextField>
+            <Label layoutX="2.0" layoutY="44.0" prefHeight="25.0" prefWidth="91.0" text="Reste à payer">
+               <graphic>
+                  <FontAwesomeIconView glyphName="CART_ARROW_DOWN" />
+               </graphic>
+            </Label>
+            <Label fx:id="TfdResteP" alignment="CENTER" layoutX="93.0" layoutY="44.0" nodeOrientation="RIGHT_TO_LEFT" prefHeight="25.0" prefWidth="163.0" styleClass="AllBord" stylesheets="@../css/Object_Style.css" text="  0.0" wrapText="true">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="3.0" layoutY="9.0" prefHeight="25.0" prefWidth="91.0" text="Paiement">
+               <graphic>
+                  <FontAwesomeIconView glyphName="SHOPPING_CART" />
+               </graphic>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

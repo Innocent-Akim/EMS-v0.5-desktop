@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import de.jensd.fx.glyphs.icons525.Icons525View?>
+<?import de.jensd.fx.glyphs.materialicons.MaterialIconView?>
+<?import de.jensd.fx.glyphs.octicons.OctIconView?>
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.ContextMenu?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.SeparatorMenuItem?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<StackPane xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lib.controler.Inte_principaleController">
+   <children>
+      <AnchorPane id="AnchorPane" prefHeight="579.0" prefWidth="964.0" style="-fx-background-color: #081016;">
+         <children>
+            <StackPane fx:id="Ecran" layoutY="32.0" prefHeight="547.0" prefWidth="964.0" style="-fx-background-color: #fff;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="32.0" />
+            <AnchorPane layoutX="-3.0" layoutY="-1.0" prefHeight="24.0" prefWidth="777.0" style="-fx-background-color: #343A3E;" styleClass="AllBord" stylesheets="@../css/Object_Style.css" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <OctIconView fill="#ff993e" glyphName="LIST_UNORDERED" layoutX="11.0" layoutY="23.0" size="20" />
+                  <HBox layoutX="45.0" layoutY="2.0">
+                     <children>
+                        <Label fx:id="LblAccueil" onMouseClicked="#Callwindow" prefHeight="28.0" prefWidth="104.0" styleClass="side-menu-btn" text="Accueil" textFill="#787878">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                           <padding>
+                              <Insets right="5.0" />
+                           </padding>
+                           <HBox.margin>
+                              <Insets right="3.0" />
+                           </HBox.margin>
+                           <graphic>
+                              <OctIconView glyphName="DEVICE_DESKTOP" />
+                           </graphic>
+                           <stylesheets>
+                              <URL value="@../css/Object_Style.css" />
+                              <URL value="@../css/style.css" />
+                           </stylesheets>
+                        </Label>
+                        <Label fx:id="Lblproduit" onMouseClicked="#Callwindow" prefHeight="28.0" prefWidth="156.0" styleClass="side-menu-btn" text="Nouveau produit" textFill="#787878">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                           <padding>
+                              <Insets right="5.0" />
+                           </padding>
+                           <graphic>
+                              <OctIconView glyphName="LINK_EXTERNAL" />
+                           </graphic>
+                           <contextMenu>
+                              <ContextMenu>
+                                <items>
+                                    <MenuItem mnemonicParsing="false" onAction="#ActionProduit" text="Nouveau produit            ">
+                                       <graphic>
+                                          <Icons525View glyphName="CIRCLEADD" />
+                                       </graphic>
+                                    </MenuItem>
+                                    <SeparatorMenuItem mnemonicParsing="false" />
+                                    <MenuItem mnemonicParsing="false" onAction="#ActionQuantiter" text="Ajouter la quantiter                ">
+                                       <graphic>
+                                          <Icons525View glyphName="BASKET" />
+                                       </graphic>
+                                    </MenuItem>
+                                    <SeparatorMenuItem mnemonicParsing="false" />
+                                    <MenuItem fx:id="AjouterPosition" mnemonicParsing="false" onAction="#AllPosition" text="Ajouter la position             ">
+                                       <graphic>
+                                          <MaterialIconView glyphName="OPEN_IN_BROWSER" />
+                                       </graphic>
+                                    </MenuItem>
+                                    <SeparatorMenuItem mnemonicParsing="false" />
+                                    <MenuItem fx:id="ajouterCategorie" mnemonicParsing="false" onAction="#Allcategorie" text="Ajouter la categorie         ">
+                                       <graphic>
+                                          <MaterialIconView glyphName="LAYERS" />
+                                       </graphic>
+                                    </MenuItem>
+                                    <SeparatorMenuItem mnemonicParsing="false" />
+                                    <MenuItem fx:id="StockOK" mnemonicParsing="false" onAction="#AllStock" text="Stock disponible                  ">
+                                       <graphic>
+                                          <FontAwesomeIconView glyphName="SHOPPING_BASKET" />
+                                       </graphic>
+                                    </MenuItem>
+                                </items>
+                              </ContextMenu>
+                           </contextMenu>
+                           <stylesheets>
+                              <URL value="@../css/Object_Style.css" />
+                              <URL value="@../css/style.css" />
+                           </stylesheets>
+                           <HBox.margin>
+                              <Insets right="3.0" />
+                           </HBox.margin>
+                        </Label>
+                        <Label fx:id="Lblapprov" onMouseClicked="#Callwindow" prefHeight="28.0" prefWidth="173.0" styleClass="side-menu-btn" text="Approvisionnement" textFill="#787878">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets right="3.0" />
+                           </HBox.margin>
+                           <graphic>
+                              <FontAwesomeIconView glyphName="CART_ARROW_DOWN" size="12" />
+                           </graphic>
+                           <stylesheets>
+                              <URL value="@../css/Object_Style.css" />
+                              <URL value="@../css/style.css" />
+                           </stylesheets>
+                        </Label>
+                        <Label fx:id="Lblventer" onMouseClicked="#Callwindow" prefHeight="27.0" prefWidth="87.0" styleClass="side-menu-btn" text="Vente" textFill="#787878">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets right="3.0" />
+                           </HBox.margin>
+                           <graphic>
+                              <FontAwesomeIconView glyphName="CART_PLUS" />
+                           </graphic>
+                           <stylesheets>
+                              <URL value="@../css/Object_Style.css" />
+                              <URL value="@../css/style.css" />
+                           </stylesheets>
+                           <contextMenu>
+                              <ContextMenu>
+                                <items>
+                                  <MenuItem fx:id="MenuCommande" mnemonicParsing="false" onAction="#AllCommande" text="Commande                           ">
+                                       <graphic>
+                                          <Icons525View glyphName="ZURB" />
+                                       </graphic>
+                                    </MenuItem>
+                                    <MenuItem fx:id="menudette" mnemonicParsing="false" onAction="#AllCommande" text="Vérifier  les Dettes">
+                                       <graphic>
+                                          <OctIconView glyphName="LAW" />
+                                       </graphic>
+                                    </MenuItem>
+                                    <MenuItem fx:id="payerDette" mnemonicParsing="false" onAction="#PaiementDette" text="Payer une dette">
+                                       <graphic>
+                                          <Icons525View glyphName="PINTEREST" />
+                                       </graphic>
+                                    </MenuItem>
+                                    <MenuItem fx:id="menuAgenda" mnemonicParsing="false" onAction="#AllCommande" text="Agenda">
+                                       <graphic>
+                                          <MaterialIconView glyphName="MESSAGE" />
+                                       </graphic>
+                                    </MenuItem>
+                                </items>
+                              </ContextMenu>
+                           </contextMenu>
+                        </Label>
+                        <Label fx:id="Lblstatistique" onMouseClicked="#Callwindow" prefHeight="26.0" prefWidth="104.0" styleClass="side-menu-btn" text="Statistique" textFill="#787878">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets right="3.0" />
+                           </HBox.margin>
+                           <graphic>
+                              <OctIconView glyphName="GRAPH" />
+                           </graphic>
+                           <stylesheets>
+                              <URL value="@../css/Object_Style.css" />
+                              <URL value="@../css/style.css" />
+                           </stylesheets>
+                        </Label>
+                        <Label fx:id="Lblrapport" onMouseClicked="#Callwindow" prefHeight="28.0" prefWidth="113.0" styleClass="side-menu-btn" text="Rapport" textFill="#787878">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets right="3.0" />
+                           </HBox.margin>
+                           <graphic>
+                              <OctIconView glyphName="SIGN_OUT" />
+                           </graphic>
+                           <stylesheets>
+                              <URL value="@../css/Object_Style.css" />
+                              <URL value="@../css/style.css" />
+                           </stylesheets>
+                        </Label>
+                        <Label fx:id="Lblparametre" onMouseClicked="#Callwindow" prefHeight="28.0" prefWidth="119.0" styleClass="side-menu-btn" text="Parametrer" textFill="#787878">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                           <graphic>
+                              <OctIconView glyphName="GEAR" />
+                           </graphic>
+                           <contextMenu>
+                              <ContextMenu>
+                                <items>
+                                    <MenuItem fx:id="MenuAgent" mnemonicParsing="false" onAction="#AllAction" text="Gestion des Agents               ">
+                                       <graphic>
+                                          <OctIconView glyphName="ORGANIZATION" size="15" />
+                                       </graphic>
+                                    </MenuItem>
+                                    <MenuItem mnemonicParsing="false" onAction="#ActionClient" text="Gestion des Clients">
+                                       <graphic>
+                                          <MaterialIconView glyphName="ACCOUNT_BOX" size="15" />
+                                       </graphic>
+                                    </MenuItem>
+                                  <MenuItem mnemonicParsing="false" onAction="#ActionFournisseur" text="Gestion des Fournisseurs">
+                                       <graphic>
+                                          <MaterialIconView glyphName="ACCESSIBLE" size="15" />
+                                       </graphic>
+                                    </MenuItem>
+                                    <MenuItem fx:id="menuEncaisssement" mnemonicParsing="false" onAction="#Encaissement" text="Encaissement                      ">
+                                       <graphic>
+                                          <FontAwesomeIconView glyphName="HOURGLASS_START" />
+                                       </graphic>
+                                    </MenuItem>
+                                    <MenuItem fx:id="MenuDecaissement" mnemonicParsing="false" onAction="#Decaissement" text="Decaissement">
+                                       <graphic>
+                                          <FontAwesomeIconView glyphName="HOURGLASS_END" />
+                                       </graphic>
+                                    </MenuItem>
+                                    <MenuItem mnemonicParsing="false" onAction="#ActionGSM" text="Configuration serveur GSM     ">
+                                       <graphic>
+                                          <FontAwesomeIconView glyphName="COMMENTS" />
+                                       </graphic>
+                                    </MenuItem>
+                                    <MenuItem fx:id="menuTaux" mnemonicParsing="false" onAction="#ActionMenuTaux" text="Modifier le taux du jour">
+                                       <graphic>
+                                          <FontAwesomeIconView glyphName="MONEY" />
+                                       </graphic>
+                                    </MenuItem>
+                                    <MenuItem mnemonicParsing="false" text="Quitter">
+                                       <graphic>
+                                          <MaterialIconView glyphName="CLOSE" size="15" />
+                                       </graphic>
+                                    </MenuItem>
+                                </items>
+                              </ContextMenu>
+                           </contextMenu>
+                           <stylesheets>
+                              <URL value="@../css/Object_Style.css" />
+                              <URL value="@../css/style.css" />
+                           </stylesheets>
+                           <HBox.margin>
+                              <Insets right="3.0" />
+                           </HBox.margin>
+                        </Label>
+                     </children>
+                     <padding>
+                        <Insets left="5.0" right="5.0" />
+                     </padding>
+                  </HBox>
+               </children>
+            </AnchorPane>
+         </children></AnchorPane>
+   </children>
+</StackPane>

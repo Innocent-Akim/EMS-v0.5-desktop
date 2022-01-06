@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.141" fx:controller="lib.source.LoadConfigurationController">
+   <children>
+      <VBox layoutX="108.0" layoutY="111.0" prefHeight="92.0" prefWidth="384.0">
+         <children>
+            <JFXTextField fx:id="chemin_backup_Tfd" maxWidth="444.0" minWidth="192.0" prefHeight="31.0" prefWidth="343.0" promptText="Chemim backup">
+               <VBox.margin>
+                  <Insets bottom="10.0" top="10.0" />
+               </VBox.margin>
+            </JFXTextField>
+            <JFXTextField fx:id="chemin_backup_Tfd112" maxWidth="445.0" minWidth="190.0" prefHeight="31.0" prefWidth="445.0" promptText="Chemim restauration">
+               <VBox.margin>
+                  <Insets bottom="10.0" />
+               </VBox.margin>
+            </JFXTextField>
+         </children>
+      </VBox>
+      <VBox layoutX="101.0" layoutY="226.0" prefHeight="92.0" prefWidth="391.0">
+         <children>
+            <JFXTextField fx:id="chemin_backup_Tfd1" maxWidth="444.0" minWidth="192.0" prefHeight="31.0" prefWidth="343.0" promptText="Cle d'identification">
+               <VBox.margin>
+                  <Insets bottom="10.0" top="10.0" />
+               </VBox.margin>
+            </JFXTextField>
+            <JFXTextField fx:id="chemin_backup_Tfd11" maxWidth="445.0" minWidth="190.0" prefHeight="31.0" prefWidth="445.0" promptText="Chemin d'acces">
+               <VBox.margin>
+                  <Insets bottom="10.0" />
+               </VBox.margin>
+            </JFXTextField>
+         </children>
+      </VBox>
+      <FontAwesomeIconView fill="#1c87db" glyphName="DATABASE" layoutX="309.0" layoutY="101.0" size="30" wrappingWidth="68.57142639160156" />
+      <Label alignment="CENTER" layoutX="191.0" layoutY="217.0" prefHeight="17.0" prefWidth="255.0" text="Configuration de chemin d'acces">
+         <font>
+            <Font name="Century Gothic Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="197.0" layoutY="109.0" prefHeight="17.0" prefWidth="255.0" text="Backup &amp; Restaure">
+         <font>
+            <Font name="Century Gothic Bold" size="14.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="backup_base_donne" layoutX="507.0" layoutY="144.0" onAction="#requete_base" prefHeight="25.0" prefWidth="79.0" style="-fx-background-color: #1C87DB; -fx-background-radius: 4em; -fx-border-radius: 4em;" text="Backup" textFill="WHITE">
+         <font>
+            <Font size="9.0" />
+         </font>
+         <graphic>
+            <FontAwesomeIconView fill="WHITE" glyphName="DATABASE" />
+         </graphic>
+      </JFXButton>
+      <JFXButton fx:id="restaure_base_donne" layoutX="507.0" layoutY="179.0" onAction="#requete_base" prefHeight="25.0" prefWidth="79.0" style="-fx-background-color: #1C87DB; -fx-background-radius: 4em; -fx-border-radius: 4em;" text="Restaure" textFill="WHITE">
+         <font>
+            <Font size="9.0" />
+         </font>
+         <graphic>
+            <FontAwesomeIconView fill="WHITE" glyphName="DATABASE" />
+         </graphic>
+      </JFXButton>
+      <JFXButton fx:id="restaure_base_donne1" layoutX="507.0" layoutY="272.0" onAction="#requete_base" prefHeight="25.0" prefWidth="79.0" style="-fx-background-color: #1C87DB; -fx-background-radius: 4em; -fx-border-radius: 4em;" text="Enregistrer" textFill="WHITE">
+         <graphic>
+            <FontAwesomeIconView fill="WHITE" glyphName="SAVE" />
+         </graphic>
+         <font>
+            <Font size="9.0" />
+         </font>
+      </JFXButton>
+      <Label layoutX="206.0" layoutY="319.0" text="imprimer">
+         <font>
+            <Font name="Century Gothic" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="270.0" layoutY="319.0" text="codebar">
+         <font>
+            <Font name="Century Gothic" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="331.0" layoutY="319.0" text="backup">
+         <font>
+            <Font name="Century Gothic" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="387.0" layoutY="319.0" text="url1">
+         <font>
+            <Font name="Century Gothic" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="86.0" layoutY="319.0" prefHeight="17.0" prefWidth="111.0" text="Clé d'identification">
+         <font>
+            <Font name="Century Gothic" size="12.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="btn_parcour_restaure1" layoutX="14.0" layoutY="273.0" onAction="#requete_base" prefHeight="23.0" prefWidth="79.0" style="-fx-background-color: #1C87DB; -fx-background-radius: 4em; -fx-border-radius: 4em;" text="Browser" textFill="WHITE">
+         <font>
+            <Font name="Century Gothic" size="12.0" />
+         </font>
+         <graphic>
+            <FontAwesomeIconView fill="WHITE" glyphName="SHARE_SQUARE_ALT" />
+         </graphic>
+      </JFXButton>
+      <JFXButton fx:id="btn_parcour_backup" layoutX="19.0" layoutY="136.0" onAction="#clic_parcourir_chemin" prefHeight="23.0" prefWidth="79.0" style="-fx-background-color: #1C87DB; -fx-background-radius: 4em; -fx-border-radius: 4em;" text="Browser" textFill="WHITE">
+         <font>
+            <Font name="Segoe UI" size="12.0" />
+         </font>
+         <graphic>
+            <FontAwesomeIconView fill="WHITE" glyphName="SHARE_SQUARE_ALT" />
+         </graphic>
+      </JFXButton>
+      <JFXButton fx:id="btn_parcour_restaure" layoutX="19.0" layoutY="171.0" onAction="#clic_parcourir_chemin" prefHeight="23.0" prefWidth="79.0" style="-fx-background-color: #1C87DB; -fx-background-radius: 4em; -fx-border-radius: 4em;" text="Browser" textFill="WHITE">
+         <font>
+            <Font name="Segoe UI" size="12.0" />
+         </font>
+         <graphic>
+            <FontAwesomeIconView fill="WHITE" glyphName="SHARE_SQUARE_ALT" />
+         </graphic>
+      </JFXButton>
+      <JFXTextField fx:id="backupheure" alignment="CENTER" layoutX="463.0" layoutY="355.0" maxWidth="414.0" minWidth="87.0" prefHeight="29.0" prefWidth="103.0" promptText="Heure backup">
+         <font>
+            <Font name="Century Gothic" size="12.0" />
+         </font>
+      </JFXTextField>
+      <FontAwesomeIconView fx:id="actionModifierheure" glyphName="DATABASE" layoutX="569.0" layoutY="375.0" onMouseClicked="#modifier_le_heure">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </FontAwesomeIconView>
+      <JFXButton fx:id="confugBtn" layoutX="150.0" layoutY="348.0" onAction="#requete_base" prefHeight="18.0" prefWidth="106.0" style="-fx-background-color: #D24D1C; -fx-background-radius: 0.5em; -fx-border-radius: 0.5em;" text="Enregistrer" textFill="WHITE">
+         <graphic>
+            <FontAwesomeIconView fill="WHITE" glyphName="SERVER" size="25" />
+         </graphic>
+         <font>
+            <Font name="Century Gothic" size="12.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton fx:id="confugBtn1" layoutX="284.0" layoutY="348.0" onAction="#requete_base" prefHeight="17.0" prefWidth="106.0" style="-fx-background-color: #0AC2C2; -fx-background-radius: 0.5em; -fx-border-radius: 0.5em;" text="Entreprise" textFill="WHITE">
+         <graphic>
+            <FontAwesomeIconView fill="WHITE" glyphName="HOME" size="25" />
+         </graphic>
+         <font>
+            <Font name="Century Gothic" size="12.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+   </children>
+</AnchorPane>

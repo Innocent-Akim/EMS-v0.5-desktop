@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXListView?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import de.jensd.fx.glyphs.octicons.OctIconView?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="560.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lib.source.UtilisateurController">
+    <children>
+        <AnchorPane layoutX="23.0" layoutY="35.0" prefHeight="512.0" prefWidth="269.0" AnchorPane.bottomAnchor="13.0" AnchorPane.leftAnchor="2.0" AnchorPane.rightAnchor="329.0" AnchorPane.topAnchor="35.0">
+            <children>
+                <JFXListView fx:id="listUtilisateur" focusTraversable="false" layoutX="2.0" layoutY="92.0" prefHeight="512.0" prefWidth="260.0" style="-fx-background-color: Transparent;" AnchorPane.bottomAnchor="3.0" AnchorPane.leftAnchor="2.0" AnchorPane.rightAnchor="2.0" AnchorPane.topAnchor="92.0" />
+                <JFXButton fx:id="btn_add" alignment="CENTER" contentDisplay="CENTER" layoutX="237.0" layoutY="66.0" onMouseClicked="#showListSousCategorie" prefHeight="25.0" prefWidth="25.0" style="-fx-background-color: #FBAA17; -fx-background-radius: 50px;" text=" " AnchorPane.rightAnchor="2.0" AnchorPane.topAnchor="66.0">
+                    <font>
+                        <Font size="9.0" />
+                    </font>
+                    <graphic>
+                        <FontAwesomeIconView fill="WHITE" glyphName="PLUS" />
+                    </graphic>
+                    <cursor>
+                        <Cursor fx:constant="HAND" />
+                    </cursor>
+                </JFXButton>
+                <Text layoutX="66.0" layoutY="44.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Liste des utilisateurs disponible de  l'entreprise" wrappingWidth="154.46875" AnchorPane.leftAnchor="66.0" AnchorPane.topAnchor="3.0" />
+                <Label alignment="CENTER" contentDisplay="CENTER" layoutX="17.0" layoutY="28.0" prefHeight="39.0" prefWidth="44.0" style="-fx-background-color: #FBAA17; -fx-background-radius: 5px;" AnchorPane.leftAnchor="17.0" AnchorPane.topAnchor="3.0">
+                    <graphic>
+                        <OctIconView fill="WHITE" glyphName="CIRCUIT_BOARD" size="30" />
+                    </graphic>
+                </Label>
+                <AnchorPane layoutX="2.0" layoutY="65.0" style="-fx-border-color: #CDC6C0; -fx-border-width: 0.5;" AnchorPane.leftAnchor="2.0" AnchorPane.rightAnchor="31.0">
+                    <children>
+                        <TextField fx:id="search" prefHeight="25.0" prefWidth="231.0" promptText="Rechercher l'agent" style="-fx-background-color: Transparent;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
+                    </children>
+                </AnchorPane>
+            </children>
+        </AnchorPane>
+        <AnchorPane layoutX="319.0" layoutY="37.0" prefHeight="514.0" prefWidth="302.0" AnchorPane.bottomAnchor="11.0" AnchorPane.rightAnchor="2.0" AnchorPane.topAnchor="35.0">
+            <children>
+                <JFXListView fx:id="listTache" focusTraversable="false" layoutX="3.0" layoutY="93.0" prefHeight="419.0" prefWidth="269.0" style="-fx-background-color: Transparent;" AnchorPane.bottomAnchor="2.0" AnchorPane.leftAnchor="3.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="93.0" />
+                <JFXButton fx:id="add_tacher" alignment="CENTER" contentDisplay="CENTER" layoutX="247.0" layoutY="66.0" prefHeight="25.0" prefWidth="25.0" style="-fx-background-color: #01A7E3; -fx-background-radius: 50px;" text=" " AnchorPane.rightAnchor="30.0" AnchorPane.topAnchor="66.0">
+                    <font>
+                        <Font size="9.0" />
+                    </font>
+                    <graphic>
+                        <FontAwesomeIconView fill="WHITE" glyphName="PLUS" />
+                    </graphic>
+                    <cursor>
+                        <Cursor fx:constant="HAND" />
+                    </cursor>
+                </JFXButton>
+                <Text layoutX="66.0" layoutY="44.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Liste des utilisateurs disponible de  l'entreprise" wrappingWidth="154.46875" AnchorPane.leftAnchor="66.0" AnchorPane.topAnchor="3.0" />
+                <Label alignment="CENTER" contentDisplay="CENTER" layoutX="17.0" layoutY="28.0" prefHeight="39.0" prefWidth="44.0" style="-fx-background-color: #01A7E3; -fx-background-radius: 5px;" AnchorPane.leftAnchor="17.0" AnchorPane.topAnchor="3.0">
+                    <graphic>
+                        <OctIconView fill="WHITE" glyphName="CHECKLIST" size="30" />
+                    </graphic>
+                </Label>
+                <AnchorPane layoutX="5.0" layoutY="65.0" prefHeight="26.0" prefWidth="235.0" style="-fx-border-color: #CDC6C0; -fx-border-width: 0.5;" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="62.0">
+                    <children>
+                        <TextField fx:id="searchTache" prefHeight="25.0" prefWidth="231.0" promptText="Rechercher tâcher" style="-fx-background-color: Transparent;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
+                    </children>
+                </AnchorPane>
+                <JFXListView fx:id="listsearch" focusTraversable="false" layoutX="5.0" layoutY="91.0" prefHeight="419.0" prefWidth="294.0" style="-fx-background-color: Transparent;" AnchorPane.topAnchor="91.0" />
+            </children>
+        </AnchorPane>
+    </children>
+</AnchorPane>

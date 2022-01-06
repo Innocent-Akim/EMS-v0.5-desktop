@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="FicheStock" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="7e9777da-6447-4172-b530-b2c962409d3f">
+	<property name="ireport.zoom" value="1.5"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="61"/>
+	<queryString>
+		<![CDATA[SELECT * FROM VsRapportVente]]>
+	</queryString>
+	<field name="Barcode" class="java.lang.String"/>
+	<field name="Designation" class="java.lang.String"/>
+	<field name="Qte" class="java.lang.Double"/>
+	<field name="Punitaire" class="java.lang.Double"/>
+	<field name="PTOTAL" class="java.lang.Double"/>
+	<field name="Montant" class="java.lang.Double"/>
+	<field name="Date" class="java.lang.String"/>
+	<field name="Codefacture" class="java.lang.Integer"/>
+	<variable name="TOTAL_1" class="java.lang.Double" resetType="Column" calculation="Sum">
+		<variableExpression><![CDATA[]]></variableExpression>
+	</variable>
+	<variable name="PTOTAL_1" class="java.lang.Double" resetType="Page" calculation="Sum">
+		<variableExpression><![CDATA[$F{PTOTAL}]]></variableExpression>
+	</variable>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="106" splitType="Stretch">
+			<staticText>
+				<reportElement mode="Opaque" x="0" y="0" width="117" height="15" backcolor="#CCCCCC" uuid="dcb097c9-caa1-4083-a4b3-d21fdefdaf55"/>
+				<textElement>
+					<font fontName="Century Gothic" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[EM SERVICE AUTO]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="41" width="555" height="14" uuid="7c1aff41-d3fd-450d-a140-287ea3d3265a"/>
+				<textElement>
+					<font fontName="Century Gothic" size="11" isBold="true"/>
+				</textElement>
+				<text><![CDATA[CD/BKV/RCCM/17-A-3037]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="435" y="0" width="120" height="15" backcolor="#CCCCCC" uuid="bf8150d6-56f8-4b7a-b9c1-3cafe92d58c3"/>
+				<textElement textAlignment="Right">
+					<font fontName="Century Gothic" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[EM SERVICE AUTO]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="85" width="555" height="15" uuid="c579b122-9150-4d9f-9ed9-c2b2ea36073d"/>
+				<textElement>
+					<font fontName="Century Gothic" size="11" isBold="true"/>
+				</textElement>
+				<text><![CDATA[E-mail: Ephremmwassa05@gmail.com]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="55" width="555" height="16" uuid="5e939da8-deed-4d64-922e-1dec07dabd95"/>
+				<textElement>
+					<font fontName="Century Gothic" size="11" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Id.Nat : 5-93-N32815B]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="71" width="555" height="14" uuid="8bdc6c75-bf2a-4bf7-b428-536929b57b68"/>
+				<textElement>
+					<font fontName="Century Gothic" size="11" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Tel: +243 852949176, 995507916]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="0" y="17" width="555" height="24" backcolor="#CCCCCC" uuid="f9585e4f-cbb7-4866-b56b-b1f068568590"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Century Gothic" size="18" isBold="true" isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[RAPPORT DES VENTES]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="100" width="555" height="0" uuid="65f7f430-29e5-4a1d-be41-984f132691e0"/>
+				<box>
+					<pen lineWidth="0.75" lineStyle="Dashed"/>
+					<topPen lineWidth="0.75" lineStyle="Dashed"/>
+					<leftPen lineWidth="0.75" lineStyle="Dashed"/>
+					<bottomPen lineWidth="0.75" lineStyle="Dashed"/>
+					<rightPen lineWidth="0.75" lineStyle="Dashed"/>
+				</box>
+				<text><![CDATA[]]></text>
+			</staticText>
+		</band>
+	</title>
+	<columnHeader>
+		<band height="20" splitType="Stretch">
+			<staticText>
+				<reportElement mode="Opaque" x="0" y="0" width="43" height="20" backcolor="#CCCCCC" uuid="e5af6945-7820-4643-9d52-a585d80a52d2"/>
+				<box>
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Cambria Math" isBold="true"/>
+				</textElement>
+				<text><![CDATA[N°]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="43" y="0" width="233" height="20" backcolor="#CCCCCC" uuid="211d9f76-f70b-4cf3-8c5b-707db61f18b2"/>
+				<box>
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Cambria Math" isBold="true"/>
+				</textElement>
+				<text><![CDATA[ DESIGNATION]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="345" y="0" width="71" height="20" backcolor="#CCCCCC" uuid="e5c7bcc2-9115-43e0-8e3f-cbb193bb309e"/>
+				<box>
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Cambria Math" isBold="true"/>
+				</textElement>
+				<text><![CDATA[P.UNITAIRE]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="276" y="0" width="69" height="20" backcolor="#CCCCCC" uuid="26ba5d1f-9ebc-4e5c-8cce-4fed15d45616"/>
+				<box>
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Cambria Math" isBold="true"/>
+				</textElement>
+				<text><![CDATA[QUANTITE]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="416" y="0" width="70" height="20" backcolor="#CCCCCC" uuid="f4243262-27b4-4b0a-b3c5-555b4ff9168e"/>
+				<box>
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Cambria Math" isBold="true"/>
+				</textElement>
+				<text><![CDATA[MONTANT]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="486" y="0" width="69" height="20" backcolor="#CCCCCC" uuid="be61b100-da6e-4f70-80f3-29373476fbb4"/>
+				<box>
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Cambria Math" isBold="true"/>
+				</textElement>
+				<text><![CDATA[DATE]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="20" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="0" width="43" height="20" uuid="d6ef4189-3de3-469e-a3ff-150e6a54f907"/>
+				<box>
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Cambria Math"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$V{COLUMN_COUNT}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="43" y="0" width="233" height="20" uuid="df8fccae-15c9-414a-9bf0-5564bf6cebb7"/>
+				<box>
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Cambria Math"/>
+				</textElement>
+				<textFieldExpression><![CDATA[" "+$F{Designation}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="276" y="0" width="69" height="20" uuid="81395a2a-08a2-429c-8b64-100fd77a97e0"/>
+				<box>
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Cambria Math"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{Qte}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="345" y="0" width="71" height="20" uuid="78d5c88c-65ba-4bac-a221-e3cbc71d91dc"/>
+				<box>
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Cambria Math"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{Punitaire}]]></textFieldExpression>
+			</textField>
+			<textField pattern="$">
+				<reportElement x="416" y="0" width="70" height="20" uuid="761e5634-5d4d-4de9-8e06-259506b5d58b"/>
+				<box>
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Cambria Math"/>
+				</textElement>
+				<textFieldExpression><![CDATA[" "+$F{PTOTAL}]]></textFieldExpression>
+			</textField>
+			<textField pattern="$">
+				<reportElement x="486" y="0" width="69" height="20" uuid="8e719263-5600-47b0-8dd9-270dc1ab77c4"/>
+				<box>
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Cambria Math"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{Date}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="22" splitType="Stretch">
+			<textField>
+				<reportElement mode="Opaque" x="0" y="0" width="555" height="22" backcolor="#CCCCCC" uuid="252e67db-aedd-4a6b-bad4-35adc71b2012"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Cambria Math" size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA["MONTANT TOTAL  "+$V{PTOTAL_1}]]></textFieldExpression>
+			</textField>
+		</band>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch">
+			<textField>
+				<reportElement x="435" y="34" width="80" height="20" uuid="d30e0676-eac1-4e65-b0dd-981fa95b274f"/>
+				<textElement textAlignment="Right" verticalAlignment="Bottom"/>
+				<textFieldExpression><![CDATA["Page "+$V{PAGE_NUMBER}+" of"]]></textFieldExpression>
+			</textField>
+			<textField evaluationTime="Report">
+				<reportElement x="515" y="34" width="40" height="20" uuid="4ab7c9b7-79ec-4b37-81a3-f0320926d4c1"/>
+				<textElement textAlignment="Right" verticalAlignment="Bottom"/>
+				<textFieldExpression><![CDATA[" " + $V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+			<textField pattern="dd/MM/yyyy">
+				<reportElement x="0" y="34" width="174" height="20" uuid="51d876e7-bda6-4c7c-8376-2bddf0993e95"/>
+				<textElement verticalAlignment="Bottom"/>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import de.jensd.fx.glyphs.materialdesignicons.MaterialDesignIconView?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="47.0" prefWidth="520.0" style="-fx-background-color: Transparent;" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lib.loadingController.LoadApproController">
+   <children>
+      <AnchorPane layoutX="3.0" layoutY="9.0" prefHeight="25.0" prefWidth="26.0" style="-fx-background-radius: 5px; -fx-background-color: #CCD7FE;" AnchorPane.leftAnchor="3.0">
+         <children>
+            <Label fx:id="index" alignment="CENTER" contentDisplay="CENTER" layoutX="2.0" layoutY="3.0" prefHeight="19.0" prefWidth="21.0" text="AB" textAlignment="CENTER" textFill="#128ce3" AnchorPane.bottomAnchor="3.0" AnchorPane.leftAnchor="2.0" AnchorPane.topAnchor="3.0">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <Label fx:id="designation" layoutX="36.0" layoutY="3.0" prefHeight="17.0" prefWidth="310.0" text="PLAQUETTE HARRIER NOUVEAU NYUMA A688WK" AnchorPane.leftAnchor="36.0" AnchorPane.rightAnchor="174.0">
+         <font>
+            <Font name="Segoe UI Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="qrecode" layoutX="36.0" layoutY="24.0" prefHeight="17.0" prefWidth="88.0" text="046574" textFill="#8d8d8d" AnchorPane.leftAnchor="36.0">
+         <graphic>
+            <MaterialDesignIconView fill="#f21d1d" glyphName="BARCODE_SCAN" />
+         </graphic>
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="quantite" layoutX="214.0" layoutY="24.0" text="10000" AnchorPane.rightAnchor="265.0">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="punitaire" layoutX="290.0" layoutY="24.0" prefHeight="17.0" prefWidth="81.0" text="2.5" AnchorPane.rightAnchor="149.0">
+         <graphic>
+            <FontAwesomeIconView fill="#079ef5" glyphName="DOLLAR" size="10" />
+         </graphic>
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="dateExp" layoutX="445.0" layoutY="27.0" text="01/06/2023" textFill="RED" AnchorPane.rightAnchor="13.0">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label fx:id="fournisseur" alignment="CENTER_RIGHT" contentDisplay="RIGHT" layoutX="339.0" layoutY="2.0" prefHeight="17.0" prefWidth="169.0" text="KAMBALE MALIKIDOGO JUGE" textFill="#128ce3" AnchorPane.rightAnchor="12.0">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="btnDetail" alignment="CENTER" contentDisplay="CENTER" layoutX="507.0" layoutY="14.0" AnchorPane.rightAnchor="1.0">
+         <graphic>
+            <MaterialDesignIconView fill="#2368f2" glyphName="DOTS_VERTICAL" />
+         </graphic>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Label>
+   </children>
+</AnchorPane>

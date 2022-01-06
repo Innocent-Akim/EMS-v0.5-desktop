@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="RapportCommande" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="352961ae-4bdd-4295-b673-92e7656e7df7">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<queryString>
+		<![CDATA[SELECT * FROM VsCommande1]]>
+	</queryString>
+	<field name="Code" class="java.lang.Integer"/>
+	<field name="Designation" class="java.lang.String"/>
+	<field name="Qte" class="java.lang.Double"/>
+	<field name="PUnite" class="java.lang.Double"/>
+	<field name="Total" class="java.lang.Double"/>
+	<field name="Date" class="java.lang.String"/>
+	<variable name="Total_1" class="java.lang.Double" resetType="Column" calculation="Sum">
+		<variableExpression><![CDATA[$F{Total}]]></variableExpression>
+	</variable>
+	<group name="Date">
+		<groupExpression><![CDATA[$F{Date}]]></groupExpression>
+		<groupHeader>
+			<band height="20">
+				<staticText>
+					<reportElement mode="Opaque" x="0" y="0" width="52" height="20" backcolor="#CCCCCC" uuid="fb4f95f7-706c-4c1b-ab5f-2885784ef5f9"/>
+					<box>
+						<pen lineWidth="0.75"/>
+						<topPen lineWidth="0.75"/>
+						<leftPen lineWidth="0.75"/>
+						<bottomPen lineWidth="0.75"/>
+						<rightPen lineWidth="0.75"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="Cambria Math" isBold="true"/>
+					</textElement>
+					<text><![CDATA[N°]]></text>
+				</staticText>
+				<staticText>
+					<reportElement mode="Opaque" x="52" y="0" width="300" height="20" backcolor="#CCCCCC" uuid="4ee78523-b7f5-4804-a672-b7b47b17ebc9"/>
+					<box>
+						<pen lineWidth="0.75"/>
+						<topPen lineWidth="0.75"/>
+						<leftPen lineWidth="0.75"/>
+						<bottomPen lineWidth="0.75"/>
+						<rightPen lineWidth="0.75"/>
+					</box>
+					<textElement verticalAlignment="Middle">
+						<font fontName="Cambria Math" isBold="true"/>
+					</textElement>
+					<text><![CDATA[  DESIGNATION]]></text>
+				</staticText>
+				<staticText>
+					<reportElement mode="Opaque" x="352" y="0" width="68" height="20" backcolor="#CCCCCC" uuid="62551f3e-94ec-4b6a-b38a-9bb09f965da9"/>
+					<box>
+						<pen lineWidth="0.75"/>
+						<topPen lineWidth="0.75"/>
+						<leftPen lineWidth="0.75"/>
+						<bottomPen lineWidth="0.75"/>
+						<rightPen lineWidth="0.75"/>
+					</box>
+					<textElement verticalAlignment="Middle">
+						<font fontName="Cambria Math" isBold="true"/>
+					</textElement>
+					<text><![CDATA[ QUANTITE]]></text>
+				</staticText>
+				<staticText>
+					<reportElement mode="Opaque" x="420" y="0" width="73" height="20" backcolor="#CCCCCC" uuid="ae1943fb-44e7-4983-8c09-ddeab47fbfed"/>
+					<box>
+						<pen lineWidth="0.75"/>
+						<topPen lineWidth="0.75"/>
+						<leftPen lineWidth="0.75"/>
+						<bottomPen lineWidth="0.75"/>
+						<rightPen lineWidth="0.75"/>
+					</box>
+					<textElement verticalAlignment="Middle">
+						<font fontName="Cambria Math" isBold="true"/>
+					</textElement>
+					<text><![CDATA[ P.UNITAIRE]]></text>
+				</staticText>
+				<staticText>
+					<reportElement mode="Opaque" x="493" y="0" width="62" height="20" backcolor="#CCCCCC" uuid="c8904867-24c1-4064-92eb-e3dc5dad8ea5"/>
+					<box>
+						<pen lineWidth="0.75"/>
+						<topPen lineWidth="0.75"/>
+						<leftPen lineWidth="0.75"/>
+						<bottomPen lineWidth="0.75"/>
+						<rightPen lineWidth="0.75"/>
+					</box>
+					<textElement verticalAlignment="Middle">
+						<font fontName="Cambria Math" isBold="true"/>
+					</textElement>
+					<text><![CDATA[ TOTAL]]></text>
+				</staticText>
+			</band>
+		</groupHeader>
+		<groupFooter>
+			<band height="25">
+				<textField>
+					<reportElement x="420" y="0" width="135" height="25" uuid="84675c13-ee46-4b61-b0fd-d9fa430e3f26"/>
+					<box>
+						<pen lineWidth="0.5"/>
+						<topPen lineWidth="0.5"/>
+						<leftPen lineWidth="0.5"/>
+						<bottomPen lineWidth="0.5"/>
+						<rightPen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="Cambria Math" size="18" isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$V{Total_1}+" \$"]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement x="352" y="0" width="68" height="25" uuid="01f922ef-7929-42f2-8d86-815c0a6f6859"/>
+					<box>
+						<pen lineWidth="0.5"/>
+						<topPen lineWidth="0.5"/>
+						<leftPen lineWidth="0.5"/>
+						<bottomPen lineWidth="0.5"/>
+						<rightPen lineWidth="0.5"/>
+					</box>
+					<textElement verticalAlignment="Middle">
+						<font fontName="Cambria Math" size="18" isBold="true"/>
+					</textElement>
+					<text><![CDATA[TOTAL]]></text>
+				</staticText>
+			</band>
+		</groupFooter>
+	</group>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="113" splitType="Stretch">
+			<staticText>
+				<reportElement mode="Opaque" x="0" y="2" width="117" height="15" backcolor="#CCCCCC" uuid="26b6f1d8-86e1-4c99-ac80-811876f6fad0"/>
+				<textElement>
+					<font fontName="Century Gothic" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[EM SERVICE AUTO]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="435" y="2" width="120" height="15" backcolor="#CCCCCC" uuid="1bf4ff6a-ff94-4cc8-8ec6-2a44f27bcc8f"/>
+				<textElement textAlignment="Right">
+					<font fontName="Century Gothic" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[EM SERVICE AUTO]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="43" width="555" height="14" uuid="3051bc23-cb03-4402-b058-199b08336fe6"/>
+				<textElement>
+					<font fontName="Century Gothic" size="11" isBold="true"/>
+				</textElement>
+				<text><![CDATA[CD/BKV/RCCM/17-A-3037]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="87" width="555" height="15" uuid="de353d4d-6dcc-4ca0-939c-d28eaed8660b"/>
+				<textElement>
+					<font fontName="Century Gothic" size="11" isBold="true"/>
+				</textElement>
+				<text><![CDATA[E-mail: Ephremmwassa05@gmail.com]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="0" y="19" width="555" height="24" backcolor="#CCCCCC" uuid="45c68080-736c-4329-a55d-84dce9f208a6"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Century Gothic" size="18" isBold="true" isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[FICHE DE COMMANDE]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="73" width="555" height="14" uuid="faec67d6-b960-4e6f-9155-115dd7bcb82e"/>
+				<textElement>
+					<font fontName="Century Gothic" size="11" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Tel: +243 852949176, 995507916]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="57" width="555" height="16" uuid="591df037-26b6-4e7a-8881-2d8711ea5679"/>
+				<textElement>
+					<font fontName="Century Gothic" size="11" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Id.Nat : 5-93-N32815B]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="102" width="555" height="0" uuid="abe6b044-e1ef-43bf-97a5-d04c9dff0f23"/>
+				<box>
+					<pen lineWidth="0.75" lineStyle="Dashed"/>
+					<topPen lineWidth="0.75" lineStyle="Dashed"/>
+					<leftPen lineWidth="0.75" lineStyle="Dashed"/>
+					<bottomPen lineWidth="0.75" lineStyle="Dashed"/>
+					<rightPen lineWidth="0.75" lineStyle="Dashed"/>
+				</box>
+				<text><![CDATA[Static text]]></text>
+			</staticText>
+		</band>
+	</title>
+	<detail>
+		<band height="20" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="0" width="52" height="20" uuid="96f738af-816c-4154-99ad-a2ef87dc7d6a"/>
+				<box>
+					<pen lineWidth="0.75"/>
+					<topPen lineWidth="0.75"/>
+					<leftPen lineWidth="0.75"/>
+					<bottomPen lineWidth="0.75"/>
+					<rightPen lineWidth="0.75"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Cambria Math"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{Code}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="52" y="0" width="300" height="20" uuid="954027ad-0c91-4d54-a560-65845a9d97e7"/>
+				<box>
+					<pen lineWidth="0.75"/>
+					<topPen lineWidth="0.75"/>
+					<leftPen lineWidth="0.75"/>
+					<bottomPen lineWidth="0.75"/>
+					<rightPen lineWidth="0.75"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Cambria Math"/>
+				</textElement>
+				<textFieldExpression><![CDATA[" "+$F{Designation}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="352" y="0" width="68" height="20" uuid="3619c033-e068-4837-9d10-1b1388d0aef2"/>
+				<box>
+					<pen lineWidth="0.75"/>
+					<topPen lineWidth="0.75"/>
+					<leftPen lineWidth="0.75"/>
+					<bottomPen lineWidth="0.75"/>
+					<rightPen lineWidth="0.75"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Cambria Math"/>
+				</textElement>
+				<textFieldExpression><![CDATA[" "+$F{Qte}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="420" y="0" width="73" height="20" uuid="83fcbdb1-867d-4249-a7f1-78eb94c00ed8"/>
+				<box>
+					<pen lineWidth="0.75"/>
+					<topPen lineWidth="0.75"/>
+					<leftPen lineWidth="0.75"/>
+					<bottomPen lineWidth="0.75"/>
+					<rightPen lineWidth="0.75"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Cambria Math"/>
+				</textElement>
+				<textFieldExpression><![CDATA[" "+$F{PUnite}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="493" y="0" width="62" height="20" uuid="943c6ab6-6844-490b-94b9-4bace3cf61d3"/>
+				<box>
+					<pen lineWidth="0.75"/>
+					<topPen lineWidth="0.75"/>
+					<leftPen lineWidth="0.75"/>
+					<bottomPen lineWidth="0.75"/>
+					<rightPen lineWidth="0.75"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Cambria Math"/>
+				</textElement>
+				<textFieldExpression><![CDATA[" "+$F{Total}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch">
+			<textField evaluationTime="Report">
+				<reportElement x="515" y="34" width="40" height="20" uuid="fd6471e9-5786-4786-b7f2-bcf53dacd488"/>
+				<textElement verticalAlignment="Bottom"/>
+				<textFieldExpression><![CDATA[" " + $V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="435" y="34" width="80" height="20" uuid="6f977bf3-ada6-4ce8-8566-2f9a274772f0"/>
+				<textElement textAlignment="Right" verticalAlignment="Bottom"/>
+				<textFieldExpression><![CDATA["Page "+$V{PAGE_NUMBER}+" of"]]></textFieldExpression>
+			</textField>
+			<textField pattern="dd/MM/yyyy">
+				<reportElement x="0" y="34" width="174" height="20" uuid="89d9b74a-058a-4a56-90e0-ee9f76980427"/>
+				<textElement verticalAlignment="Bottom"/>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>

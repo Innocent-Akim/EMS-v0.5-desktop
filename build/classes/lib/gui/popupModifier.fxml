@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="AnchoPanalModifier" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="82.0" prefWidth="166.0" style="-fx-background-color: #fff;" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lib.controler.PopupModifierController">
+   <children>
+      <TextField fx:id="TfdQteModifier" layoutX="11.0" layoutY="28.0" onKeyReleased="#IsModifierQuantite" prefHeight="27.0" prefWidth="147.0" promptText="Entrer la quantiter" styleClass="textfiled" stylesheets="@../css/Object_Style.css" />
+   </children>
+</AnchorPane>

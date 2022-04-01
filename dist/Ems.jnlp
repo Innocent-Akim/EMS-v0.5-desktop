@@ -8,7 +8,7 @@
   </information>
   <resources>
     <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
-    <jar href="Ems.jar" size="1038437" download="eager" />
+    <jar href="Ems.jar" size="1051379" download="eager" />
     <jar href="lib\AbsoluteLayout.jar" size="2850" download="eager" />
     <jar href="lib\GNAvatarView-1.0-rc.jar" size="26082" download="eager" />
     <jar href="lib\GNButton-1.1.0.jar" size="194323" download="eager" />
@@ -119,6 +119,7 @@
     <jar href="lib\spring-core-2.5.5.jar" size="287235" download="eager" />
     <jar href="lib\spring.jar" size="2838649" download="eager" />
     <jar href="lib\sqljdbc4-2.0.jar" size="466359" download="eager" />
+    <jar href="lib\sqljdbc4-3.0.jar" size="536204" download="eager" />
     <jar href="lib\swingx-1.6.2 (2).jar" size="1453716" download="eager" />
     <jar href="lib\swingx-1.6.2.jar" size="1453716" download="eager" />
     <jar href="lib\swingx-2007_10_07.jar" size="1371280" download="eager" />

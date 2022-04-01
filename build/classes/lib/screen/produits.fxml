@@ -56,7 +56,7 @@
                   <FontAwesomeIconView fill="WHITE" glyphName="SAVE" />
                </graphic>
             </JFXButton>
-            <JFXButton fx:id="imprimerProduitBtn" buttonType="RAISED" layoutX="133.0" layoutY="43.0" onAction="#enre_update" prefHeight="25.0" prefWidth="93.0" style="-fx-background-color: #029fd4;" text="Imprimer" textFill="WHITE">
+            <JFXButton fx:id="imprimerProduitBtn" buttonType="RAISED" layoutX="133.0" layoutY="7.0" onAction="#enre_update" prefHeight="61.0" prefWidth="93.0" style="-fx-background-color: #029fd4;" text="Imprimer" textFill="WHITE">
                <font>
                   <Font name="Segoe UI" size="12.0" />
                </font>
@@ -70,14 +70,6 @@
                </font>
                <graphic>
                   <FontAwesomeIconView fill="WHITE" glyphName="PENCIL_SQUARE_ALT" />
-               </graphic>
-            </JFXButton>
-            <JFXButton fx:id="delete_" buttonType="RAISED" layoutX="133.0" layoutY="9.0" onAction="#enre_update" prefHeight="25.0" prefWidth="93.0" style="-fx-background-color: #029fd4;" text="Supprimer" textFill="WHITE">
-               <font>
-                  <Font name="Segoe UI" size="12.0" />
-               </font>
-               <graphic>
-                  <FontAwesomeIconView fill="WHITE" glyphName="UNDO" />
                </graphic>
             </JFXButton>
          </children>

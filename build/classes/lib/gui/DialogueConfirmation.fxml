@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.icons525.Icons525View?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="dialogue" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="58.0" prefWidth="378.0" style="-fx-background-color: #fff;" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lib.controler.DialogueConfirmationController">
+   <children>
+      <Label fx:id="LblTitre" layoutX="2.0" layoutY="1.0" prefHeight="25.0" prefWidth="374.0" text="Label">
+         <graphic>
+            <Icons525View fill="#01a7e3" glyphName="PENCIL" size="15" />
+         </graphic>
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="btnOK" layoutX="165.0" layoutY="25.0" onAction="#ActionnerAll" prefHeight="16.0" prefWidth="64.0" style="-fx-background-color: #01a7e3;" styleClass="BtnSelected" stylesheets="@../css/Object_Style.css" text="OK">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <graphic>
+            <Icons525View fill="WHITE" glyphName="CIRCLESELECT" size="15" />
+         </graphic>
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

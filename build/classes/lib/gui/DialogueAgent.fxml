@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.materialicons.MaterialIconView?>
+<?import java.lang.String?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="339.0" style="-fx-background-color: #fff;" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lib.controler.DialogueAgentController">
+   <children>
+      <AnchorPane layoutX="6.0" layoutY="9.0" prefHeight="102.0" prefWidth="327.0" styleClass="AllBord" stylesheets="@../css/Object_Style.css">
+         <children>
+            <Circle fx:id="AddImage" fill="#173754" layoutX="61.0" layoutY="52.0" radius="47.0" stroke="BLACK" strokeType="INSIDE" />
+            <Button fx:id="btnImage" layoutX="110.0" layoutY="59.0" mnemonicParsing="false" onAction="#AllPhotos" prefHeight="25.0" prefWidth="28.0" stylesheets="@../css/Object_Style.css">
+               <graphic>
+                  <MaterialIconView fill="#f5f5f5" glyphName="ADD_A_PHOTO" />
+               </graphic>
+               <styleClass>
+                  <String fx:value="BtnSelected" />
+                  <String fx:value="HandCursor" />
+               </styleClass>
+            </Button>
+            <Label alignment="CENTER" layoutX="237.0" layoutY="19.0" prefHeight="66.0" prefWidth="76.0" styleClass="AllBord" stylesheets="@../css/Object_Style.css" text="00">
+               <font>
+                  <Font name="System Bold" size="43.0" />
+               </font>
+               <graphic>
+                  <MaterialIconView glyphName="RING_VOLUME" size="15" />
+               </graphic>
+            </Label>
+         </children>
+      </AnchorPane>
+      <GridPane hgap="6.0" layoutX="4.0" layoutY="124.0" prefHeight="219.0" prefWidth="327.0" vgap="5.0">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <TextField fx:id="Tfdnom" prefHeight="25.0" prefWidth="250.0" promptText="Entrer le nom " styleClass="textfiled" stylesheets="@../css/Object_Style.css" GridPane.columnIndex="1" />
+            <TextField fx:id="Tfdpostnom" prefHeight="25.0" prefWidth="250.0" promptText="Entrer le postnom" styleClass="textfiled" stylesheets="@../css/Object_Style.css" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <TextField fx:id="Tfdprenom" prefHeight="25.0" prefWidth="250.0" promptText="Entrer le prenom" styleClass="textfiled" stylesheets="@../css/Object_Style.css" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <ComboBox fx:id="Cbxsexe" prefHeight="25.0" prefWidth="250.0" promptText="Entrer le sexe" styleClass="textfiled" stylesheets="@../css/Object_Style.css" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <TextField fx:id="Tfdadress" prefHeight="25.0" prefWidth="250.0" promptText="Entrer l'adresse" styleClass="textfiled" stylesheets="@../css/Object_Style.css" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+            <TextField fx:id="Tfdcontact" prefHeight="25.0" prefWidth="250.0" promptText="Entrer le contact" styleClass="textfiled" stylesheets="@../css/Object_Style.css" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+            <TextField fx:id="Tfdemail" prefHeight="25.0" prefWidth="250.0" promptText="Entrer E-mail" styleClass="textfiled" stylesheets="@../css/Object_Style.css" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+            <Text fill="#787878" strokeType="OUTSIDE" strokeWidth="0.0" text="Nom agent" wrappingWidth="76.13671875" />
+            <Text fill="#787878" strokeType="OUTSIDE" strokeWidth="0.0" text="Postnom agent" wrappingWidth="88.13671875" GridPane.rowIndex="1" />
+            <Text fill="#787878" strokeType="OUTSIDE" strokeWidth="0.0" text="Prenom agent" wrappingWidth="88.13671875" GridPane.rowIndex="2" />
+            <Text fill="#787878" strokeType="OUTSIDE" strokeWidth="0.0" text="Sexe agent" wrappingWidth="88.13671875" GridPane.rowIndex="3" />
+            <Text fill="#787878" strokeType="OUTSIDE" strokeWidth="0.0" text="Adresse agent" wrappingWidth="83.13671875" GridPane.rowIndex="4" />
+            <Text fill="#787878" strokeType="OUTSIDE" strokeWidth="0.0" text="Contact agent" wrappingWidth="83.13671875" GridPane.rowIndex="5" />
+            <Text fill="#787878" strokeType="OUTSIDE" strokeWidth="0.0" text="E-mail agent" wrappingWidth="83.13671875" GridPane.rowIndex="6" />
+         </children>
+      </GridPane>
+      <Button fx:id="Btnajouter" layoutX="144.0" layoutY="362.0" mnemonicParsing="false" onAction="#AllPhotos" prefHeight="25.0" prefWidth="88.0" stylesheets="@../css/Object_Style.css" text="Ajouter">
+         <graphic>
+            <MaterialIconView fill="WHITE" glyphName="ADD_CIRCLE" size="15" />
+         </graphic>
+         <styleClass>
+            <String fx:value="BtnSelected" />
+            <String fx:value="HandCursor" />
+         </styleClass>
+      </Button>
+   </children>
+</AnchorPane>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.materialdesignicons.MaterialDesignIconView?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="cardeUtilisateur" prefHeight="36.0" prefWidth="246.0" style="-fx-background-color: Transparent;" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lib.loadingController.LoadUtilisateurController">
+   <children>
+      <Label fx:id="username" layoutX="35.0" layoutY="2.0" prefHeight="17.0" prefWidth="176.0" text="KIGHUNDILA WAKOMYA" AnchorPane.leftAnchor="35.0" AnchorPane.rightAnchor="35.0">
+         <font>
+            <Font name="Century Gothic Bold" size="11.0" />
+         </font>
+      </Label>
+      <Label fx:id="fonction" layoutX="36.0" layoutY="18.0" prefHeight="17.0" prefWidth="176.0" text="Administrateur" textFill="#1bb3e0" AnchorPane.leftAnchor="36.0" AnchorPane.rightAnchor="34.0" />
+      <Label alignment="CENTER" layoutX="2.0" layoutY="3.0" prefHeight="30.0" prefWidth="30.0" style="-fx-border-radius: 20px; -fx-border-color: #84C0FB;">
+         <graphic>
+            <MaterialDesignIconView fill="#1a8cff" glyphName="ACCOUNT" size="18" />
+         </graphic>
+      </Label>
+      <AnchorPane layoutX="222.0" layoutY="8.0" style="-fx-background-color: white; -fx-background-radius: 5px;" AnchorPane.rightAnchor="5.0">
+         <children>
+            <Label fx:id="btn_modifier" alignment="CENTER" prefHeight="19.0" prefWidth="19.0" style="-fx-background-color: white; -fx-border-color: #029FD4; -fx-border-radius: 5px; -fx-border-width: 0.5;">
+               <graphic>
+                  <MaterialDesignIconView fill="#029fd4" glyphName="DOWNLOAD" />
+               </graphic>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Label>
+         </children>
+      </AnchorPane>
+      <Label fx:id="code" layoutX="148.0" layoutY="13.0" text="Label" textFill="TRANSPARENT" />
+   </children>
+</AnchorPane>

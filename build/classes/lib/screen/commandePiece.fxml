@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import com.jfoenix.controls.JFXListView?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import de.jensd.fx.glyphs.octicons.OctIconView?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="585.0" prefWidth="501.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lib.source.CommandePieceController">
+   <children>
+      <AnchorPane layoutX="9.0" layoutY="10.0" prefHeight="48.0" prefWidth="483.0" style="-fx-background-color: fff; -fx-border-color: DEE7F8;" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0">
+         <children>
+            <AnchorPane layoutX="319.0" layoutY="6.0" prefHeight="37.0" prefWidth="271.0" AnchorPane.rightAnchor="0.0">
+               <children>
+                  <JFXButton fx:id="ch_left" contentDisplay="GRAPHIC_ONLY" layoutX="213.0" layoutY="6.3" ripplerFill="#dee7f8" styleClass="cursor" AnchorPane.topAnchor="6.3">
+                     <graphic>
+                        <FontAwesomeIconView fill="#00000087" glyphName="CHEVRON_LEFT">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </FontAwesomeIconView>
+                     </graphic>
+                     <font>
+                        <Font size="11.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton fx:id="ch_right" contentDisplay="GRAPHIC_ONLY" layoutX="242.0" layoutY="6.3" ripplerFill="#dee7f8" styleClass="cursor" AnchorPane.topAnchor="6.3">
+                     <font>
+                        <Font size="11.0" />
+                     </font>
+                     <graphic>
+                        <FontAwesomeIconView fill="#00000087" glyphName="CHEVRON_RIGHT">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </FontAwesomeIconView>
+                     </graphic>
+                  </JFXButton>
+                  <Label fx:id="pagetext" alignment="CENTER_RIGHT" contentDisplay="RIGHT" layoutX="109.0" layoutY="10.0" prefHeight="16.0" prefWidth="90.0" text="0 - 0 sur 0" textFill="#00000087" AnchorPane.topAnchor="10.0">
+                     <font>
+                        <Font name="Century Gothic" size="13.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="18.0" layoutY="20.0" prefHeight="26.0" prefWidth="198.0" style="-fx-background-color: #fff; -fx-border-color: #BAC3E2; -fx-border-width: 0.25; -fx-border-radius: 7px; -fx-background-radius: 7px;" AnchorPane.leftAnchor="13.0">
+         <children>
+            <TextField fx:id="recher_facture" layoutX="6.0" layoutY="1.0" prefHeight="24.0" prefWidth="178.0" promptText="Rechercher une commande..." style="-fx-background-color: #FFF;" AnchorPane.leftAnchor="6.0">
+               <font>
+                  <Font size="11.0" />
+               </font>
+            </TextField>
+            <OctIconView fill="#6a75ca" glyphName="SEARCH" layoutX="174.0" layoutY="19.0" size="13" />
+         </children>
+         <effect>
+            <DropShadow color="WHITE" />
+         </effect>
+      </AnchorPane>
+      <AnchorPane layoutX="5.0" layoutY="61.0" prefHeight="59.0" prefWidth="491.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0">
+         <children>
+            <AnchorPane layoutY="5.0" prefHeight="48.0" prefWidth="169.0" style="-fx-background-color: #fff; -fx-border-color: #BAC3E2; -fx-border-width: 0.25; -fx-border-radius: 7px; -fx-background-radius: 7px;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="322.0">
+               <children>
+                  <TextField fx:id="designationField" layoutX="1.25" layoutY="18.0" prefHeight="28.0" prefWidth="154.0" promptText="PARFUM CALIFORNIA" style="-fx-background-color: #FFF;" AnchorPane.leftAnchor="1.0" AnchorPane.rightAnchor="23.0">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </TextField>
+                  <OctIconView fill="#029fd4" glyphName="COMMENT_DISCUSSION" layoutX="158.25" layoutY="38.0" size="13" AnchorPane.rightAnchor="6.75" />
+                  <Label layoutX="6.0" layoutY="1.0" text="Désignation" AnchorPane.leftAnchor="2.0" />
+               </children>
+               <effect>
+                  <DropShadow color="WHITE" />
+               </effect>
+            </AnchorPane>
+            <AnchorPane layoutX="171.0" layoutY="5.0" prefHeight="48.0" prefWidth="102.0" style="-fx-background-color: #fff; -fx-border-color: #BAC3E2; -fx-border-width: 0.25; -fx-border-radius: 7px; -fx-background-radius: 7px;" AnchorPane.rightAnchor="218.0">
+               <children>
+                  <TextField fx:id="quantiteField" layoutX="1.25" layoutY="18.0" prefHeight="28.0" prefWidth="82.0" promptText="0.0" style="-fx-background-color: #FFF;" AnchorPane.leftAnchor="1.0">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </TextField>
+                  <OctIconView fill="#029fd4" glyphName="COMMENT_DISCUSSION" layoutX="85.0" layoutY="38.0" size="13" />
+                  <Label layoutX="5.0" text="Quantité" AnchorPane.leftAnchor="2.0" />
+               </children>
+               <effect>
+                  <DropShadow color="WHITE" />
+               </effect>
+            </AnchorPane>
+            <AnchorPane layoutX="274.0" layoutY="5.0" prefHeight="48.0" prefWidth="102.0" style="-fx-background-color: #fff; -fx-border-color: #BAC3E2; -fx-border-width: 0.25; -fx-border-radius: 7px; -fx-background-radius: 7px;" AnchorPane.rightAnchor="115.0">
+               <children>
+                  <TextField fx:id="punitaireField" layoutX="1.25" layoutY="21.0" prefHeight="24.0" prefWidth="82.0" promptText="0.0" style="-fx-background-color: #FFF;" AnchorPane.leftAnchor="1.25">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </TextField>
+                  <OctIconView fill="#029fd4" glyphName="COMMENT_DISCUSSION" layoutX="84.0" layoutY="39.0" size="13" text="" />
+                  <Label layoutX="2.0" text="P.Unitaire" AnchorPane.leftAnchor="2.0" />
+               </children>
+               <effect>
+                  <DropShadow color="WHITE" />
+               </effect>
+            </AnchorPane>
+            <AnchorPane layoutX="378.0" layoutY="6.0" prefHeight="48.0" prefWidth="113.0" style="-fx-background-color: #fff; -fx-border-color: #BAC3E2; -fx-border-width: 0.25; -fx-border-radius: 7px; -fx-background-radius: 7px;" AnchorPane.rightAnchor="0.0">
+               <children>
+                  <TextField fx:id="dateField" alignment="TOP_RIGHT" editable="false" layoutX="1.75" layoutY="21.0" prefHeight="25.0" prefWidth="82.0" promptText="2022-02-01" style="-fx-background-color: #FFF;" AnchorPane.leftAnchor="1.75">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </TextField>
+                  <JFXDatePicker fx:id="datePicker" defaultColor="#029fd4" layoutX="65.5" layoutY="17.0" prefHeight="16.0" prefWidth="36.0" AnchorPane.rightAnchor="0.5" />
+                  <Label layoutX="4.0" text="Date" AnchorPane.leftAnchor="2.0" />
+               </children>
+               <effect>
+                  <DropShadow color="WHITE" />
+               </effect>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+      <JFXListView fx:id="printData" focusTraversable="false" layoutX="4.0" layoutY="177.0" prefHeight="399.0" prefWidth="494.0" style="-fx-background-color: Transparent;" AnchorPane.bottomAnchor="9.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="177.0" />
+      <JFXButton fx:id="btn_add" layoutX="7.0" layoutY="122.0" prefHeight="25.0" prefWidth="113.0" style="-fx-background-color: #029FD4;" text="Enregistrement" textFill="WHITE" AnchorPane.leftAnchor="7.0">
+         <graphic>
+            <FontAwesomeIconView fill="WHITE" glyphName="PLUS" />
+         </graphic>
+      </JFXButton>
+      <AnchorPane layoutX="5.0" layoutY="153.0" prefWidth="491.0" style="-fx-background-color: Transparent;" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0">
+         <children>
+            <Label prefHeight="17.0" prefWidth="144.0" style="-fx-background-color: Transparent;" text="Désignation" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="322.0">
+               <graphic>
+                  <FontAwesomeIconView fill="#029fd4" glyphName="SORT" />
+               </graphic>
+            </Label>
+            <Label layoutX="172.0" layoutY="-1.0" prefHeight="17.0" prefWidth="74.0" style="-fx-background-color: Transparent;" text="Quantité" AnchorPane.rightAnchor="245.0">
+               <graphic>
+                  <FontAwesomeIconView fill="#029fd4" glyphName="SORT" />
+               </graphic>
+            </Label>
+            <Label layoutX="251.0" layoutY="1.0" prefHeight="17.0" prefWidth="74.0" style="-fx-background-color: Transparent;" text="P.Unitaire" AnchorPane.rightAnchor="166.0">
+               <graphic>
+                  <FontAwesomeIconView fill="#029fd4" glyphName="SORT" />
+               </graphic>
+            </Label>
+            <Label layoutX="330.0" prefHeight="17.0" prefWidth="74.0" style="-fx-background-color: Transparent;" text="Date" AnchorPane.rightAnchor="87.0">
+               <graphic>
+                  <FontAwesomeIconView fill="#029fd4" glyphName="SORT" />
+               </graphic>
+            </Label>
+            <Label layoutX="409.0" prefHeight="17.0" prefWidth="82.0" style="-fx-background-color: Transparent;" text="Action" AnchorPane.rightAnchor="0.0">
+               <graphic>
+                  <FontAwesomeIconView fill="#e8451cfa" glyphName="UPLOAD" />
+               </graphic>
+            </Label>
+         </children>
+      </AnchorPane>
+      <ListView fx:id="listCommandePiece" layoutX="4.0" layoutY="198.0" prefHeight="386.0" prefWidth="494.0" style="-fx-background-color: Transparent;" AnchorPane.bottomAnchor="1.0" AnchorPane.leftAnchor="4.0" AnchorPane.rightAnchor="3.0" AnchorPane.topAnchor="198.0" />
+   </children>
+</AnchorPane>

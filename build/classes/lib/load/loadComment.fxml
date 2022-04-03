@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.octicons.OctIconView?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="cardID" prefHeight="27.0" prefWidth="491.0" style="-fx-background-color: Transparent; -fx-background-radius: 10px;" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lib.loadingController.LoadCommentController">
+   <children>
+      <Label fx:id="designation" layoutY="4.0" prefHeight="17.0" prefWidth="144.0" text="BIELETTE" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="322.0">
+         <graphic>
+            <OctIconView fill="#e19f04" glyphName="LIGHT_BULB" size="14" />
+         </graphic>
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="qte" layoutX="158.0" layoutY="4.0" prefHeight="17.0" prefWidth="74.0" text="100000" textFill="#030303" AnchorPane.rightAnchor="245.0">
+         <graphic>
+            <OctIconView fill="#063772" glyphName="FILE_SYMLINK_FILE" size="14" />
+         </graphic>
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="prix" layoutX="327.0" layoutY="4.0" prefHeight="17.0" prefWidth="74.0" text="20 $" AnchorPane.rightAnchor="166.0">
+         <graphic>
+            <OctIconView fill="#0a3a54" glyphName="GRAPH" size="14" />
+         </graphic>
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="date" alignment="CENTER" layoutX="321.0" layoutY="4.0" prefHeight="17.0" prefWidth="74.0" text="2022-05-12" AnchorPane.rightAnchor="87.0" />
+      <Separator layoutX="-2.0" layoutY="30.0" prefHeight="0.0" prefWidth="491.0" style="-fx-background-color: #898585;" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" />
+      <GridPane hgap="3.0" layoutX="440.0" layoutY="2.0" vgap="3.0" AnchorPane.rightAnchor="2.0">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <Button fx:id="btn_modif" mnemonicParsing="false" prefHeight="25.0" prefWidth="23.0" style="-fx-border-color: #bfb9b9; -fx-border-radius: 5px; -fx-border-width: 0.25; -fx-background-radius: 5px; -fx-background-color: #029FD4;">
+               <graphic>
+                  <OctIconView fill="WHITE" glyphName="SYNC" />
+               </graphic>
+            </Button>
+            <Button fx:id="btn_annuler" mnemonicParsing="false" prefHeight="25.0" prefWidth="23.0" style="-fx-border-color: #bfb9b9; -fx-border-width: 0.25px; -fx-border-radius: 5px; -fx-background-color: red; -fx-background-radius: 5px;" GridPane.columnIndex="1">
+               <graphic>
+                  <OctIconView fill="WHITE" glyphName="TRASHCAN" size="12" />
+               </graphic>
+            </Button>
+         </children>
+      </GridPane>
+      <Label fx:id="id" layoutX="104.0" layoutY="8.0" text="0.0" textFill="TRANSPARENT" />
+   </children>
+</AnchorPane>

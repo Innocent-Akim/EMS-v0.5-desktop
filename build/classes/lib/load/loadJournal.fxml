@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.ContextMenu?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.input.KeyCodeCombination?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="pan" prefHeight="69.0" prefWidth="865.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lib.loadingController.LoadJournalController">
+   <children>
+      <Label layoutX="112.0" layoutY="11.0" prefHeight="20.0" prefWidth="71.0" style="-fx-background-color: #D8E6FF; -fx-background-radius: 15px;" text="Débit" textFill="#757272">
+         <graphic>
+            <FontAwesomeIconView fill="#03a9f4" glyphName="PLUS_CIRCLE" size="20" />
+         </graphic>
+         <font>
+            <Font name="Arial Black" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="112.0" layoutY="42.0" prefHeight="20.0" prefWidth="71.0" style="-fx-background-color: FFE0E0; -fx-background-radius: 15px;" text="Crédit" textFill="#757272">
+         <graphic>
+            <FontAwesomeIconView fill="#fa4d53" glyphName="MINUS_CIRCLE" size="20" />
+         </graphic>
+         <font>
+            <Font name="Arial Black" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="CompteDebut" layoutX="194.0" layoutY="13.0" prefHeight="17.0" prefWidth="313.0" text="Caise">
+         <font>
+            <Font name="Century Gothic Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="txtCredit" layoutX="194.0" layoutY="43.0" prefHeight="17.0" prefWidth="298.0" text="Caise">
+         <font>
+            <Font name="Century Gothic Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="txtMontant" alignment="CENTER_RIGHT" layoutX="601.0" layoutY="2.0" prefHeight="28.0" prefWidth="259.0" text="1000000 USD" textAlignment="RIGHT" AnchorPane.rightAnchor="0.0">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Label>
+      <Label layoutX="8.0" layoutY="3.0" prefHeight="17.0" prefWidth="71.0" text="N° OP" AnchorPane.leftAnchor="8.0" />
+      <Label fx:id="txtRef" layoutX="8.0" layoutY="22.0" prefHeight="17.0" prefWidth="84.0" text="10000000" AnchorPane.leftAnchor="8.0">
+         <font>
+            <Font name="Arial Black" size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="txtLibelle" alignment="CENTER_RIGHT" layoutX="515.0" layoutY="25.0" prefHeight="40.0" prefWidth="364.0" text=" Label Label Label Label Label Label Label LabelLabel Label  Label Label Label Label Label Label Label LabelLabel Label" textAlignment="RIGHT" textFill="#5b5858" wrapText="true" AnchorPane.rightAnchor="0.0">
+         <contextMenu>
+            <ContextMenu>
+              <items>
+                <MenuItem mnemonicParsing="false" onAction="#anuller" text="Annulel la journalisation">
+                     <accelerator>
+                        <KeyCodeCombination alt="UP" code="CANCEL" control="UP" meta="ANY" shift="UP" shortcut="UP" />
+                     </accelerator>
+                  </MenuItem>
+              </items>
+            </ContextMenu>
+         </contextMenu>
+      </Label>
+      <Label fx:id="txtCode" layoutX="534.0" layoutY="5.0" prefHeight="17.0" prefWidth="64.0" text="oo" textFill="#ff0202" />
+      <Label fx:id="txtDate" layoutX="7.0" layoutY="47.0" prefHeight="17.0" prefWidth="95.0" text="2020-02-02" textFill="#ff1818" AnchorPane.leftAnchor="8.0">
+         <font>
+            <Font name="Century Gothic Bold" size="12.0" />
+         </font>
+      </Label>
+      <Separator layoutX="495.0" layoutY="5.0" orientation="VERTICAL" prefHeight="57.0" prefWidth="9.0" />
+      <Separator layoutX="98.0" layoutY="1.0" orientation="VERTICAL" prefHeight="69.0" prefWidth="9.0" AnchorPane.bottomAnchor="0.0" AnchorPane.topAnchor="0.0" />
+      <Label layoutX="504.0" layoutY="6.0" text="Ref :" />
+   </children>
+</AnchorPane>

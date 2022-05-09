@@ -9,7 +9,7 @@
 <?import javafx.scene.layout.RowConstraints?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane id="AnchorPane" prefHeight="133.0" prefWidth="160.0" style="-fx-background-color: fff;" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lib.source.MenuController">
+<AnchorPane id="AnchorPane" fx:id="ecran_menu" prefHeight="133.0" prefWidth="160.0" style="-fx-background-color: fff;" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lib.source.MenuController">
    <children>
       <GridPane hgap="5.0" layoutX="6.0" layoutY="7.0" prefHeight="123.0" prefWidth="150.0" vgap="7.0">
          <columnConstraints>
@@ -18,14 +18,14 @@
          <rowConstraints>
             <RowConstraints maxHeight="29.0" minHeight="10.0" prefHeight="24.0" vgrow="SOMETIMES" />
             <RowConstraints maxHeight="29.0" minHeight="10.0" prefHeight="24.0" vgrow="SOMETIMES" />
-            <RowConstraints maxHeight="29.0" minHeight="10.0" prefHeight="24.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="29.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
             <RowConstraints maxHeight="29.0" minHeight="10.0" prefHeight="24.0" vgrow="SOMETIMES" />
             <RowConstraints maxHeight="29.0" minHeight="10.0" prefHeight="24.0" vgrow="SOMETIMES" />
          </rowConstraints>
          <children>
-            <Label fx:id="b_fournir" onMouseClicked="#Calloperation" prefHeight="20.0" prefWidth="150.0" text="Fournir" textFill="#8b8f98">
+            <Label fx:id="b_nouveau" onMouseClicked="#Calloperation" prefHeight="20.0" prefWidth="150.0" text="Nouveau" textFill="#8b8f98">
                <font>
-                  <Font name="Century Gothic" size="13.0" />
+                  <Font name="Century Gothic" size="14.0" />
                </font>
                <graphic>
                   <Icons525View fill="#1493d7" glyphName="VKONTAKTE" size="16" />
@@ -34,20 +34,9 @@
                   <Cursor fx:constant="HAND" />
                </cursor>
             </Label>
-            <Label fx:id="b_nouveau" onMouseClicked="#Calloperation" prefHeight="20.0" prefWidth="150.0" text="Nouveau" textFill="#8b8f98" GridPane.rowIndex="1">
+            <Label fx:id="b_ventes" onMouseClicked="#Calloperation" prefHeight="20.0" prefWidth="150.0" text="Ventes" textFill="#8b8f98" GridPane.rowIndex="1">
                <font>
-                  <Font name="Century Gothic" size="13.0" />
-               </font>
-               <graphic>
-                  <Icons525View fill="#1493d7" glyphName="VKONTAKTE" size="16" />
-               </graphic>
-               <cursor>
-                  <Cursor fx:constant="HAND" />
-               </cursor>
-            </Label>
-            <Label fx:id="b_ventes" onMouseClicked="#Calloperation" prefHeight="20.0" prefWidth="150.0" text="Ventes" textFill="#8b8f98" GridPane.rowIndex="2">
-               <font>
-                  <Font name="Century Gothic" size="13.0" />
+                  <Font name="Century Gothic" size="14.0" />
                </font>
                <graphic>
                   <Icons525View fill="#1493d7" glyphName="VKONTAKTE" size="16" />
@@ -61,7 +50,7 @@
                   <Icons525View fill="#1493d7" glyphName="VKONTAKTE" size="16" />
                </graphic>
                <font>
-                  <Font name="Century Gothic" size="13.0" />
+                  <Font name="Century Gothic" size="14.0" />
                </font>
                <cursor>
                   <Cursor fx:constant="HAND" />
@@ -69,11 +58,22 @@
             </Label>
             <Label fx:id="b_caisse" onMouseClicked="#Calloperation" prefHeight="20.0" prefWidth="150.0" text="Caisse" textFill="#8b8f98" GridPane.rowIndex="4">
                <font>
-                  <Font name="Century Gothic" size="13.0" />
+                  <Font name="Century Gothic" size="14.0" />
                </font>
                <graphic>
                   <Icons525View fill="#1493d7" glyphName="VKONTAKTE" size="16" />
                </graphic>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Label>
+            <Label fx:id="b_dettes" prefHeight="17.0" prefWidth="146.0" text="Dettes" textFill="#8b8f98" GridPane.rowIndex="2">
+               <graphic>
+                  <Icons525View fill="#1493d7" glyphName="VKONTAKTE" size="16" />
+               </graphic>
+               <font>
+                  <Font name="Century Gothic" size="14.0" />
+               </font>
                <cursor>
                   <Cursor fx:constant="HAND" />
                </cursor>

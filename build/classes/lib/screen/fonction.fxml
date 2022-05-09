@@ -13,9 +13,9 @@
 
 <AnchorPane id="AnchorPane" prefHeight="560.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lib.source.FonctionController">
    <children>
-      <AnchorPane layoutX="5.0" layoutY="11.0" prefHeight="538.0" prefWidth="293.0" style="-fx-background-color: white;" AnchorPane.leftAnchor="2.0" AnchorPane.topAnchor="11.0">
+      <AnchorPane layoutX="5.0" prefHeight="560.0" prefWidth="293.0" style="-fx-background-color: white;" AnchorPane.leftAnchor="2.0" AnchorPane.topAnchor="0.0">
          <children>
-            <JFXListView fx:id="listTaux" focusTraversable="false" layoutX="2.0" layoutY="93.0" prefHeight="512.0" prefWidth="260.0" style="-fx-background-color: Transparent;" AnchorPane.bottomAnchor="2.0" AnchorPane.leftAnchor="2.0" AnchorPane.rightAnchor="2.0" AnchorPane.topAnchor="93.0" />
+            <JFXListView fx:id="listTaux" focusTraversable="false" layoutX="2.0" layoutY="93.0" prefHeight="560.0" prefWidth="289.0" style="-fx-background-color: Transparent;" AnchorPane.bottomAnchor="-2.0" AnchorPane.leftAnchor="2.0" AnchorPane.topAnchor="93.0" />
             <JFXButton fx:id="btn_add" alignment="CENTER" contentDisplay="CENTER" layoutX="237.0" layoutY="66.0" onMouseClicked="#showListSousCategorie" prefHeight="25.0" prefWidth="25.0" style="-fx-background-color: #FBAA17; -fx-background-radius: 50px;" text=" " AnchorPane.rightAnchor="2.0" AnchorPane.topAnchor="66.0">
                <font>
                   <Font size="9.0" />
@@ -27,7 +27,10 @@
                   <Cursor fx:constant="HAND" />
                </cursor>
             </JFXButton>
-            <Text layoutX="66.0" layoutY="18.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Liste des taux disponible  dans les system" wrappingWidth="154.46875" AnchorPane.leftAnchor="66.0" AnchorPane.topAnchor="5.0" />
+            <Text layoutX="66.0" layoutY="21.0703125" strokeType="OUTSIDE" strokeWidth="0.0" text="Liste des taux disponible  dans les system" wrappingWidth="154.46875" AnchorPane.leftAnchor="66.0" AnchorPane.topAnchor="9.0">
+               <font>
+                  <Font name="Century Gothic" size="12.0" />
+               </font></Text>
             <Label alignment="CENTER" contentDisplay="CENTER" layoutX="17.0" layoutY="28.0" prefHeight="39.0" prefWidth="44.0" style="-fx-background-color: #FBAA17; -fx-background-radius: 5px;" AnchorPane.leftAnchor="17.0" AnchorPane.topAnchor="3.0">
                <graphic>
                   <OctIconView fill="WHITE" glyphName="FILE_SYMLINK_FILE" size="30" />
@@ -35,14 +38,17 @@
             </Label>
             <AnchorPane layoutX="16.0" layoutY="65.0" prefHeight="26.0" prefWidth="246.0" style="-fx-border-color: #CDC6C0; -fx-border-width: 0.5;" AnchorPane.leftAnchor="16.0" AnchorPane.rightAnchor="31.0">
                <children>
-                  <TextField fx:id="search" prefHeight="25.0" prefWidth="231.0" promptText="Entrer le taux" style="-fx-background-color: Transparent;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
+                  <TextField fx:id="search" prefHeight="25.0" prefWidth="231.0" promptText="Entrer le taux" style="-fx-background-color: Transparent;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                     <font>
+                        <Font name="Century Gothic" size="12.0" />
+                     </font></TextField>
                </children>
             </AnchorPane>
          </children>
       </AnchorPane>
-      <AnchorPane layoutX="300.0" layoutY="11.0" prefHeight="538.0" prefWidth="293.0" style="-fx-background-color: white;" AnchorPane.rightAnchor="2.0">
+      <AnchorPane layoutX="300.0" prefHeight="560.0" prefWidth="293.0" style="-fx-background-color: white;" AnchorPane.leftAnchor="305.0" AnchorPane.rightAnchor="2.0">
          <children>
-            <JFXListView fx:id="listCategorie" focusTraversable="false" layoutX="2.0" layoutY="93.0" prefHeight="512.0" prefWidth="260.0" style="-fx-background-color: Transparent;" AnchorPane.bottomAnchor="2.0" AnchorPane.leftAnchor="2.0" AnchorPane.rightAnchor="2.0" AnchorPane.topAnchor="93.0" />
+            <JFXListView fx:id="listCategorie" focusTraversable="false" layoutX="3.0" layoutY="91.0" prefHeight="560.0" prefWidth="289.0" style="-fx-background-color: Transparent;" AnchorPane.bottomAnchor="49.0" AnchorPane.leftAnchor="3.0" AnchorPane.rightAnchor="1.0" AnchorPane.topAnchor="91.0" />
             <JFXButton fx:id="btn_categorier" alignment="CENTER" contentDisplay="CENTER" layoutX="237.0" layoutY="66.0" prefHeight="25.0" prefWidth="25.0" style="-fx-background-color: #029FD4; -fx-background-radius: 50px;" text=" " AnchorPane.rightAnchor="2.0" AnchorPane.topAnchor="66.0">
                <font>
                   <Font size="9.0" />
@@ -54,7 +60,10 @@
                   <Cursor fx:constant="HAND" />
                </cursor>
             </JFXButton>
-            <Text layoutX="66.0" layoutY="20.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Liste des categories disponible  dans les system" wrappingWidth="154.46875" AnchorPane.leftAnchor="66.0" AnchorPane.topAnchor="7.0" />
+            <Text layoutX="66.0" layoutY="20.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Liste des categories disponible  dans les system" wrappingWidth="154.46875" AnchorPane.leftAnchor="66.0" AnchorPane.topAnchor="7.0">
+               <font>
+                  <Font name="Century Gothic" size="12.0" />
+               </font></Text>
             <Label alignment="CENTER" contentDisplay="CENTER" layoutX="17.0" layoutY="5.0" prefHeight="39.0" prefWidth="44.0" style="-fx-background-color: #029FD4; -fx-background-radius: 5px;" AnchorPane.leftAnchor="17.0" AnchorPane.topAnchor="5.0">
                <graphic>
                   <OctIconView fill="WHITE" glyphName="FILE_SYMLINK_FILE" size="30" />
@@ -62,7 +71,10 @@
             </Label>
             <AnchorPane layoutX="16.0" layoutY="65.0" prefHeight="26.0" prefWidth="246.0" style="-fx-border-color: #CDC6C0; -fx-border-width: 0.5;" AnchorPane.leftAnchor="16.0" AnchorPane.rightAnchor="31.0">
                <children>
-                  <TextField fx:id="tfdCategorie" prefHeight="25.0" prefWidth="231.0" promptText="Entrer la categorie" style="-fx-background-color: Transparent;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
+                  <TextField fx:id="tfdCategorie" prefHeight="25.0" prefWidth="231.0" promptText="Entrer la categorie" style="-fx-background-color: Transparent;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                     <font>
+                        <Font name="Century Gothic" size="12.0" />
+                     </font></TextField>
                </children>
             </AnchorPane>
          </children>

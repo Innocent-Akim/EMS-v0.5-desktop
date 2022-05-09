@@ -97,7 +97,7 @@
             </GridPane>
          </children>
       </AnchorPane>
-      <HBox alignment="BOTTOM_LEFT" layoutY="48.0" prefHeight="467.0" prefWidth="341.0" style="-fx-background-color: #F7F8FB;" AnchorPane.bottomAnchor="55.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="48.0">
+      <HBox alignment="BOTTOM_LEFT" layoutX="3.0" layoutY="52.0" prefHeight="467.0" prefWidth="341.0" style="-fx-background-color: #F7F8FB;" AnchorPane.bottomAnchor="51.0" AnchorPane.leftAnchor="3.0" AnchorPane.topAnchor="52.0">
          <children>
             <AnchorPane prefHeight="569.0" prefWidth="339.0" style="-fx-background-color: #F7F8FB;">
                <children>
@@ -107,7 +107,7 @@
                      </font>
                   </Text>
                   <HBox layoutX="262.0" layoutY="1.0" AnchorPane.rightAnchor="124.0" />
-                  <HBox alignment="BOTTOM_LEFT" layoutX="25.0" layoutY="67.0" prefHeight="289.0" prefWidth="289.0" style="-fx-background-color: #F7F8FB;">
+                  <HBox alignment="BOTTOM_LEFT" layoutX="25.0" layoutY="67.0" prefHeight="391.0" prefWidth="289.0" style="-fx-background-color: #F7F8FB;">
                      <children>
                         <AnchorPane prefHeight="365.0" prefWidth="289.0">
                            <children>
@@ -151,7 +151,7 @@
                                  <children>
                                     <TextField fx:id="qte" layoutX="17.0" layoutY="1.0" prefHeight="26.0" prefWidth="256.0" promptText="20" style="-fx-background-color: #FFF;">
                                        <font>
-                                          <Font name="Century Gothic" size="11.0" />
+                                          <Font name="Century Gothic Bold" size="17.0" />
                                        </font>
                                     </TextField>
                                     <OctIconView fill="#a3a0d7" glyphName="LINK_EXTERNAL" layoutX="3.0" layoutY="19.0" size="15" />
@@ -169,7 +169,7 @@
                                  <children>
                                     <TextField fx:id="punitaire" layoutX="17.0" layoutY="1.0" prefHeight="26.0" prefWidth="90.0" promptText="2.5" style="-fx-background-color: #FFF;">
                                        <font>
-                                          <Font name="Century Gothic" size="11.0" />
+                                          <Font name="Century Gothic Bold" size="17.0" />
                                        </font>
                                     </TextField>
                                     <OctIconView fill="#a3a0d7" glyphName="LINK_EXTERNAL" layoutX="3.0" layoutY="19.0" size="15" />
@@ -187,7 +187,7 @@
                                  <children>
                                     <TextField fx:id="pT" layoutX="22.0" layoutY="1.0" prefHeight="26.0" prefWidth="114.0" promptText="50" style="-fx-background-color: #FFF;">
                                        <font>
-                                          <Font name="Century Gothic" size="11.0" />
+                                          <Font name="Century Gothic Bold" size="17.0" />
                                        </font>
                                     </TextField>
                                     <OctIconView fill="#a3a0d7" glyphName="LINK_EXTERNAL" layoutX="3.0" layoutY="19.0" size="15" />
@@ -196,21 +196,39 @@
                                     <DropShadow color="WHITE" />
                                  </effect>
                               </AnchorPane>
-                              <Text layoutX="144.0" layoutY="183.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Total" wrappingWidth="90.00001090765">
+                              <Text layoutX="144.0" layoutY="184.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Montant  à payé" wrappingWidth="107.99999624490738">
                                  <font>
                                     <Font name="Century Gothic" size="12.0" />
                                  </font>
                               </Text>
-                              <JFXButton fx:id="enregitrebtn" buttonType="RAISED" layoutX="10.0" layoutY="228.0" onAction="#imprimer_" prefHeight="28.0" prefWidth="274.0" style="-fx-background-color: #029FD4;" text="Ajouter" textFill="WHITE">
+                              <JFXButton fx:id="enregitrebtn" buttonType="RAISED" layoutX="10.0" layoutY="291.0" onAction="#imprimer_" prefHeight="28.0" prefWidth="274.0" style="-fx-background-color: #029FD4;" text="Ajouter" textFill="WHITE">
                                  <font>
                                     <Font name="Century Gothic Bold" size="13.0" />
                                  </font>
                               </JFXButton>
-                              <JFXButton fx:id="proformant" buttonType="RAISED" layoutX="105.0" layoutY="265.0" prefHeight="27.0" prefWidth="83.0" style="-fx-background-color: red; -fx-border-width: 0.5px; -fx-border-radius: 5px;" text="Proformant" textFill="WHITE">
+                              <JFXButton fx:id="proformant" buttonType="RAISED" layoutX="105.0" layoutY="338.0" prefHeight="27.0" prefWidth="83.0" style="-fx-background-color: red; -fx-border-width: 0.5px; -fx-border-radius: 5px;" text="Proformant" textFill="WHITE">
                                  <font>
                                     <Font name="Roboto Medium" size="12.0" />
                                  </font>
                               </JFXButton>
+                              <AnchorPane layoutX="13.0" layoutY="242.0" prefHeight="36.0" prefWidth="265.0" style="-fx-background-color: #fff; -fx-border-color: #BAC3E2; -fx-border-width: 0.25;">
+                                 <children>
+                                    <TextField fx:id="payer" layoutX="17.0" layoutY="1.0" prefHeight="34.0" prefWidth="248.0" promptText="2.5" style="-fx-background-color: #FFF;">
+                                       <font>
+                                          <Font name="Century Gothic Bold" size="17.0" />
+                                       </font>
+                                    </TextField>
+                                    <OctIconView fill="#a3a0d7" glyphName="LINK_EXTERNAL" layoutX="3.0" layoutY="19.0" size="15" />
+                                 </children>
+                                 <effect>
+                                    <DropShadow color="WHITE" />
+                                 </effect>
+                              </AnchorPane>
+                              <Text layoutX="13.0" layoutY="237.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Payé" wrappingWidth="83.00000536441803">
+                                 <font>
+                                    <Font name="Century Gothic" size="12.0" />
+                                 </font>
+                              </Text>
                            </children>
                         </AnchorPane>
                      </children>
@@ -220,12 +238,12 @@
                         <Font name="Century Gothic" size="17.0" />
                      </font>
                   </Label>
-                  <JFXButton fx:id="print1" buttonType="RAISED" layoutX="36.0" layoutY="332.0" onAction="#imprimer_" prefHeight="27.0" prefWidth="83.0" style="-fx-background-color: #fff; -fx-border-width: 0.5px; -fx-border-radius: 5px;" text="Imprimer" textFill="#48477b">
+                  <JFXButton fx:id="print1" buttonType="RAISED" layoutX="36.0" layoutY="405.0" onAction="#imprimer_" prefHeight="27.0" prefWidth="83.0" style="-fx-background-color: #fff; -fx-border-width: 0.5px; -fx-border-radius: 5px;" text="Imprimer" textFill="#48477b">
                      <font>
                         <Font name="Roboto Medium" size="12.0" />
                      </font>
                   </JFXButton>
-                  <JFXButton fx:id="annuler_facture" buttonType="RAISED" layoutX="225.0" layoutY="332.0" onAction="#imprimer_" prefHeight="27.0" prefWidth="83.0" style="-fx-background-color: #fff; -fx-border-width: 0.5px; -fx-border-radius: 5px;" text="Annuler" textFill="#48477b">
+                  <JFXButton fx:id="annuler_facture" buttonType="RAISED" layoutX="225.0" layoutY="404.0" onAction="#imprimer_" prefHeight="27.0" prefWidth="83.0" style="-fx-background-color: #fff; -fx-border-width: 0.5px; -fx-border-radius: 5px;" text="Annuler" textFill="#48477b">
                      <font>
                         <Font name="Roboto Medium" size="12.0" />
                      </font>
@@ -346,8 +364,8 @@
             </Label>
          </children>
       </AnchorPane>
-      <ListView fx:id="listClient" layoutX="2.0" layoutY="173.0" prefHeight="395.0" prefWidth="530.0" style="-fx-background-color: Transparent;" AnchorPane.bottomAnchor="2.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="173.0" />
-      <ListView fx:id="listproduit_search" layoutX="1.0" layoutY="225.0" onMouseClicked="#mouse_exit_false" prefHeight="340.0" prefWidth="551.0" style="-fx-background-color: Transparent;" AnchorPane.bottomAnchor="3.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="227.0" />
+      <ListView fx:id="listClient" layoutX="38.0" layoutY="178.0" prefHeight="391.0" prefWidth="492.0" style="-fx-background-color: Transparent;" AnchorPane.bottomAnchor="1.0" AnchorPane.leftAnchor="38.0" AnchorPane.topAnchor="178.0" />
+      <ListView fx:id="listproduit_search" layoutX="38.0" layoutY="225.0" onMouseClicked="#mouse_exit_false" prefHeight="343.0" prefWidth="513.0" style="-fx-background-color: Transparent;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="38.0" AnchorPane.topAnchor="227.0" />
       <AnchorPane layoutX="3.0" layoutY="50.0" prefHeight="53.0" prefWidth="200.0" style="-fx-background-color: #F7F8FB;" AnchorPane.leftAnchor="3.0">
          <children>
             <AnchorPane layoutY="38.0" prefHeight="6.0" prefWidth="200.0" style="-fx-background-color: #029fd4;">

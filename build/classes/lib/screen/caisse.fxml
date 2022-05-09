@@ -1,23 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXDatePicker?>
 <?import com.jfoenix.controls.JFXListView?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
 <?import de.jensd.fx.glyphs.icons525.Icons525View?>
 <?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
 <?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.ColumnConstraints?>
 <?import javafx.scene.layout.GridPane?>
 <?import javafx.scene.layout.RowConstraints?>
-<?import javafx.scene.layout.StackPane?>
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane id="AnchorPane" prefHeight="555.0" prefWidth="879.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lib.source.CaisseController">
+<AnchorPane id="AnchorPane" fx:id="windoCaisse" prefHeight="555.0" prefWidth="879.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lib.source.CaisseController">
    <children>
-      <AnchorPane layoutX="421.0" layoutY="10.0" prefHeight="545.0" prefWidth="353.0" style="-fx-background-color: FBFCFD;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="421.0" AnchorPane.topAnchor="10.0">
+      <AnchorPane layoutX="401.0" layoutY="64.0" prefHeight="484.0" prefWidth="475.0" style="-fx-background-color: FBFCFD;" AnchorPane.bottomAnchor="7.0" AnchorPane.leftAnchor="401.0" AnchorPane.rightAnchor="3.0" AnchorPane.topAnchor="64.0">
          <children>
-            <JFXListView fx:id="listaleur" focusTraversable="false" prefHeight="545.0" prefWidth="333.0" style="-fx-background-color: Transparent;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+            <JFXListView fx:id="listaleur" focusTraversable="false" prefHeight="484.0" prefWidth="475.0" style="-fx-background-color: Transparent;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
          </children>
       </AnchorPane>
       <AnchorPane layoutX="11.0" layoutY="11.0" prefHeight="43.0" prefWidth="380.0" style="-fx-background-color: fff; -fx-background-radius: 4px; -fx-border-color: F4F4F7;">
@@ -47,7 +54,7 @@
             <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
          </rowConstraints>
          <children>
-            <JFXButton fx:id="sortie" onMouseClicked="#LoadDataForWeek" prefHeight="29.0" prefWidth="90.0" style="-fx-background-color: #fff;" text="Sortie" GridPane.columnIndex="1">
+            <JFXButton fx:id="sortie" prefHeight="29.0" prefWidth="90.0" style="-fx-background-color: #fff;" text="Sortie" GridPane.columnIndex="1">
                <font>
                   <Font size="13.0" />
                </font>
@@ -55,7 +62,7 @@
                   <Cursor fx:constant="HAND" />
                </cursor>
             </JFXButton>
-            <JFXButton fx:id="entree" onMouseClicked="#LoadDataForDay" prefHeight="29.0" prefWidth="90.0" style="-fx-background-color: #01a7e3;" text="Entrée" textFill="WHITE">
+            <JFXButton fx:id="entree" prefHeight="29.0" prefWidth="90.0" style="-fx-background-color: #01a7e3;" text="Entrée" textFill="WHITE">
                <font>
                   <Font name="Century Gothic Bold" size="13.0" />
                </font>
@@ -65,6 +72,171 @@
             </JFXButton>
          </children>
       </GridPane>
-      <StackPane fx:id="container_screen" layoutX="11.0" layoutY="65.0" prefHeight="482.0" prefWidth="380.0" AnchorPane.bottomAnchor="8.0" AnchorPane.leftAnchor="11.0" AnchorPane.rightAnchor="488.0" AnchorPane.topAnchor="65.0" />
+      <AnchorPane layoutX="11.0" layoutY="62.0" prefHeight="484.0" prefWidth="380.0" style="-fx-background-color: white;" AnchorPane.bottomAnchor="9.0" AnchorPane.leftAnchor="11.0" AnchorPane.topAnchor="64.0">
+         <children>
+            <AnchorPane layoutX="13.0" layoutY="14.0" prefHeight="57.0" prefWidth="357.0">
+               <children>
+                  <Label layoutY="-3.0" text="Date de l'opération" textFill="#35597b">
+                     <font>
+                        <Font name="Century Gothic" size="17.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="txtDate" layoutX="-1.0" layoutY="22.0" prefHeight="33.0" prefWidth="145.0" style="-fx-border-color: #c2c2c2c2; -fx-border-width: 0.5px;" styleClass="textField" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                     <font>
+                        <Font name="Century Gothic Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <JFXDatePicker fx:id="datePicker" defaultColor="#01a7e3" layoutX="268.0" layoutY="26.0" prefHeight="31.0" prefWidth="17.0" AnchorPane.rightAnchor="0.0" />
+               </children>
+            </AnchorPane>
+            <GridPane hgap="5.0" layoutX="13.0" layoutY="85.0">
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <children>
+                  <AnchorPane prefHeight="55.0" prefWidth="190.0">
+                     <children>
+                        <Label layoutY="-3.0" text="Montant" textFill="#35597b">
+                           <font>
+                              <Font name="Century Gothic" size="17.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="montant" layoutX="3.0" layoutY="27.0" onKeyReleased="#rechercher_produit_" prefHeight="36.0" prefWidth="190.0" promptText="Entrez le montant" style="-fx-background-color: Transparent; -fx-border-color: #c2c2c2c2; -fx-border-width: 0.5px;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                           <font>
+                              <Font name="Century Gothic" size="17.0" />
+                           </font>
+                        </TextField>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane prefHeight="55.0" prefWidth="162.0" GridPane.columnIndex="1">
+                     <children>
+                        <Label layoutY="-3.0" text="Devise" textFill="#35597b">
+                           <font>
+                              <Font name="Century Gothic" size="17.0" />
+                           </font>
+                        </Label>
+                        <JFXButton fx:id="franc" layoutX="82.0" layoutY="26.0" prefHeight="36.0" prefWidth="80.0" style="-fx-background-color: #fff;" text="FC" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="82.0">
+                           <font>
+                              <Font name="Century Gothic Bold" size="12.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </JFXButton>
+                        <JFXButton fx:id="dollars" layoutY="27.0" prefHeight="36.0" prefWidth="80.0" style="-fx-background-color: #01a7e3;" text="USD" textFill="WHITE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0">
+                           <font>
+                              <Font name="Century Gothic Bold" size="12.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </JFXButton>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </GridPane>
+            <AnchorPane layoutX="13.0" layoutY="153.0" prefHeight="55.0" prefWidth="357.0">
+               <children>
+                  <Label layoutY="-3.0" text="Montant en toute lettre" textFill="#35597b">
+                     <font>
+                        <Font name="Century Gothic" size="17.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="touteLettre" layoutY="10.0" onKeyReleased="#rechercher_produit_" prefHeight="29.0" prefWidth="318.0" promptText="Ex: Dix dollars" style="-fx-background-color: Transparent; -fx-border-color: #c2c2c2c2; -fx-border-width: 0.5px;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                     <font>
+                        <Font name="Century Gothic" size="17.0" />
+                     </font>
+                  </TextField>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="13.0" layoutY="216.0" prefHeight="55.0" prefWidth="357.0">
+               <children>
+                  <Label layoutY="-3.0" text="Motif de l'operation" textFill="#35597b">
+                     <font>
+                        <Font name="Century Gothic" size="17.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="motif" layoutX="3.0" layoutY="27.0" onKeyReleased="#rechercher_produit_" prefHeight="29.0" prefWidth="318.0" promptText="Entrez le motif de l'operation" style="-fx-background-color: Transparent; -fx-border-color: #c2c2c2c2; -fx-border-width: 0.5px;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                     <font>
+                        <Font name="Century Gothic" size="17.0" />
+                     </font>
+                  </TextField>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="13.0" layoutY="280.0" prefHeight="55.0" prefWidth="357.0">
+               <children>
+                  <Label layoutY="-3.0" text="Bénéficiaire" textFill="#35597b">
+                     <font>
+                        <Font name="Century Gothic" size="17.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="beneficie" layoutX="3.0" layoutY="27.0" onKeyReleased="#rechercher_produit_" prefHeight="36.0" prefWidth="316.0" promptText="Ex: EPHREM Mwassa" style="-fx-background-color: Transparent; -fx-border-color: #c2c2c2c2; -fx-border-width: 0.5px  0px  0.5px  0.5px;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="41.0">
+                     <font>
+                        <Font name="Century Gothic" size="17.0" />
+                     </font>
+                  </TextField>
+                  <Label fx:id="btnAddBeneficiaire" alignment="CENTER" contentDisplay="CENTER" layoutX="318.0" layoutY="22.0" prefHeight="36.0" prefWidth="42.0" style="-fx-border-color: #c2c2c2c2; -fx-border-width: 0.5px  0.5px  0.5px  0px;" AnchorPane.rightAnchor="0.0">
+                     <graphic>
+                        <FontAwesomeIconView fill="#e07130" glyphName="PLUS" />
+                     </graphic>
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <Button fx:id="btnSave" layoutX="68.0" layoutY="355.0" mnemonicParsing="false" onAction="#Save" prefHeight="31.0" prefWidth="116.0" style="-fx-background-color: #01a7e3;" text="Enrégistrer" textFill="WHITE">
+               <graphic>
+                  <FontAwesomeIconView fill="WHITE" glyphName="SAVE" />
+               </graphic>
+               <font>
+                  <Font name="Century Gothic" size="12.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnupdate" layoutX="201.0" layoutY="355.0" mnemonicParsing="false" onAction="#Save" prefHeight="31.0" prefWidth="116.0" style="-fx-background-color: DE561E;" text="Modifier" textFill="WHITE">
+               <graphic>
+                  <FontAwesomeIconView fill="WHITE" glyphName="CHEVRON_DOWN" />
+               </graphic>
+               <font>
+                  <Font name="Century Gothic" size="12.0" />
+               </font>
+            </Button>
+            <ImageView fitHeight="90.0" fitWidth="162.0" layoutX="103.0" layoutY="389.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="0.0" AnchorPane.topAnchor="395.0">
+               <image>
+                  <Image url="@../image/search.png" />
+               </image>
+            </ImageView>
+            <ListView fx:id="listsearchBeneficiaire" layoutX="13.0" layoutY="338.0" prefHeight="141.0" prefWidth="357.0" style="-fx-background-color: Transparent;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="13.0" AnchorPane.topAnchor="339.0" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="401.0" layoutY="11.0" prefHeight="43.0" prefWidth="475.0" style="-fx-background-color: fff; -fx-background-radius: 4px; -fx-border-color: F4F4F7;" AnchorPane.leftAnchor="401.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="11.0">
+         <effect>
+            <DropShadow blurType="GAUSSIAN" color="#c6c6c6" height="6.0" offsetX="0.5" offsetY="0.5" radius="2.5" width="6.0" />
+         </effect>
+         <children>
+            <Text layoutX="11.0" layoutY="33.0" strokeType="OUTSIDE" strokeWidth="0.0" text="LISTE DES OPERATION">
+               <font>
+                  <Font name="Century Gothic Bold" size="13.0" />
+               </font>
+            </Text>
+            <Text fill="#42627d58" layoutX="12.0" layoutY="17.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Opération" wrappingWidth="173.13670974969864">
+               <font>
+                  <Font name="Gadugi Bold" size="12.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+      <TextField fx:id="rechercher_v" layoutX="599.0" layoutY="17.0" onKeyReleased="#rechercher_produit" prefHeight="26.0" prefWidth="255.0" promptText="Rechercher" style="-fx-background-color: Transparent; -fx-border-color: #c2c2c2c2; -fx-border-width: 0.5px; -fx-border-radius: 5px;" AnchorPane.rightAnchor="25.0">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </TextField>
    </children>
 </AnchorPane>

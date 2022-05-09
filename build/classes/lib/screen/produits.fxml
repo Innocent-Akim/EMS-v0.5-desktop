@@ -7,6 +7,7 @@
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.Cursor?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.effect.DropShadow?>
 <?import javafx.scene.layout.AnchorPane?>
@@ -17,7 +18,7 @@
 
 <AnchorPane fx:id="produit_interface" prefHeight="555.0" prefWidth="879.0" style="-fx-background-color: #FFF;" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lib.source.ProduitsController">
    <children>
-      <GridPane layoutX="10.0" layoutY="16.0" prefHeight="201.0" prefWidth="301.0">
+      <GridPane layoutX="10.0" layoutY="16.0" prefHeight="201.0" prefWidth="301.0" AnchorPane.leftAnchor="10.0">
          <columnConstraints>
             <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
          </columnConstraints>
@@ -33,13 +34,13 @@
          </rowConstraints>
          <children>
             <TextField fx:id="codebarTfd" onKeyReleased="#key_released_codebar" prefHeight="25.0" prefWidth="265.0" promptText="Entrer le barcode" style="-fx-background-color: Transparent; -fx-border-color: #c2c2c2c2; -fx-border-width: 0.5px;" GridPane.rowIndex="1" />
-            <TextField fx:id="disigna_tfd" prefHeight="25.0" prefWidth="265.0" promptText="Entrer la designation" style="-fx-background-color: Transparent; -fx-border-color: #c2c2c2c2; -fx-border-width: 0.5px;" GridPane.rowIndex="3" />
-            <TextField fx:id="punitaireTfd" onKeyReleased="#priUnitaire_isNumerique" prefHeight="25.0" prefWidth="265.0" promptText="Entrer le prix unitaire" style="-fx-background-color: Transparent; -fx-border-color: #c2c2c2c2; -fx-border-width: 0.5px;" GridPane.rowIndex="5">
+            <TextField fx:id="disigna_tfd" prefHeight="25.0" prefWidth="265.0" promptText="Entrez la désignation" style="-fx-background-color: Transparent; -fx-border-color: #c2c2c2c2; -fx-border-width: 0.5px;" GridPane.rowIndex="3" />
+            <TextField fx:id="punitaireTfd" prefHeight="25.0" prefWidth="265.0" promptText="Entrer le prix unitaire" style="-fx-background-color: Transparent; -fx-border-color: #c2c2c2c2; -fx-border-width: 0.5px;" GridPane.rowIndex="5">
                <GridPane.margin>
                   <Insets top="3.0" />
                </GridPane.margin>
             </TextField>
-            <TextField fx:id="quantiteTfd" onKeyReleased="#quantite_disponible" prefHeight="25.0" prefWidth="265.0" promptText="Entrer la quantité minimale" style="-fx-background-color: Transparent; -fx-border-color: #c2c2c2c2; -fx-border-width: 0.5px;" GridPane.rowIndex="7" />
+            <TextField fx:id="quantiteTfd" prefHeight="25.0" prefWidth="265.0" promptText="Entrer la quantité minimale" style="-fx-background-color: Transparent; -fx-border-color: #c2c2c2c2; -fx-border-width: 0.5px;" GridPane.rowIndex="7" />
             <Label text="Barcode" />
             <Label text="Designation" GridPane.rowIndex="2" />
             <Label text="Prix unitaire" GridPane.rowIndex="4" />
@@ -129,5 +130,6 @@
             <DropShadow color="WHITE" />
          </effect>
       </AnchorPane>
+      <ListView fx:id="searchPience" layoutX="9.0" layoutY="116.0" prefHeight="436.0" prefWidth="506.0" style="-fx-background-color: Transparent;" AnchorPane.leftAnchor="10.0" />
    </children>
 </AnchorPane>

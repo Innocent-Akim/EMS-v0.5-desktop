@@ -36,7 +36,7 @@
       <AnchorPane layoutX="30.0" layoutY="87.0" prefHeight="570.0" prefWidth="741.0" style="-fx-background-radius: 5px;" AnchorPane.bottomAnchor="8.0" AnchorPane.leftAnchor="30.0" AnchorPane.rightAnchor="30.0" AnchorPane.topAnchor="87.0">
          <children>
             <StackPane fx:id="screen" layoutX="184.0" prefHeight="585.0" prefWidth="503.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="186.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
-            <AnchorPane prefHeight="585.0" prefWidth="184.0" style="-fx-background-color: #fff; -fx-background-radius: 5px 0px 0px 5px;">
+            <AnchorPane fx:id="id_menu" prefHeight="585.0" prefWidth="184.0" style="-fx-background-color: #fff; -fx-background-radius: 5px 0px 0px 5px;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
                <children>
                   <AnchorPane layoutX="3.0" layoutY="47.0" prefHeight="200.0" prefWidth="178.0" AnchorPane.leftAnchor="0.0">
                      <children>
@@ -69,7 +69,7 @@
                               <Cursor fx:constant="HAND" />
                            </cursor>
                         </Label>
-                        <Label fx:id="fonction" prefHeight="20.0" prefWidth="139.0" text="Fonction" textFill="#757171" GridPane.rowIndex="2">
+                        <Label fx:id="fonction" prefHeight="20.0" prefWidth="139.0" text="Config taux" textFill="#757171" GridPane.rowIndex="2">
                            <font>
                               <Font name="Century Gothic" size="13.0" />
                            </font>

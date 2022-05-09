@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import com.jfoenix.controls.JFXButton?>
-<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.PasswordField?>
 <?import javafx.scene.control.Separator?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.HBox?>
@@ -15,36 +15,28 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<StackPane prefHeight="508.0" prefWidth="818.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="DialogueControllers.configServeurController">
+<StackPane prefHeight="560.0" prefWidth="600.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="DialogueControllers.configServeurController">
    <children>
       <VBox alignment="CENTER">
          <children>
             <HBox alignment="CENTER">
                <children>
-                  <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                  <AnchorPane prefHeight="560.0" prefWidth="200.0">
                      <children>
-                        <HBox alignment="CENTER" layoutX="244.0" prefHeight="508.0" prefWidth="540.0">
+                        <HBox alignment="CENTER" layoutY="14.0" prefHeight="508.0" prefWidth="540.0">
                            <children>
-                              <AnchorPane id="AnchorPane" prefHeight="508.0" prefWidth="455.0" style="-fx-background-color: white;">
+                              <AnchorPane id="AnchorPane" prefHeight="508.0" prefWidth="536.0" style="-fx-background-color: white;">
                                  <children>
-                                    <JFXButton fx:id="btnExit" alignment="CENTER" layoutX="427.0" layoutY="453.0" onAction="#Quitter" prefHeight="28.0" prefWidth="103.0" stylesheets="@../../../../../../../../style/Button.css" text="Quitter">
-                                       <font>
-                                          <Font name="Century Gothic" size="13.0" />
-                                       </font>
-                                       <graphic>
-                                          <FontAwesomeIconView fill="WHITE" glyphName="ARROW_CIRCLE_RIGHT" size="15" />
-                                       </graphic>
-                                    </JFXButton>
-                                    <AnchorPane layoutX="386.0" layoutY="311.0" opacity="0.38" prefHeight="109.0" prefWidth="103.0" rotate="-45.0" style="-fx-background-color: #0747a6; -fx-background-radius: 10px;" />
-                                    <AnchorPane layoutX="123.0" layoutY="73.0" opacity="0.1" prefHeight="109.0" prefWidth="103.0" rotate="-130.6" style="-fx-background-color: #0747a6; -fx-background-radius: 10px;" />
-                                    <AnchorPane layoutX="120.0" layoutY="81.0" prefHeight="335.0" prefWidth="368.0" style="-fx-background-color: #fff;">
+                                    <AnchorPane layoutX="391.0" layoutY="346.0" opacity="0.38" prefHeight="109.0" prefWidth="103.0" rotate="-45.0" style="-fx-background-color: #0747a6; -fx-background-radius: 10px;" />
+                                    <AnchorPane layoutX="40.0" layoutY="25.0" opacity="0.1" prefHeight="109.0" prefWidth="103.0" rotate="-130.6" style="-fx-background-color: #0747a6; -fx-background-radius: 10px;" />
+                                    <AnchorPane layoutX="70.0" layoutY="81.0" prefHeight="318.0" prefWidth="402.0" style="-fx-background-color: #fff;">
                                        <children>
                                           <AnchorPane layoutX="22.0" layoutY="8.0" prefHeight="52.0" prefWidth="362.0">
                                              <children>
                                                 <Label fx:id="genreicon11" layoutY="22.0" prefHeight="28.0" prefWidth="28.0" />
                                                 <AnchorPane layoutX="-2.0" layoutY="19.0" prefHeight="33.0" prefWidth="362.0" style="-fx-border-color: #F5F5F5;">
                                                    <children>
-                                                      <TextField fx:id="txtServeur" layoutX="6.0" layoutY="5.0" prefHeight="27.0" prefWidth="194.0" promptText="Serveur" style="-fx-background-color: #FFFF;" AnchorPane.bottomAnchor="4.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="163.0" AnchorPane.topAnchor="4.0">
+                                                      <TextField fx:id="hostname" layoutX="6.0" layoutY="5.0" prefHeight="27.0" prefWidth="194.0" promptText="Hostname" style="-fx-background-color: #FFFF;" AnchorPane.bottomAnchor="4.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="163.0" AnchorPane.topAnchor="4.0">
                                                          <font>
                                                             <Font name="System Bold" size="12.0" />
                                                          </font>
@@ -64,7 +56,7 @@
                                                 </Label>
                                              </children>
                                           </AnchorPane>
-                                          <JFXButton fx:id="btnEnregistrer" layoutX="220.0" layoutY="228.0" onAction="#save" prefHeight="26.0" prefWidth="150.0" style="-fx-background-color: #0747a6; -fx-background-radius: 10px;" text="Enrégistrer et quitter" textFill="WHITE" AnchorPane.topAnchor="228.0">
+                                          <JFXButton fx:id="btnEnregistrer" layoutX="220.0" layoutY="228.0" onAction="#save" prefHeight="26.0" prefWidth="150.0" style="-fx-background-color: #029fd4; -fx-background-radius: 10px;" text="Enrégistrer et quitter" textFill="WHITE" AnchorPane.topAnchor="228.0">
                                              <font>
                                                 <Font name="Century Gothic" size="13.0" />
                                              </font>
@@ -74,12 +66,12 @@
                                                 <Label fx:id="genreicon111" layoutY="22.0" prefHeight="28.0" prefWidth="28.0" />
                                                 <AnchorPane layoutX="-2.0" layoutY="19.0" prefHeight="33.0" prefWidth="362.0" style="-fx-border-color: #F5F5F5;">
                                                    <children>
-                                                      <TextField fx:id="txtBd" layoutX="6.0" layoutY="5.0" prefHeight="27.0" prefWidth="196.0" promptText="BD" style="-fx-background-color: #FFFF;" AnchorPane.bottomAnchor="4.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="162.0" AnchorPane.topAnchor="4.0">
+                                                      <TextField fx:id="txtBd" layoutX="6.0" layoutY="5.0" prefHeight="27.0" prefWidth="196.0" promptText="Database" style="-fx-background-color: #FFFF;" AnchorPane.bottomAnchor="4.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="162.0" AnchorPane.topAnchor="4.0">
                                                          <font>
                                                             <Font name="System Bold" size="12.0" />
                                                          </font>
                                                       </TextField>
-                                                      <TextField fx:id="txtUser" layoutX="211.0" layoutY="3.0" prefHeight="27.0" prefWidth="150.0" promptText="Nom d'utilsateur" style="-fx-background-color: #FFFF;">
+                                                      <TextField fx:id="txtUser" layoutX="211.0" layoutY="3.0" prefHeight="27.0" prefWidth="150.0" promptText="Username" style="-fx-background-color: #FFFF;">
                                                          <font>
                                                             <Font name="System Bold" size="12.0" />
                                                          </font>
@@ -100,8 +92,14 @@
                                                 <AnchorPane layoutX="-2.0" layoutY="23.0" prefHeight="33.0" prefWidth="362.0" style="-fx-border-color: #F5F5F5;">
                                                    <children>
                                                       <Separator layoutX="202.0" layoutY="1.0" orientation="VERTICAL" prefHeight="29.0" prefWidth="7.0" AnchorPane.bottomAnchor="0.0" AnchorPane.topAnchor="0.0" />
-                                                      <PasswordField fx:id="txtPswd" layoutX="11.0" layoutY="7.0" prefHeight="27.0" prefWidth="187.0" promptText="Mot de passe" style="-fx-background-color: WHITE;" AnchorPane.bottomAnchor="6.0" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="6.0" />
-                                                      <PasswordField fx:id="txtConfirme" layoutX="191.0" layoutY="11.0" promptText="Confirmer Mot de passe" style="-fx-background-color: WHITE;" AnchorPane.bottomAnchor="4.0" AnchorPane.rightAnchor="4.0" AnchorPane.topAnchor="4.0" />
+                                                      <PasswordField fx:id="txtPswd" layoutX="11.0" layoutY="7.0" prefHeight="27.0" prefWidth="187.0" promptText="Password" style="-fx-background-color: WHITE;" AnchorPane.bottomAnchor="6.0" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="6.0">
+                                                         <font>
+                                                            <Font name="System Bold" size="12.0" />
+                                                         </font></PasswordField>
+                                                      <PasswordField fx:id="txtConfirme" layoutX="191.0" layoutY="6.0" prefHeight="29.0" prefWidth="150.0" promptText="Confirm password" style="-fx-background-color: WHITE;" AnchorPane.bottomAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="5.0">
+                                                         <font>
+                                                            <Font name="System Bold" size="12.0" />
+                                                         </font></PasswordField>
                                                    </children>
                                                 </AnchorPane>
                                                 <Label prefHeight="16.0" prefWidth="211.0" text="Mot de passe" textFill="#42526e">
@@ -111,7 +109,7 @@
                                                 </Label>
                                              </children>
                                           </AnchorPane>
-                                          <JFXButton fx:id="btnTester" layoutX="67.0" layoutY="228.0" onAction="#tester" prefHeight="26.0" prefWidth="116.0" style="-fx-background-color: #0747a6; -fx-background-radius: 10px;" text="Tester" textFill="WHITE">
+                                          <JFXButton fx:id="btnTester" layoutX="67.0" layoutY="228.0" onAction="#tester" prefHeight="26.0" prefWidth="116.0" style="-fx-background-color: #029fd4; -fx-background-radius: 10px;" text="Tester" textFill="WHITE">
                                              <font>
                                                 <Font name="Century Gothic" size="13.0" />
                                              </font>
@@ -121,16 +119,20 @@
                                           <DropShadow color="#6d6d6f45" height="10.0" radius="4.5" width="10.0" />
                                        </effect>
                                     </AnchorPane>
-                                    <Text fx:id="titre" fill="#084aa6d4" layoutX="120.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Configuration serveur" wrappingWidth="210.9999900124967">
+                                    <Text fx:id="titre" fill="#029fd4d4" layoutX="165.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Configuration serveur" wrappingWidth="210.9999900124967">
                                        <font>
                                           <Font name="Century Gothic Bold" size="18.0" />
                                        </font>
                                     </Text>
+                                    <ImageView fitHeight="94.0" fitWidth="158.0" layoutX="190.0" layoutY="405.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../image/undraw_Secure_server_re_8wsq.png" />
+                                       </image>
+                                    </ImageView>
                                  </children>
                               </AnchorPane>
                            </children>
                         </HBox>
-                        <ImageView fitHeight="271.0" fitWidth="231.0" layoutX="56.0" layoutY="119.0" pickOnBounds="true" preserveRatio="true" />
                      </children>
                   </AnchorPane>
                </children>

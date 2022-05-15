@@ -45,6 +45,17 @@
                   <Cursor fx:constant="HAND" />
                </cursor>
             </Label>
+            <Label fx:id="b_dettes" onMouseClicked="#Calloperation" prefHeight="17.0" prefWidth="146.0" text="Dettes" textFill="#8b8f98" GridPane.rowIndex="2">
+               <graphic>
+                  <Icons525View fill="#1493d7" glyphName="VKONTAKTE" size="16" />
+               </graphic>
+               <font>
+                  <Font name="Century Gothic" size="14.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Label>
             <Label fx:id="b_commande" onMouseClicked="#Calloperation" prefHeight="17.0" prefWidth="153.0" text="Commande" textFill="#8b8f98" GridPane.rowIndex="3">
                <graphic>
                   <Icons525View fill="#1493d7" glyphName="VKONTAKTE" size="16" />
@@ -63,17 +74,6 @@
                <graphic>
                   <Icons525View fill="#1493d7" glyphName="VKONTAKTE" size="16" />
                </graphic>
-               <cursor>
-                  <Cursor fx:constant="HAND" />
-               </cursor>
-            </Label>
-            <Label fx:id="b_dettes" prefHeight="17.0" prefWidth="146.0" text="Dettes" textFill="#8b8f98" GridPane.rowIndex="2">
-               <graphic>
-                  <Icons525View fill="#1493d7" glyphName="VKONTAKTE" size="16" />
-               </graphic>
-               <font>
-                  <Font name="Century Gothic" size="14.0" />
-               </font>
                <cursor>
                   <Cursor fx:constant="HAND" />
                </cursor>

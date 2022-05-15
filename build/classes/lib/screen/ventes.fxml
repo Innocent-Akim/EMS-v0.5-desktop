@@ -83,7 +83,7 @@
                   </AnchorPane>
                   <AnchorPane style="-fx-background-color: #D24D1C; -fx-background-radius: 0.5em;" GridPane.columnIndex="2">
                      <children>
-                        <Button fx:id="btn_calculatrice" mnemonicParsing="false" onAction="#imprimer_" prefHeight="25.0" prefWidth="24.0" style="-fx-background-color: #D24D1C; -fx-background-color: Transparent; -fx-background-radius: 0.5em;">
+                        <Button fx:id="btn_calculatrice" mnemonicParsing="false" prefHeight="25.0" prefWidth="24.0" style="-fx-background-color: #D24D1C; -fx-background-color: Transparent; -fx-background-radius: 0.5em;">
                            <graphic>
                               <MaterialDesignIconView fill="WHITE" glyphName="CALCULATOR" size="15" />
                            </graphic>
@@ -310,7 +310,7 @@
          <children>
             <TextField fx:id="recher_facture" layoutX="6.0" layoutY="1.0" prefHeight="24.0" prefWidth="220.0" promptText="Rechercher un produit" style="-fx-background-color: #FFF;">
                <font>
-                  <Font size="11.0" />
+                  <Font name="Century Gothic" size="12.0" />
                </font>
             </TextField>
             <OctIconView fill="#6a75ca" glyphName="SEARCH" layoutX="228.0" layoutY="19.0" size="13" />

@@ -31,45 +31,45 @@
                <children>
                   <HBox prefHeight="78.0" prefWidth="182.0" styleClass="AllBord" stylesheets="@../css/Object_Style.css">
                      <children>
-                        <Label fx:id="lblproduit" alignment="CENTER" onMouseClicked="#AllActionnerrapport" prefHeight="85.0" prefWidth="180.0" styleClass="side-menu-btn" stylesheets="@../css/style.css" text="Liste de produit">
+                        <Label fx:id="lblproduit" alignment="CENTER" onMouseClicked="#AllActionnerrapport" prefHeight="85.0" prefWidth="180.0" styleClass="side-menu-btn" text="Liste de produit">
                            <font>
-                              <Font name="Bell MT" size="16.0" />
+                              <Font name="Century Gothic" size="14.0" />
                            </font>
                         </Label>
                      </children>
                   </HBox>
                   <HBox prefHeight="78.0" prefWidth="182.0" styleClass="AllBord" stylesheets="@../css/Object_Style.css" GridPane.rowIndex="1">
                      <children>
-                        <Label fx:id="lbldette" alignment="CENTER" onMouseClicked="#AllActionnerrapport" prefHeight="80.0" prefWidth="180.0" styleClass="side-menu-btn" stylesheets="@../css/style.css" text="Fiche des dettes DETAIL">
+                        <Label fx:id="lbldette" alignment="CENTER" onMouseClicked="#AllActionnerrapport" prefHeight="80.0" prefWidth="180.0" styleClass="side-menu-btn" text="Fiche des dettes DETAIL">
                            <font>
-                              <Font name="Bell MT" size="16.0" />
+                              <Font name="Century Gothic" size="14.0" />
                            </font>
                         </Label>
                      </children>
                   </HBox>
                   <HBox prefHeight="78.0" prefWidth="182.0" styleClass="AllBord" stylesheets="@../css/Object_Style.css" GridPane.rowIndex="2">
                      <children>
-                        <Label fx:id="l2" alignment="CENTER" onMouseClicked="#AllActionnerrapport" prefHeight="80.0" prefWidth="180.0" styleClass="side-menu-btn" stylesheets="@../css/style.css" text="Liste des agents">
+                        <Label fx:id="l2" alignment="CENTER" onMouseClicked="#AllActionnerrapport" prefHeight="80.0" prefWidth="180.0" styleClass="side-menu-btn" text="Liste des agents">
                            <font>
-                              <Font name="Bell MT" size="16.0" />
+                              <Font name="Century Gothic" size="14.0" />
                            </font>
                         </Label>
                      </children>
                   </HBox>
                   <HBox prefHeight="78.0" prefWidth="182.0" styleClass="AllBord" stylesheets="@../css/Object_Style.css" GridPane.columnIndex="1">
                      <children>
-                        <Label fx:id="l1" alignment="CENTER" onMouseClicked="#AllActionnerrapport" prefHeight="80.0" prefWidth="180.0" styleClass="side-menu-btn" stylesheets="@../css/style.css" text="Fiche de commande">
+                        <Label fx:id="l1" alignment="CENTER" onMouseClicked="#AllActionnerrapport" prefHeight="80.0" prefWidth="180.0" styleClass="side-menu-btn" text="Fiche de commande">
                            <font>
-                              <Font name="Bell MT" size="16.0" />
+                              <Font name="Century Gothic" size="14.0" />
                            </font>
                         </Label>
                      </children>
                   </HBox>
                   <HBox prefHeight="78.0" prefWidth="182.0" styleClass="AllBord" stylesheets="@../css/Object_Style.css" GridPane.columnIndex="1" GridPane.rowIndex="1">
                      <children>
-                        <Label fx:id="lblVente" alignment="CENTER" onMouseClicked="#AllActionnerrapport" prefHeight="80.0" prefWidth="180.0" styleClass="side-menu-btn" stylesheets="@../css/style.css" text="Rapport de vente">
+                        <Label fx:id="lblVente" alignment="CENTER" onMouseClicked="#AllActionnerrapport" prefHeight="80.0" prefWidth="180.0" styleClass="side-menu-btn" text="Rapport de vente">
                            <font>
-                              <Font name="Bell MT" size="16.0" />
+                              <Font name="Century Gothic" size="14.0" />
                            </font>
                            <contextMenu>
                               <ContextMenu>
@@ -92,36 +92,36 @@
                   </HBox>
                   <HBox prefHeight="78.0" prefWidth="182.0" styleClass="AllBord" stylesheets="@../css/Object_Style.css" GridPane.columnIndex="1" GridPane.rowIndex="2">
                      <children>
-                        <Label fx:id="l3" alignment="CENTER" onMouseClicked="#AllActionnerrapport" prefHeight="80.0" prefWidth="180.0" styleClass="side-menu-btn" stylesheets="@../css/style.css" text="Liste des clients">
+                        <Label fx:id="l3" alignment="CENTER" onMouseClicked="#AllActionnerrapport" prefHeight="80.0" prefWidth="180.0" styleClass="side-menu-btn" text="Liste des clients">
                            <font>
-                              <Font name="Bell MT" size="16.0" />
+                              <Font name="Century Gothic" size="14.0" />
                            </font>
                         </Label>
                      </children>
                   </HBox>
                   <HBox prefHeight="78.0" prefWidth="182.0" styleClass="AllBord" stylesheets="@../css/Object_Style.css" GridPane.columnIndex="2">
                      <children>
-                        <Label fx:id="l4" alignment="CENTER" onMouseClicked="#AllActionnerrapport" prefHeight="80.0" prefWidth="180.0" styleClass="side-menu-btn" stylesheets="@../css/style.css" text="Fiche des dettes SIMPLI">
+                        <Label fx:id="l4" alignment="CENTER" onMouseClicked="#AllActionnerrapport" prefHeight="80.0" prefWidth="180.0" styleClass="side-menu-btn" text="Fiche des dettes SIMPLI">
                            <font>
-                              <Font name="Bell MT" size="16.0" />
+                              <Font name="Century Gothic" size="14.0" />
                            </font>
                         </Label>
                      </children>
                   </HBox>
                   <HBox prefHeight="78.0" prefWidth="182.0" styleClass="AllBord" stylesheets="@../css/Object_Style.css" GridPane.columnIndex="2" GridPane.rowIndex="1">
                      <children>
-                        <Label fx:id="l5" alignment="CENTER" onMouseClicked="#AllActionnerrapport" prefHeight="80.0" prefWidth="184.0" styleClass="side-menu-btn" stylesheets="@../css/style.css" text="Produit non disponible">
+                        <Label fx:id="l5" alignment="CENTER" onMouseClicked="#AllActionnerrapport" prefHeight="80.0" prefWidth="184.0" styleClass="side-menu-btn" text="Produit non disponible">
                            <font>
-                              <Font name="Bell MT" size="16.0" />
+                              <Font name="Century Gothic" size="14.0" />
                            </font>
                         </Label>
                      </children>
                   </HBox>
                   <HBox prefHeight="78.0" prefWidth="182.0" styleClass="AllBord" stylesheets="@../css/Object_Style.css" GridPane.columnIndex="2" GridPane.rowIndex="2">
                      <children>
-                        <Label fx:id="l6" alignment="CENTER" onMouseClicked="#AllActionnerrapport" prefHeight="80.0" prefWidth="184.0" styleClass="side-menu-btn" stylesheets="@../css/style.css" text="Liste des fournisseurs">
+                        <Label fx:id="l6" alignment="CENTER" onMouseClicked="#AllActionnerrapport" prefHeight="80.0" prefWidth="184.0" styleClass="side-menu-btn" text="Liste des fournisseurs">
                            <font>
-                              <Font name="Bell MT" size="16.0" />
+                              <Font name="Century Gothic" size="14.0" />
                            </font>
                         </Label>
                      </children>
@@ -134,8 +134,8 @@
          <children>
             <GridPane hgap="5.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" vgap="6.0">
                <columnConstraints>
-                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
-                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="230.0" minWidth="10.0" prefWidth="177.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="171.0" minWidth="10.0" prefWidth="171.0" />
                </columnConstraints>
                <rowConstraints>
                   <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />

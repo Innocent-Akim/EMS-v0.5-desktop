@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ProgressIndicator?>
+<?import javafx.scene.effect.Reflection?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+
+<StackPane prefHeight="570.0" prefWidth="879.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lib.source.ProgressbarController">
+   <children>
+      <AnchorPane fx:id="Fenetre" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="43.0" prefWidth="516.0">
+         <children>
+            <ProgressIndicator fx:id="progressbar02" layoutX="131.0" layoutY="20.0" prefHeight="19.0" prefWidth="44.0" progress="1.0">
+               <effect>
+                  <Reflection />
+               </effect>
+            </ProgressIndicator>
+         </children>
+      </AnchorPane>
+      <ImageView fx:id="imageIv" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/fl-loader.gif" />
+         </image>
+      </ImageView>
+   </children>
+</StackPane>

@@ -1,0 +1,16 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 13 mars 2021, 12:53:33
+    Author     : vulembere
+*/
+
+.button {
+    -fx-border-color: #35597B;
+    -fx-background-color:white;
+    -fx-border-radius:10px;
+}
+

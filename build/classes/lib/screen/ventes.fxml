@@ -22,14 +22,14 @@
 
 <AnchorPane fx:id="interfaceVente" prefHeight="570.0" prefWidth="879.0" style="-fx-background-color: #FFF;" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lib.source.VentesController">
    <children>
-      <AnchorPane layoutX="16.0" layoutY="2.0" prefHeight="49.0" prefWidth="852.0" style="-fx-background-color: fff; -fx-background-radius: 5px;" AnchorPane.leftAnchor="16.0" AnchorPane.rightAnchor="11.0" AnchorPane.topAnchor="2.0">
+      <AnchorPane layoutX="1.0" layoutY="1.0" prefHeight="48.0" prefWidth="879.0" style="-fx-background-color: fff; -fx-background-radius: 5px;" AnchorPane.leftAnchor="1.0" AnchorPane.rightAnchor="-1.0" AnchorPane.topAnchor="1.0">
          <children>
-            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="12.0" layoutY="8.0" prefHeight="33.0" prefWidth="35.0" style="-fx-background-color: #48477B; -fx-background-radius: 5px;" AnchorPane.leftAnchor="12.0" AnchorPane.topAnchor="8.0">
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="12.0" layoutY="8.0" prefHeight="33.0" prefWidth="35.0" style="-fx-background-color: #2E568C; -fx-background-radius: 5px;" AnchorPane.leftAnchor="12.0" AnchorPane.topAnchor="8.0">
                <graphic>
                   <FontAwesomeIconView fill="WHITE" glyphName="STEAM_SQUARE" size="22" />
                </graphic>
             </Label>
-            <AnchorPane layoutX="50.0" prefHeight="49.0" prefWidth="307.0" style="-fx-background-color: Transparent;" AnchorPane.leftAnchor="50.0">
+            <AnchorPane layoutX="50.0" prefHeight="37.0" prefWidth="307.0" style="-fx-background-color: Transparent;" AnchorPane.leftAnchor="50.0">
                <effect>
                   <DropShadow blurType="GAUSSIAN" color="#c6c6c6" height="6.0" offsetX="0.5" offsetY="0.5" radius="2.5" width="6.0" />
                </effect>
@@ -39,7 +39,7 @@
                         <Font name="Century Gothic Bold" size="13.0" />
                      </font>
                   </Text>
-                  <Icons525View fill="#029fd4" glyphName="VINE" layoutX="287.0" layoutY="32.0" size="20" />
+                  <Icons525View fill="#421f06" glyphName="VINE" layoutX="287.0" layoutY="32.0" size="20" />
                   <Text fill="#42627d58" layoutX="12.0" layoutY="17.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Opération" wrappingWidth="173.13670974969864">
                      <font>
                         <Font name="Gadugi Bold" size="12.0" />
@@ -97,7 +97,7 @@
             </GridPane>
          </children>
       </AnchorPane>
-      <HBox alignment="BOTTOM_LEFT" layoutX="3.0" layoutY="52.0" prefHeight="467.0" prefWidth="341.0" style="-fx-background-color: #F7F8FB;" AnchorPane.bottomAnchor="51.0" AnchorPane.leftAnchor="3.0" AnchorPane.topAnchor="52.0">
+      <HBox alignment="BOTTOM_LEFT" layoutX="3.0" layoutY="47.0" prefHeight="472.0" prefWidth="341.0" style="-fx-background-color: #F7F8FB;" AnchorPane.bottomAnchor="51.0" AnchorPane.leftAnchor="3.0" AnchorPane.topAnchor="47.0">
          <children>
             <AnchorPane prefHeight="569.0" prefWidth="339.0" style="-fx-background-color: #F7F8FB;">
                <children>
@@ -118,7 +118,7 @@
                                           <Font name="Century Gothic" size="11.0" />
                                        </font>
                                     </TextField>
-                                    <OctIconView fill="#a3a0d7" glyphName="LINK_EXTERNAL" layoutX="3.0" layoutY="19.0" size="15" />
+                                    <OctIconView fill="#a3a0d7" glyphName="LINK_EXTERNAL" layoutX="3.0" layoutY="21.0" size="15" />
                                  </children>
                                  <effect>
                                     <DropShadow color="WHITE" />
@@ -154,7 +154,7 @@
                                           <Font name="Century Gothic Bold" size="17.0" />
                                        </font>
                                     </TextField>
-                                    <OctIconView fill="#a3a0d7" glyphName="LINK_EXTERNAL" layoutX="3.0" layoutY="19.0" size="15" />
+                                    <OctIconView fill="#a3a0d7" glyphName="LINK_EXTERNAL" layoutX="3.0" layoutY="23.0" size="15" />
                                  </children>
                                  <effect>
                                     <DropShadow color="WHITE" />
@@ -172,7 +172,7 @@
                                           <Font name="Century Gothic Bold" size="17.0" />
                                        </font>
                                     </TextField>
-                                    <OctIconView fill="#a3a0d7" glyphName="LINK_EXTERNAL" layoutX="3.0" layoutY="19.0" size="15" />
+                                    <OctIconView fill="#a3a0d7" glyphName="LINK_EXTERNAL" layoutX="3.0" layoutY="24.0" size="15" />
                                  </children>
                                  <effect>
                                     <DropShadow color="WHITE" />
@@ -201,30 +201,46 @@
                                     <Font name="Century Gothic" size="12.0" />
                                  </font>
                               </Text>
-                              <JFXButton fx:id="enregitrebtn" buttonType="RAISED" layoutX="10.0" layoutY="291.0" onAction="#imprimer_" prefHeight="28.0" prefWidth="274.0" style="-fx-background-color: #029FD4;" text="Ajouter" textFill="WHITE">
+                              <JFXButton fx:id="enregitrebtn" buttonType="RAISED" layoutX="10.0" layoutY="291.0" onAction="#imprimer_" prefHeight="28.0" prefWidth="274.0" style="-fx-border-width: 0.5px; -fx-border-radius: 5px; -fx-background-color: #fff; -fx-background-radius: 5px;" text="Ajouter" textFill="#2e568c">
                                  <font>
                                     <Font name="Century Gothic Bold" size="13.0" />
                                  </font>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
                               </JFXButton>
-                              <JFXButton fx:id="proformant" buttonType="RAISED" layoutX="105.0" layoutY="338.0" prefHeight="27.0" prefWidth="83.0" style="-fx-background-color: red; -fx-border-width: 0.5px; -fx-border-radius: 5px;" text="Proformant" textFill="WHITE">
-                                 <font>
-                                    <Font name="Roboto Medium" size="12.0" />
-                                 </font>
-                              </JFXButton>
-                              <AnchorPane layoutX="13.0" layoutY="242.0" prefHeight="36.0" prefWidth="265.0" style="-fx-background-color: #fff; -fx-border-color: #BAC3E2; -fx-border-width: 0.25;">
+                              <AnchorPane layoutX="14.0" layoutY="246.0" prefHeight="36.0" prefWidth="108.0" style="-fx-background-color: #fff; -fx-border-color: #BAC3E2; -fx-border-width: 0.25;">
                                  <children>
-                                    <TextField fx:id="payer" layoutX="17.0" layoutY="1.0" prefHeight="34.0" prefWidth="248.0" promptText="2.5" style="-fx-background-color: #FFF;">
+                                    <TextField fx:id="payer" layoutX="15.0" layoutY="1.0" prefHeight="34.0" prefWidth="91.0" promptText="50" style="-fx-background-color: #FFF;">
                                        <font>
                                           <Font name="Century Gothic Bold" size="17.0" />
                                        </font>
                                     </TextField>
-                                    <OctIconView fill="#a3a0d7" glyphName="LINK_EXTERNAL" layoutX="3.0" layoutY="19.0" size="15" />
+                                    <OctIconView fill="#a3a0d7" glyphName="LINK_EXTERNAL" layoutX="3.0" layoutY="23.0" size="15" />
                                  </children>
                                  <effect>
                                     <DropShadow color="WHITE" />
                                  </effect>
                               </AnchorPane>
-                              <Text layoutX="13.0" layoutY="237.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Payé" wrappingWidth="83.00000536441803">
+                              <Text layoutX="13.0" layoutY="239.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Montant cash" wrappingWidth="107.99999624490738">
+                                 <font>
+                                    <Font name="Century Gothic" size="12.0" />
+                                 </font>
+                              </Text>
+                              <AnchorPane layoutX="147.0" layoutY="245.0" prefHeight="36.0" prefWidth="123.0" style="-fx-background-color: #fff; -fx-border-color: #BAC3E2; -fx-border-width: 0.25;">
+                                 <children>
+                                    <TextField fx:id="reste" layoutX="15.0" layoutY="1.0" prefHeight="34.0" prefWidth="114.0" promptText="0.0" style="-fx-background-color: #FFF;">
+                                       <font>
+                                          <Font name="Century Gothic Bold" size="17.0" />
+                                       </font>
+                                    </TextField>
+                                    <OctIconView fill="#a3a0d7" glyphName="LINK_EXTERNAL" layoutX="3.0" layoutY="24.0" size="15" />
+                                 </children>
+                                 <effect>
+                                    <DropShadow color="WHITE" />
+                                 </effect>
+                              </AnchorPane>
+                              <Text layoutX="147.0" layoutY="239.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Montant reste" wrappingWidth="107.99999624490738">
                                  <font>
                                     <Font name="Century Gothic" size="12.0" />
                                  </font>
@@ -233,29 +249,35 @@
                         </AnchorPane>
                      </children>
                   </HBox>
-                  <Label fx:id="numerF" alignment="CENTER" layoutX="215.0" layoutY="1.0" prefHeight="53.0" prefWidth="104.0" style="-fx-border-color: #002679; -fx-border-width: 0.25; -fx-border-radius: 10px;" text="00" textFill="#002679">
+                  <Label fx:id="numerF" alignment="CENTER" layoutX="219.0" layoutY="3.0" prefHeight="53.0" prefWidth="104.0" style="-fx-border-color: FFAB23; -fx-border-width: 0.25; -fx-border-radius: 10px;" text="00">
                      <font>
-                        <Font name="Century Gothic" size="17.0" />
+                        <Font name="Century Gothic Bold" size="17.0" />
                      </font>
                   </Label>
-                  <JFXButton fx:id="print1" buttonType="RAISED" layoutX="36.0" layoutY="405.0" onAction="#imprimer_" prefHeight="27.0" prefWidth="83.0" style="-fx-background-color: #fff; -fx-border-width: 0.5px; -fx-border-radius: 5px;" text="Imprimer" textFill="#48477b">
+                  <JFXButton fx:id="print1" buttonType="RAISED" layoutX="36.0" layoutY="398.0" onAction="#imprimer_" prefHeight="27.0" prefWidth="83.0" style="-fx-background-color: #fff; -fx-border-width: 0.5px; -fx-border-radius: 5px;" text="Imprimer" textFill="#421f06">
                      <font>
-                        <Font name="Roboto Medium" size="12.0" />
+                        <Font name="Century Gothic" size="11.0" />
                      </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
                   </JFXButton>
-                  <JFXButton fx:id="annuler_facture" buttonType="RAISED" layoutX="225.0" layoutY="404.0" onAction="#imprimer_" prefHeight="27.0" prefWidth="83.0" style="-fx-background-color: #fff; -fx-border-width: 0.5px; -fx-border-radius: 5px;" text="Annuler" textFill="#48477b">
+                  <JFXButton fx:id="annuler_facture" buttonType="RAISED" layoutX="225.0" layoutY="397.0" onAction="#imprimer_" prefHeight="27.0" prefWidth="83.0" style="-fx-background-color: #fff; -fx-border-width: 0.5px; -fx-border-radius: 5px;" text="Annuler" textFill="#421f06">
                      <font>
-                        <Font name="Roboto Medium" size="12.0" />
+                        <Font name="Century Gothic" size="11.0" />
                      </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
                   </JFXButton>
-                  <MaterialDesignIconView fill="#029fd4" glyphName="ACCOUNT_CIRCLE" layoutX="215.0" layoutY="77.0" size="25" />
-                  <Label fx:id="client_nom" contentDisplay="CENTER" layoutX="240.0" layoutY="60.0" prefHeight="16.0" prefWidth="75.0" text="2" textFill="#0d0d0db8">
+                  <MaterialDesignIconView fill="#421f06" glyphName="ACCOUNT_CIRCLE" layoutX="215.0" layoutY="83.0" size="25" />
+                  <Label fx:id="client_nom" contentDisplay="CENTER" layoutX="240.0" layoutY="65.0" prefHeight="16.0" prefWidth="75.0" text="1" textFill="#0d0d0d00">
                      <font>
                         <Font name="Century Gothic Bold" size="13.0" />
                      </font>
                   </Label>
                   <Label fx:id="code_produit_" layoutX="301.0" layoutY="59.0" text="Label" textFill="#ffffff00" />
-                  <Button fx:id="btn_addCLient" alignment="CENTER" layoutX="311.0" layoutY="98.0" mnemonicParsing="false" style="-fx-background-color: red; -fx-background-radius: 20px;" text="+" textFill="WHITE">
+                  <Button fx:id="btn_addCLient" alignment="CENTER" layoutX="311.0" layoutY="98.0" mnemonicParsing="false" style="-fx-background-color: #2E568C; -fx-background-radius: 20px;" text="+" textFill="WHITE">
                      <cursor>
                         <Cursor fx:constant="HAND" />
                      </cursor>
@@ -266,7 +288,7 @@
       </HBox>
       <AnchorPane layoutX="346.0" layoutY="48.0" prefHeight="520.0" prefWidth="530.0" AnchorPane.bottomAnchor="2.0" AnchorPane.leftAnchor="346.0" AnchorPane.rightAnchor="3.0" AnchorPane.topAnchor="48.0">
          <children>
-            <JFXListView fx:id="vb_vente" focusTraversable="false" layoutY="52.0" prefHeight="415.0" prefWidth="530.0" style="-fx-background-color: Transparent;" AnchorPane.bottomAnchor="53.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="52.0" />
+            <JFXListView fx:id="vb_vente" focusTraversable="false" layoutY="49.0" prefHeight="418.0" prefWidth="530.0" style="-fx-background-color: Transparent;" AnchorPane.bottomAnchor="53.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="49.0" />
          </children>
       </AnchorPane>
       <AnchorPane layoutX="347.0" layoutY="48.0" prefHeight="48.0" prefWidth="530.0" style="-fx-background-color: fff; -fx-border-color: DEE7F8;" AnchorPane.leftAnchor="347.0" AnchorPane.rightAnchor="2.0">
@@ -349,7 +371,7 @@
                   <DropShadow blurType="GAUSSIAN" color="#c6c6c6" height="6.0" offsetX="0.5" offsetY="0.5" radius="2.5" width="6.0" />
                </effect>
                <children>
-                  <Icons525View fill="#029fd4" glyphName="QRCODE" layoutX="6.0" layoutY="24.0" size="20" />
+                  <Icons525View fill="#421f06" glyphName="QRCODE" layoutX="6.0" layoutY="24.0" size="20" />
                </children>
             </AnchorPane>
             <Text layoutX="49.0" layoutY="25.0" strokeType="OUTSIDE" strokeWidth="0.0" text="QUANTITE DISPO" wrappingWidth="103.99999491870403">
@@ -364,11 +386,17 @@
             </Label>
          </children>
       </AnchorPane>
-      <ListView fx:id="listClient" layoutX="38.0" layoutY="178.0" prefHeight="391.0" prefWidth="492.0" style="-fx-background-color: Transparent;" AnchorPane.bottomAnchor="1.0" AnchorPane.leftAnchor="38.0" AnchorPane.topAnchor="178.0" />
-      <ListView fx:id="listproduit_search" layoutX="38.0" layoutY="225.0" onMouseClicked="#mouse_exit_false" prefHeight="343.0" prefWidth="513.0" style="-fx-background-color: Transparent;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="38.0" AnchorPane.topAnchor="227.0" />
+      <ListView fx:id="listClient" layoutX="36.0" layoutY="173.0" prefHeight="391.0" prefWidth="492.0" style="-fx-background-color: Transparent;" AnchorPane.bottomAnchor="6.0" AnchorPane.leftAnchor="36.0" AnchorPane.topAnchor="173.0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></ListView>
+      <ListView fx:id="listproduit_search" layoutX="34.0" layoutY="225.0" onMouseClicked="#mouse_exit_false" prefHeight="346.0" prefWidth="513.0" style="-fx-background-color: Transparent;" AnchorPane.bottomAnchor="-1.0" AnchorPane.leftAnchor="34.0" AnchorPane.topAnchor="225.0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></ListView>
       <AnchorPane layoutX="3.0" layoutY="50.0" prefHeight="53.0" prefWidth="200.0" style="-fx-background-color: #F7F8FB;" AnchorPane.leftAnchor="3.0">
          <children>
-            <AnchorPane layoutY="38.0" prefHeight="6.0" prefWidth="200.0" style="-fx-background-color: #029fd4;">
+            <AnchorPane layoutY="38.0" prefHeight="6.0" prefWidth="200.0" style="-fx-background-color: #421f06;">
                <children>
                   <Text fill="WHITE" layoutY="12.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Taux de change Actuel" textAlignment="CENTER" wrappingWidth="199.00000558421016">
                      <font>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXCheckBox?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="26.0" prefWidth="253.0" style="-fx-background-color: Transparent;" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lib.loadingController.LoadTacheController">
+   <children>
+      <Label alignment="CENTER" layoutX="4.0" layoutY="4.0" prefHeight="17.0" prefWidth="19.0" style="-fx-border-color: #029aff; -fx-border-radius: 3px;" AnchorPane.leftAnchor="4.0">
+         <graphic>
+            <FontAwesomeIconView fill="RED" glyphName="SLACK" />
+         </graphic>
+      </Label>
+      <JFXCheckBox fx:id="index" checkedColor="#029aff" layoutX="224.0" layoutY="4.0" prefHeight="18.0" prefWidth="28.0" selected="true" text="." textFill="#ffffff00" AnchorPane.rightAnchor="0.0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></JFXCheckBox>
+      <Label fx:id="parametrer" layoutX="27.0" layoutY="3.0" prefHeight="20.0" prefWidth="196.0" text="Paramètre" AnchorPane.leftAnchor="27.0" AnchorPane.rightAnchor="30.0">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="code" layoutX="111.0" layoutY="5.0" prefHeight="17.0" prefWidth="19.0" textFill="TRANSPARENT" />
+      <Label fx:id="etat" layoutX="130.0" layoutY="5.0" prefHeight="17.0" prefWidth="28.0" textFill="#ffffff00" />
+   </children>
+</AnchorPane>

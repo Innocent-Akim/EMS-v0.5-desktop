@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import com.jfoenix.controls.JFXListView?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="570.0" prefWidth="879.0" style="-fx-background-color: #EEF3F9;" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.141" fx:controller="lib.source.DettesController">
+   <children>
+      <AnchorPane layoutX="361.0" layoutY="11.0" prefHeight="547.0" prefWidth="509.0" style="-fx-background-color: white;" AnchorPane.bottomAnchor="8.0" AnchorPane.leftAnchor="362.0" AnchorPane.rightAnchor="8.0" AnchorPane.topAnchor="8.0">
+         <children>
+            <Button fx:id="dettes" layoutX="141.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="141.0" style="-fx-background-color: Transparent;" text="Total dettes" AnchorPane.leftAnchor="141.0">
+               <font>
+                  <Font name="Century Gothic Bold" size="11.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="btn_details" mnemonicParsing="false" prefHeight="25.0" prefWidth="141.0" style="-fx-background-color: Transparent;" text="Détail dettes" AnchorPane.leftAnchor="0.0">
+               <font>
+                  <Font name="Century Gothic Bold" size="11.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <TextField fx:id="search" layoutX="288.0" layoutY="24.0" prefHeight="26.0" prefWidth="220.0" promptText="Rechercher par nom..." style="-fx-background-color: Transparent; -fx-border-color: #E8E8E8; -fx-border-width: 0.5px; -fx-border-radius: 5px;" AnchorPane.rightAnchor="1.0" AnchorPane.topAnchor="24.0">
+               <font>
+                  <Font name="Century Gothic" size="13.0" />
+               </font>
+            </TextField>
+            <JFXListView fx:id="listDette" focusTraversable="false" layoutY="53.0" prefHeight="500.0" prefWidth="509.0" style="-fx-background-color: #EEF3F9;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="54.0" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="8.0" layoutY="80.0" prefHeight="134.0" prefWidth="341.0" style="-fx-background-color: #33B5E5; -fx-background-radius: 10px;" AnchorPane.leftAnchor="8.0" AnchorPane.topAnchor="80.0">
+         <children>
+            <Label fx:id="montantEndette" alignment="CENTER" layoutX="1.0" layoutY="-2.0" prefHeight="134.0" prefWidth="341.0" text="200.00000" textFill="WHITE" AnchorPane.leftAnchor="1.0" AnchorPane.rightAnchor="-1.0">
+               <font>
+                  <Font name="Century Gothic Bold" size="52.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutY="5.0" prefHeight="23.0" prefWidth="342.0" text="Montant en dette" textFill="WHITE">
+               <font>
+                  <Font name="Century Gothic" size="23.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <GridPane hgap="5.0" layoutX="39.0" layoutY="26.0" AnchorPane.leftAnchor="39.0">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <AnchorPane prefHeight="33.0" prefWidth="141.0" style="-fx-border-width: 0.25px; -fx-border-color: #BBBBBB; -fx-border-radius: 5px;">
+               <children>
+                  <TextField fx:id="beginDate" editable="false" prefHeight="32.0" prefWidth="113.0" promptText="2020-02-12" style="-fx-background-color: Transparent;">
+                     <font>
+                        <Font name="Century Gothic Bold" size="15.0" />
+                     </font>
+                  </TextField>
+                  <JFXDatePicker fx:id="dateOne" defaultColor="#33b5e5" layoutX="110.0" prefHeight="31.0" prefWidth="31.0" AnchorPane.rightAnchor="0.0">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </JFXDatePicker>
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="33.0" prefWidth="141.0" style="-fx-border-width: 0.25px; -fx-border-color: #BBBBBB; -fx-border-radius: 5px;" GridPane.columnIndex="1">
+               <children>
+                  <TextField fx:id="endDate" editable="false" prefHeight="32.0" prefWidth="113.0" promptText="2020-02-12" style="-fx-background-color: Transparent;">
+                     <font>
+                        <Font name="Century Gothic Bold" size="15.0" />
+                     </font>
+                  </TextField>
+                  <JFXDatePicker fx:id="dateTo" defaultColor="#33b5e5" layoutX="110.0" prefHeight="31.0" prefWidth="31.0" AnchorPane.rightAnchor="0.0">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </JFXDatePicker>
+               </children>
+            </AnchorPane>
+         </children>
+      </GridPane>
+   </children>
+</AnchorPane>

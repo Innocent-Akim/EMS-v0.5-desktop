@@ -33,12 +33,12 @@
                <children>
                   <VBox alignment="CENTER" layoutX="5.0" layoutY="1.0" prefHeight="210.0" prefWidth="177.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                      <children>
-                        <Label fx:id="presExpire" alignment="CENTER" text="118" textFill="#fa573c">
+                        <Label fx:id="agents" alignment="CENTER" text="118" textFill="#fa573c">
                            <font>
                               <Font name="Century Gothic Bold" size="45.0" />
                            </font>
                         </Label>
-                        <Text fill="#b6b6b6" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-fill: -text-color;" text="Disponibles">
+                        <Text fill="#b6b6b6" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-fill: -text-color;" text="Agents">
                            <font>
                               <Font name="Century Gothic Bold" size="17.0" />
                            </font>
@@ -54,12 +54,12 @@
                <children>
                   <VBox alignment="CENTER" prefHeight="210.0" prefWidth="187.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                      <children>
-                        <Label fx:id="produitNondispo" alignment="CENTER" text="231" textFill="#ff7537">
+                        <Label fx:id="fournisseur" alignment="CENTER" text="231" textFill="#ff7537">
                            <font>
                               <Font name="Century Gothic Bold" size="45.0" />
                            </font>
                         </Label>
-                        <Text fill="#b6b6b6" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-fill: -text-color;" text="Non disponibles">
+                        <Text fill="#b6b6b6" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-fill: -text-color;" text="Fournisseurs">
                            <font>
                               <Font name="Century Gothic Bold" size="17.0" />
                            </font>
@@ -73,7 +73,7 @@
             </AnchorPane>
             <VBox fx:id="bn" alignment="CENTER" prefHeight="210.0" prefWidth="187.0">
                <children>
-                  <Label fx:id="perimer" alignment="CENTER" text="34" textFill="#4986e7">
+                  <Label fx:id="clients" alignment="CENTER" text="34" textFill="#2e568c">
                      <font>
                         <Font name="Century Gothic Bold" size="45.0" />
                      </font>
@@ -171,7 +171,7 @@
                         <Font size="13.0" />
                      </font>
                   </JFXButton>
-                  <JFXButton fx:id="b_Day" onMouseClicked="#LoadDataForDay" prefHeight="29.0" prefWidth="90.0" style="-fx-background-color: #6a75ca;" text="Jours" textFill="WHITE">
+                  <JFXButton fx:id="b_Day" onMouseClicked="#LoadDataForDay" prefHeight="29.0" prefWidth="90.0" style="-fx-background-color: #2E568C;" text="Jours" textFill="WHITE">
                      <font>
                         <Font name="Century Gothic Bold" size="13.0" />
                      </font>

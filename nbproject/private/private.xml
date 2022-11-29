@@ -2,29 +2,6 @@
 <project-private xmlns="http://www.netbeans.org/ns/project-private/1">
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
-        <group>
-            <file>file:/C:/Users/ISDR/Documents/Home/Project/Ems/Ems/src/lib/source/HomeController.java</file>
-            <file>file:/C:/Users/ISDR/Documents/Home/Project/Ems/Ems/src/lib/source/ProduitsController.java</file>
-            <file>file:/C:/Users/ISDR/Documents/Home/Project/Ems/Ems/src/style/style.css</file>
-            <file>file:/C:/Users/ISDR/Documents/Home/Project/Ems/Ems/src/lib/autrer/Preferences.java</file>
-            <file>file:/C:/Users/ISDR/Documents/Home/Project/Ems/Ems/src/lib/source/MenuController.java</file>
-            <file>file:/C:/Users/ISDR/Documents/Home/Project/Ems/Ems/src/lib/source/ParametreController.java</file>
-            <file>file:/C:/Users/ISDR/Documents/Home/Project/Ems/Ems/src/lib/source/LoadPersonneController.java</file>
-            <file>file:/C:/Users/ISDR/Documents/Home/Project/Ems/Ems/src/lib/source/ComptabiliteController.java</file>
-            <file>file:/C:/Users/ISDR/Documents/Home/Project/Ems/Ems/src/lib/source/EcritureController.java</file>
-            <file>file:/C:/Users/ISDR/Documents/Home/Project/Ems/Ems/src/lib/source/LoginController.java</file>
-            <file>file:/C:/Users/ISDR/Documents/Home/Project/Ems/Ems/src/lib/source/VentesController.java</file>
-            <file>file:/C:/Users/ISDR/Documents/Home/Project/Ems/Ems/src/lib/source/CaisseController.java</file>
-            <file>file:/C:/Users/ISDR/Documents/Home/Project/Ems/Ems/src/declancher/EMsoft_V21.java</file>
-            <file>file:/C:/Users/ISDR/Documents/Home/Project/Ems/Ems/src/lib/loadingController/LoadUtilisateurController.java</file>
-            <file>file:/C:/Users/ISDR/Documents/Home/Project/Ems/Ems/src/lib/screen/pupoMenu.fxml</file>
-            <file>file:/C:/Users/ISDR/Documents/Home/Project/Ems/Ems/src/lib/source/ErrorController.java</file>
-            <file>file:/C:/Users/ISDR/Documents/Home/Project/Ems/Ems/src/DialogueControllers/configServeurController.java</file>
-            <file>file:/C:/Users/ISDR/Documents/Home/Project/Ems/Ems/src/lib/source/UtilisateurController.java</file>
-            <file>file:/C:/Users/ISDR/Documents/Home/Project/Ems/Ems/src/lib/source/PupoMenuController.java</file>
-            <file>file:/C:/Users/ISDR/Documents/Home/Project/Ems/Ems/src/lib/source/DashboardController.java</file>
-            <file>file:/C:/Users/ISDR/Documents/Home/Project/Ems/Ems/src/lib/loadingController/LoadApproController.java</file>
-            <file>file:/C:/Users/ISDR/Documents/Home/Project/Ems/Ems/src/lib/loadingController/LoadVenteController.java</file>
-        </group>
+        <group/>
     </open-files>
 </project-private>

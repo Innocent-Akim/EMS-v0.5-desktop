@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.icons525.Icons525View?>
+<?import de.jensd.fx.glyphs.octicons.OctIconView?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="52.0" prefWidth="726.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lib.loadingController.LoadOperationController">
+   <children>
+      <AnchorPane id="AnchorPane" layoutX="204.0" layoutY="3.0" prefHeight="47.0" prefWidth="467.0" style="-fx-background-color: F4F4F4; -fx-background-radius: 4px;" AnchorPane.leftAnchor="204.0" AnchorPane.rightAnchor="55.0">
+         <children>
+            <Label fx:id="txtBeneficiaire" layoutX="66.0" layoutY="-1.0" prefHeight="19.0" prefWidth="342.0" text="Kyavu Blaise" textFill="#4b6283c2">
+               <font>
+                  <Font name="Arial Black" size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="txtMotif" layoutX="65.0" layoutY="24.0" prefHeight="17.0" prefWidth="325.0" text="Versement du 2 eme tranche de la dette  Versement du 2 eme tranche de la dette " AnchorPane.leftAnchor="65.0" AnchorPane.rightAnchor="85.0">
+               <font>
+                  <Font name="System Bold" size="11.0" />
+               </font>
+            </Label>
+            <Label fx:id="txtDate" alignment="CENTER_RIGHT" layoutX="368.0" layoutY="5.0" prefHeight="19.0" prefWidth="103.0" text="08:04:00" textAlignment="RIGHT" AnchorPane.rightAnchor="4.0">
+               <font>
+                  <Font name="System Bold" size="11.0" />
+               </font>
+            </Label>
+            <Label fx:id="txtinit" alignment="CENTER" layoutX="10.0" layoutY="5.0" prefHeight="35.0" prefWidth="44.0" style="-fx-border-color: #D8E6FF; -fx-border-radius: 5px;" text="K">
+               <font>
+                  <Font name="Ebrima Bold" size="17.0" />
+               </font>
+            </Label>
+            <Label fx:id="txtDateheur" alignment="CENTER_RIGHT" layoutX="388.0" layoutY="24.0" prefHeight="19.0" prefWidth="85.0" text="2020-02-02" textAlignment="RIGHT" textFill="#9a9393" AnchorPane.rightAnchor="4.0">
+               <font>
+                  <Font name="System Bold" size="11.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <JFXButton fx:id="btn" alignment="CENTER" contentDisplay="CENTER" layoutX="680.0" layoutY="8.0" onAction="#infos" prefHeight="35.0" prefWidth="35.0" style="-fx-background-color: white;" text=" " textOverrun="CLIP" AnchorPane.rightAnchor="8.0">
+         <effect>
+            <DropShadow color="#bdbebf" />
+         </effect>
+         <graphic>
+            <Icons525View fill="#348cb2" glyphName="FULLSCR_ESC" size="22" />
+         </graphic>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <Label fx:id="iconSortie" alignment="CENTER" contentDisplay="CENTER" layoutX="13.0" layoutY="7.0" opacity="0.57" prefHeight="36.0" prefWidth="36.0" style="-fx-background-color: FFE0E0; -fx-background-radius: 50px; -fx-border-color: FE4B4C; -fx-border-radius: 50px; -fx-border-width: 0.25px;" textFill="#000000c5" visible="false">
+         <graphic>
+            <OctIconView fill="#fa4d5391" glyphName="LINK_EXTERNAL" size="16" />
+         </graphic></Label>
+      <AnchorPane layoutX="1.0" layoutY="3.0" prefHeight="47.0" prefWidth="200.0" style="-fx-background-color: F4F4F4; -fx-background-radius: 4px;">
+         <children>
+            <Label fx:id="txtMontant" alignment="TOP_RIGHT" layoutX="60.0" layoutY="18.0" prefHeight="24.0" prefWidth="133.0" text="23445.45 USD" AnchorPane.rightAnchor="7.0">
+               <font>
+                  <Font name="Arial Black" size="16.0" />
+               </font>
+            </Label>
+            <Label fx:id="iconEntre" alignment="CENTER" contentDisplay="CENTER" layoutX="4.0" layoutY="4.0" opacity="0.57" prefHeight="36.0" prefWidth="36.0" style="-fx-background-color: #D8E6FF; -fx-background-radius: 50px; -fx-border-color: #03A9F4; -fx-border-radius: 50px; -fx-border-width: 0.25px;" textFill="#000000c5" visible="false">
+               <graphic>
+                  <OctIconView fill="#03a9f4" glyphName="DIFF_RENAMED" size="16" />
+               </graphic>
+            </Label>
+            <Label fx:id="txtType" alignment="CENTER_RIGHT" layoutX="69.0" layoutY="1.0" prefHeight="19.0" prefWidth="124.0" text="ENTREE" textAlignment="RIGHT" AnchorPane.rightAnchor="7.0">
+               <font>
+                  <Font name="Arial Black" size="12.0" />
+               </font>
+            </Label>
+            <Label fx:id="txtNumero" layoutX="54.0" layoutY="-2.0" prefHeight="26.0" prefWidth="85.0" text="000000" textAlignment="RIGHT" textFill="#4b6283" AnchorPane.leftAnchor="54.0" AnchorPane.rightAnchor="51.0">
+               <font>
+                  <Font name="Arial Black" size="17.0" />
+               </font>
+            </Label>
+            <Label fx:id="iconSortie" alignment="CENTER" contentDisplay="CENTER" layoutX="3.0" layoutY="3.0" opacity="0.57" prefHeight="36.0" prefWidth="36.0" style="-fx-background-color: FFE0E0; -fx-background-radius: 50px; -fx-border-color: FE4B4C; -fx-border-radius: 50px; -fx-border-width: 0.25px;" textFill="#000000c5" visible="false">
+               <graphic>
+                  <OctIconView fill="#fa4d5391" glyphName="LINK_EXTERNAL" size="16" />
+               </graphic>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXCheckBox?>
+<?import de.jensd.fx.glyphs.octicons.OctIconView?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="89.0" prefWidth="244.0" style="-fx-background-color: Transparent;" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.141" fx:controller="lib.loadingController.LoadClientController">
+   <children>
+      <Label fx:id="name" alignment="CENTER" layoutY="48.0" prefHeight="17.0" prefWidth="223.0" text="AKILIMALI CIZUNGU INNOCENT" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <font>
+            <Font name="Century Gothic Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="tel" alignment="CENTER" layoutY="64.0" prefHeight="17.0" prefWidth="223.0" text="+243977748166" textFill="#1493d7" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <font>
+            <Font name="Century Gothic" size="13.0" />
+         </font>
+      </Label>
+      <AnchorPane layoutX="94.0" layoutY="2.0" prefHeight="45.0" prefWidth="47.0" style="-fx-border-radius: 40px; -fx-border-color: #1493d7;">
+         <children>
+            <OctIconView fill="#35597b" glyphName="PERSON" layoutX="12.0" layoutY="32.1875" size="30" />
+         </children>
+      </AnchorPane>
+      <JFXCheckBox fx:id="checkValider" checkedColor="#1493d7" layoutX="-9.0" layoutY="66.0" prefHeight="17.0" prefWidth="65.0" style="-fx-background-color: Transparent;" text="." textFill="TRANSPARENT" unCheckedColor="#d6920bce">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXCheckBox>
+      <OctIconView fill="#1493d7" glyphName="MAIL" layoutX="6.0" layoutY="26.0" size="25" />
+      <Separator layoutX="-1.0" layoutY="86.0" prefHeight="3.0" prefWidth="244.0" style="-fx-background-color: #21A9E1;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
+   </children>
+</AnchorPane>

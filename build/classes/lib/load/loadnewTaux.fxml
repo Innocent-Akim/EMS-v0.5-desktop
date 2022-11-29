@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXCheckBox?>
+<?import de.jensd.fx.glyphs.octicons.OctIconView?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="21.0" prefWidth="260.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lib.loadingController.LoadnewTauxController">
+   <children>
+      <AnchorPane id="AnchorPane" prefHeight="21.0" prefWidth="260.0">
+         <children>
+            <JFXCheckBox fx:id="index" checkedColor="#029fd4" layoutX="210.0" layoutY="1.0" prefHeight="18.0" prefWidth="24.0" selected="true" text="." textFill="TRANSPARENT" AnchorPane.rightAnchor="0.0">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXCheckBox>
+            <Label fx:id="taux" layoutX="22.0" layoutY="1.0" prefHeight="19.0" prefWidth="56.0" text="20100" AnchorPane.leftAnchor="22.0">
+               <font>
+                  <Font name="Century Gothic Bold" size="13.0" />
+               </font>
+            </Label>
+            <OctIconView fill="#d40202" glyphName="ARROW_RIGHT" layoutX="72.0" layoutY="16.0" size="15" />
+            <Label layoutX="89.0" layoutY="2.0" text="1 USD">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label fx:id="dateUpdate" alignment="CENTER" contentDisplay="CENTER" layoutX="142.0" layoutY="2.0" prefHeight="17.0" prefWidth="92.0" text="2021-02-12" AnchorPane.rightAnchor="46.0">
+               <font>
+                  <Font name="Century Gothic Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="2.0" layoutY="2.0" style="-fx-background-color: #029fd4; -fx-background-radius: 5px;" text="CD" textFill="WHITE" AnchorPane.leftAnchor="2.0">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label fx:id="etat" layoutX="63.0" layoutY="1.0" text="0" textFill="TRANSPARENT" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

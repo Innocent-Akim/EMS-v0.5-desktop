@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import com.jfoenix.controls.JFXDatePicker?>
 <?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.Cursor?>
 <?import javafx.scene.control.ContextMenu?>
-<?import javafx.scene.control.DatePicker?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.ColumnConstraints?>
 <?import javafx.scene.layout.GridPane?>
@@ -35,6 +37,9 @@
                            <font>
                               <Font name="Century Gothic" size="14.0" />
                            </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
                         </Label>
                      </children>
                   </HBox>
@@ -44,6 +49,9 @@
                            <font>
                               <Font name="Century Gothic" size="14.0" />
                            </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
                         </Label>
                      </children>
                   </HBox>
@@ -53,6 +61,9 @@
                            <font>
                               <Font name="Century Gothic" size="14.0" />
                            </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
                         </Label>
                      </children>
                   </HBox>
@@ -62,6 +73,9 @@
                            <font>
                               <Font name="Century Gothic" size="14.0" />
                            </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
                         </Label>
                      </children>
                   </HBox>
@@ -87,6 +101,9 @@
                                 </items>
                               </ContextMenu>
                            </contextMenu>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
                         </Label>
                      </children>
                   </HBox>
@@ -96,6 +113,9 @@
                            <font>
                               <Font name="Century Gothic" size="14.0" />
                            </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
                         </Label>
                      </children>
                   </HBox>
@@ -105,6 +125,9 @@
                            <font>
                               <Font name="Century Gothic" size="14.0" />
                            </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
                         </Label>
                      </children>
                   </HBox>
@@ -114,6 +137,9 @@
                            <font>
                               <Font name="Century Gothic" size="14.0" />
                            </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
                         </Label>
                      </children>
                   </HBox>
@@ -123,6 +149,9 @@
                            <font>
                               <Font name="Century Gothic" size="14.0" />
                            </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
                         </Label>
                      </children>
                   </HBox>
@@ -141,8 +170,26 @@
                   <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
                </rowConstraints>
                <children>
-                  <DatePicker fx:id="dtdebut" promptText="Entrer la date debut" style="-fx-background-color: Transparent;" />
-                  <DatePicker fx:id="datefin" promptText="Entrer la date fin" style="-fx-background-color: Transparent;" GridPane.columnIndex="1" />
+                  <AnchorPane prefHeight="29.0" prefWidth="177.0" style="-fx-border-color: #D1D1D1; -fx-border-width: 0.5px;">
+                     <children>
+                        <TextField fx:id="dateField1" editable="false" layoutY="2.0" prefHeight="25.0" prefWidth="140.0" promptText="01-05-2022" style="-fx-background-color: Transparent;">
+                           <font>
+                              <Font name="Century Gothic" size="12.0" />
+                           </font>
+                        </TextField>
+                        <JFXDatePicker fx:id="date1" defaultColor="#2bc2d5" layoutX="139.0" layoutY="-2.0" prefWidth="23.0" />
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane style="-fx-border-color: #D1D1D1; -fx-border-width: 0.5px;" GridPane.columnIndex="1">
+                     <children>
+                        <TextField fx:id="dateField2" editable="false" layoutY="3.0" prefHeight="25.0" prefWidth="140.0" promptText="02-05-2022" style="-fx-background-color: Transparent;">
+                           <font>
+                              <Font name="Century Gothic" size="13.0" />
+                           </font>
+                        </TextField>
+                        <JFXDatePicker fx:id="date2" defaultColor="#2bc2d5" layoutX="136.0" layoutY="-2.0" prefHeight="31.0" prefWidth="17.0" />
+                     </children>
+                  </AnchorPane>
                </children>
             </GridPane>
          </children>

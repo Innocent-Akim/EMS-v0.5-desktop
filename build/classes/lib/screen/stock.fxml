@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXListView?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="487.0" prefWidth="756.0" style="-fx-background-color: #EEF3F9;" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lib.source.StockController">
+   <children>
+      <AnchorPane prefHeight="25.0" prefWidth="756.0" style="-fx-background-color: white;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Button fx:id="disponible" layoutX="1.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="126.0" style="-fx-background-color: Transparent;" text="Disponibles" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <font>
+                  <Font name="Century Gothic" size="12.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="nondisponible" layoutX="127.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="126.0" style="-fx-background-color: Transparent;" text="Non disponibles" AnchorPane.leftAnchor="127.0" AnchorPane.topAnchor="0.0">
+               <font>
+                  <Font name="Century Gothic" size="12.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+         </children>
+      </AnchorPane>
+      <JFXListView fx:id="listStock" focusTraversable="false" layoutX="7.0" layoutY="64.0" prefHeight="423.0" prefWidth="517.0" style="-fx-background-color: Transparent;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="239.0" AnchorPane.topAnchor="64.0" />
+      <ImageView fitHeight="227.0" fitWidth="224.0" layoutX="528.0" layoutY="34.0" pickOnBounds="true" preserveRatio="true" AnchorPane.rightAnchor="4.0">
+         <image>
+            <Image url="@../image/stock.png" />
+         </image>
+      </ImageView>
+      <AnchorPane layoutX="533.0" layoutY="206.0" prefHeight="282.0" prefWidth="224.0" style="-fx-background-color: #1493d7; -fx-background-radius: 5px;" AnchorPane.bottomAnchor="4.0" AnchorPane.rightAnchor="4.0" AnchorPane.topAnchor="201.0">
+         <children>
+            <Text fill="WHITE" layoutX="46.0" layoutY="98.0" strokeType="OUTSIDE" strokeWidth="0.0" text="50000 " textAlignment="CENTER" AnchorPane.topAnchor="54.0">
+               <font>
+                  <Font name="Century Gothic Bold" size="43.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="86.0" layoutY="57.0" strokeType="OUTSIDE" strokeWidth="0.0" text="USD" AnchorPane.topAnchor="37.0">
+               <font>
+                  <Font name="Century Gothic Bold" size="20.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="40.0" layoutY="221.0" strokeType="OUTSIDE" strokeWidth="0.0" text="100.000" textAlignment="CENTER" AnchorPane.bottomAnchor="48.0">
+               <font>
+                  <Font name="Century Gothic Bold" size="43.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="99.0" layoutY="172.0" strokeType="OUTSIDE" strokeWidth="0.0" text="FC" AnchorPane.bottomAnchor="105.0">
+               <font>
+                  <Font name="Century Gothic Bold" size="20.0" />
+               </font>
+            </Text>
+            <FontAwesomeIconView fill="WHITE" glyphName="CHAIN_BROKEN" layoutX="88.0" layoutY="147.0" size="50" />
+         </children>
+      </AnchorPane>
+      <TextField fx:id="search" layoutX="340.0" layoutY="34.0" prefHeight="25.0" prefWidth="271.0" promptText="Rechercher..." style="-fx-background-color: white; -fx-border-color: #A3A4A6; -fx-border-width: 0.25px; -fx-border-radius: 4px;" AnchorPane.rightAnchor="239.0">
+         <font>
+            <Font name="Century Gothic" size="12.0" />
+         </font>
+      </TextField>
+   </children>
+</AnchorPane>

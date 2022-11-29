@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import com.gn.GNAvatarView?>
+<?import com.jfoenix.controls.JFXProgressBar?>
 <?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
 <?import de.jensd.fx.glyphs.materialdesignicons.MaterialDesignIconView?>
 <?import java.lang.String?>
@@ -21,7 +22,6 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.shape.SVGPath?>
 <?import javafx.scene.text.Font?>
-<?import javafx.scene.text.Text?>
 
 <StackPane fx:id="fenetreLogin" prefHeight="601.0" prefWidth="1004.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lib.source.LoginController">
    <padding>
@@ -36,7 +36,7 @@
                      <children>
                         <HBox alignment="CENTER" prefHeight="437.0" prefWidth="544.0" spacing="40.0" style="-fx-background-color: #fff;" styleClass="teste">
                            <children>
-                              <GNAvatarView fx:id="avatar" prefHeight="439.0" prefWidth="217.0" strokeWidth="0.0">
+                              <GNAvatarView fx:id="avatar" prefHeight="435.0" prefWidth="183.0" stroke="BLACK" strokeWidth="0.0" type="RECT">
                                  <effect>
                                     <DropShadow color="#00000035" />
                                  </effect>
@@ -103,7 +103,7 @@
                                           <Insets right="10.0" />
                                        </padding>
                                     </HBox>
-                                    <Button fx:id="btnConnecter" defaultButton="true" mnemonicParsing="false" prefHeight="29.0" prefWidth="105.0" style="-fx-background-color: #33B5E5;" text="Sign In" textFill="WHITE">
+                                    <Button fx:id="btnConnecter" defaultButton="true" mnemonicParsing="false" prefHeight="29.0" prefWidth="105.0" style="-fx-background-color: #2E568C;" text="Sign In" textFill="WHITE">
                                        <styleClass>
                                           <String fx:value="btn-primary" />
                                           <String fx:value="btn-info" />
@@ -118,14 +118,10 @@
                                           <Cursor fx:constant="HAND" />
                                        </cursor>
                                     </Button>
-                                    <HBox prefHeight="27.0" prefWidth="295.0">
+                                    <HBox fx:id="load" prefHeight="32.0" prefWidth="281.0">
                                        <children>
                                           <ImageView fx:id="loadIcon" fitHeight="33.0" fitWidth="31.0" pickOnBounds="true" preserveRatio="true" />
-                                          <Text fx:id="message" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="246.13677978515625">
-                                             <HBox.margin>
-                                                <Insets top="10.0" />
-                                             </HBox.margin>
-                                          </Text>
+                                          <JFXProgressBar fx:id="loading" focusTraversable="false" style="-fx-background-color: #33B5E5;" />
                                        </children>
                                     </HBox>
                                     <HBox accessibleRole="LIST_ITEM" alignment="CENTER" prefHeight="17.0" prefWidth="289.0">

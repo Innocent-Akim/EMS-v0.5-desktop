@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="35.0" prefWidth="540.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lib.loadingController.LoadEcritureController">
+   <children>
+      <Label fx:id="txtintitule" layoutX="171.0" layoutY="9.0" prefHeight="19.0" prefWidth="238.0" text="Label" AnchorPane.leftAnchor="171.0" AnchorPane.rightAnchor="131.0">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font></Label>
+      <TextField fx:id="txtmontant" layoutX="414.0" layoutY="6.0" prefHeight="26.0" prefWidth="122.0" promptText="Entrez le montant" style="-fx-background-color: Transparent; -fx-border-color: #A3A4A6; -fx-border-width: 0.25px; -fx-border-radius: 4px;" text="0.0" AnchorPane.rightAnchor="4.0">
+         <font>
+            <Font name="Century Gothic Bold" size="13.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="txtCompre" layoutX="4.0" layoutY="6.0" prefHeight="25.0" prefWidth="161.0" promptText="Sélectionnez un compte" style="-fx-background-color: Transparent; -fx-border-color: #A3A4A6; -fx-border-width: 0.25px; -fx-border-radius: 4px;" AnchorPane.leftAnchor="4.0">
+         <font>
+            <Font name="Century Gothic" size="12.0" />
+         </font>
+      </TextField>
+   </children>
+</AnchorPane>

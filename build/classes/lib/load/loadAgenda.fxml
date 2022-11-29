@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="108.0" prefWidth="414.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lib.loadingController.LoadAgendaController">
+   <children>
+      <AnchorPane layoutX="13.0" layoutY="12.0" style="-fx-background-color: #008DDE; -fx-background-radius: 5px;" AnchorPane.leftAnchor="10.0">
+         <children>
+            <Label fx:id="day" alignment="CENTER" contentDisplay="CENTER" layoutX="17.0" layoutY="20.0" prefHeight="45.0" prefWidth="45.0" style="-fx-background-color: #21A9E1; -fx-background-radius: 20px;" text="20" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="22.0" />
+               </font>
+            </Label>
+            <Label fx:id="year" alignment="CENTER" layoutX="1.0" prefHeight="19.0" prefWidth="86.0" text="2022" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Label>
+            <Label fx:id="moth" alignment="CENTER" layoutY="65.0" prefHeight="17.0" prefWidth="86.0" text="JANVIER" textFill="#fffbfb">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <Label fx:id="title" layoutX="104.0" layoutY="2.0" prefHeight="17.0" prefWidth="301.0" text="TITLE">
+         <font>
+            <Font name="Century Gothic Bold" size="16.0" />
+         </font>
+      </Label>
+      <ScrollPane layoutX="104.0" layoutY="19.0" style="-fx-background-color: Transparent;">
+         <content>
+            <Text fx:id="message" strokeType="OUTSIDE" strokeWidth="0.0" text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus perferendis aliquid fugit, velit magni maxime asperiores delectus pariatur non eos voluptate eum. Laudantium voluptate voluptas velit aliquid at nemo exercitationem?" wrappingWidth="310.13671875" />
+         </content>
+      </ScrollPane>
+   </children>
+</AnchorPane>

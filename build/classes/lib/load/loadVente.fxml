@@ -19,7 +19,7 @@
                   <Font name="System Bold" size="12.0" />
                </font>
                <graphic>
-                  <Icons525View fill="#1b86db" glyphName="BULLET" size="18" />
+                  <Icons525View fill="#2e568c" glyphName="BULLET" size="18" />
                </graphic>
             </Label>
             <Label fx:id="designation" layoutX="79.0" layoutY="30.0" prefHeight="18.0" prefWidth="253.0" text="ADALATE 20MG SPÉCIALITÉ/ 30CS ">
@@ -35,7 +35,7 @@
                   <Font name="System Bold" size="13.0" />
                </font>
             </TextField>
-            <Label fx:id="ptotal" alignment="CENTER" layoutX="491.0" layoutY="31.0" prefHeight="18.0" prefWidth="91.0" text="2.000.000" textFill="#1b86db">
+            <Label fx:id="ptotal" alignment="CENTER" layoutX="491.0" layoutY="31.0" prefHeight="18.0" prefWidth="91.0" text="2.000.000" textFill="#2e568c">
                <graphic>
                   <MaterialDesignIconView fill="#fd7252" glyphName="CHART_LINE" size="18" />
                </graphic>
@@ -68,9 +68,9 @@
                   <Font name="Century Gothic Bold" size="12.0" />
                </font>
             </Label>
-            <AnchorPane layoutX="584.0" layoutY="32.0" prefHeight="17.0" prefWidth="24.0" style="-fx-background-color: #1B86DB; -fx-background-radius: 0.2em;" AnchorPane.rightAnchor="7.0">
+            <AnchorPane fx:id="btl_modifier" layoutX="584.0" layoutY="32.0" prefHeight="17.0" prefWidth="24.0" style="-fx-background-color: #2E568C; -fx-background-radius: 0.2em;" AnchorPane.rightAnchor="7.0">
                <children>
-                  <FontAwesomeIconView fx:id="btl_modifier" fill="WHITE" glyphName="EDIT" layoutX="5.0" layoutY="14.0" size="15">
+                  <FontAwesomeIconView fill="WHITE" glyphName="EDIT" layoutX="5.0" layoutY="14.0" size="15">
                      <cursor>
                         <Cursor fx:constant="HAND" />
                      </cursor></FontAwesomeIconView>
@@ -94,6 +94,6 @@
             <Cursor fx:constant="HAND" />
          </cursor>
       </AnchorPane>
-      <Separator layoutY="65.0" prefWidth="200.0" style="-fx-background-color: #1B86DB;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
+      <Separator layoutY="65.0" prefWidth="200.0" style="-fx-background-color: #2E568C;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
    </children>
 </AnchorPane>

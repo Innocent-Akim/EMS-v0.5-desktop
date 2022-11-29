@@ -160,6 +160,6 @@
             </Label>
          </children>
       </AnchorPane>
-      <ListView fx:id="listCommandePiece" layoutX="4.0" layoutY="198.0" prefHeight="386.0" prefWidth="494.0" style="-fx-background-color: Transparent;" AnchorPane.bottomAnchor="1.0" AnchorPane.leftAnchor="4.0" AnchorPane.rightAnchor="3.0" AnchorPane.topAnchor="198.0" />
+      <ListView fx:id="listCommandePiece" layoutX="4.0" layoutY="115.0" prefHeight="469.0" prefWidth="494.0" style="-fx-background-color: Transparent;" AnchorPane.bottomAnchor="1.0" AnchorPane.leftAnchor="4.0" AnchorPane.rightAnchor="3.0" AnchorPane.topAnchor="115.0" />
    </children>
 </AnchorPane>

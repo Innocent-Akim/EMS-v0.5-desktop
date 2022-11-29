@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXListView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="510.0" prefWidth="540.0" style="-fx-background-color: #EEF3F9;" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lib.source.EcritureController">
+   <children>
+      <AnchorPane prefHeight="36.0" prefWidth="540.0" style="-fx-background-color: white;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+      <JFXListView fx:id="listData" focusTraversable="false" layoutY="41.0" prefHeight="466.0" prefWidth="540.0" style="-fx-background-color: Transparent;" AnchorPane.bottomAnchor="3.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="41.0" />
+   </children>
+</AnchorPane>

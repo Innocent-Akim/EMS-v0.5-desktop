@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="container" prefHeight="126.0" prefWidth="373.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lib.loadingController.LoadMessageController">
+   <children>
+      <ScrollPane layoutX="4.0" layoutY="2.0" prefHeight="121.0" prefWidth="369.0" style="-fx-background-color: Transparent;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="2.0">
+         <content>
+            <Text fx:id="message" strokeType="OUTSIDE" strokeWidth="0.0" text="SMS( Short Message Service) is a messaging protocol to send and receive text messages on mobile phones. With text messaging being active for almost three decades, it is safe to say that all the active cell phones support text messaging, making SMS a valuable marketing channel.SMS marketing refers to using SMS to send promotional messages for marketing products or doing business promotions. According to The World Bank, there are 109 active mobile subscriptions for every 100 individuals. While that includes the users using multiple subscriptions, it gives a good enough estimate that almost everyone owns a mobile phone and shows the potential of SMS marketing.Also, an average mobile user in the United States spends 4 hours and 23 minutes on their mobile phone, excluding talk time. That presents text messaging as a perfect platform for businesses to connect to their customers. " textAlignment="JUSTIFY" wrappingWidth="366.294921875">
+               <font>
+                  <Font name="Century Gothic" size="13.0" />
+               </font>
+            </Text>
+         </content>
+      </ScrollPane>
+   </children>
+</AnchorPane>

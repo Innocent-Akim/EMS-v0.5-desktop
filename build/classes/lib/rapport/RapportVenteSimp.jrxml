@@ -22,7 +22,7 @@
 				<textField>
 					<reportElement mode="Opaque" x="0" y="0" width="555" height="20" backcolor="#CCCCCC" uuid="cedab626-cc7f-4826-abf6-7f22724e5b6d"/>
 					<textElement verticalAlignment="Middle">
-						<font fontName="Century Gothic" size="16" isBold="true"/>
+						<font fontName="Century Gothic" size="14" isBold="true"/>
 					</textElement>
 					<textFieldExpression><![CDATA[$F{DATE}]]></textFieldExpression>
 				</textField>
@@ -39,8 +39,8 @@
 						<bottomPen lineWidth="0.75" lineStyle="Dashed"/>
 						<rightPen lineWidth="0.75" lineStyle="Dashed"/>
 					</box>
-					<textElement>
-						<font fontName="Century Gothic" size="20" isBold="true"/>
+					<textElement verticalAlignment="Middle">
+						<font fontName="Century Gothic" size="14" isBold="true"/>
 					</textElement>
 					<textFieldExpression><![CDATA[" MONTANT TOTAL  "+$V{TOTAL_1}+" \$"]]></textFieldExpression>
 				</textField>

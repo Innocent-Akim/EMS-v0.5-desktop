@@ -76,6 +76,14 @@
       </AnchorPane>
       <Accordion layoutX="5.0" layoutY="54.0" prefHeight="527.0" prefWidth="491.0" AnchorPane.bottomAnchor="4.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="54.0">
         <panes>
+          <TitledPane animated="false" prefHeight="140.0" prefWidth="491.0" text="Afficher">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: white;">
+                     <children>
+                        <JFXListView fx:id="dataList" layoutX="7.0" layoutY="14.0" prefHeight="456.0" prefWidth="475.0" style="-fx-background-color: Transfert;" AnchorPane.bottomAnchor="3.0" AnchorPane.leftAnchor="3.0" AnchorPane.rightAnchor="3.0" AnchorPane.topAnchor="6.0" />
+                     </children></AnchorPane>
+            </content>
+          </TitledPane>
           <TitledPane animated="false" text="Add commander">
             <content>
               <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: white;">
@@ -378,14 +386,6 @@
                         <String fx:value="accordion" />
                      </styleClass>
                   </AnchorPane>
-            </content>
-          </TitledPane>
-          <TitledPane animated="false" prefHeight="140.0" prefWidth="491.0" text="Afficher">
-            <content>
-              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: white;">
-                     <children>
-                        <JFXListView fx:id="dataList" layoutX="7.0" layoutY="14.0" prefHeight="456.0" prefWidth="475.0" style="-fx-background-color: Transfert;" AnchorPane.bottomAnchor="3.0" AnchorPane.leftAnchor="3.0" AnchorPane.rightAnchor="3.0" AnchorPane.topAnchor="6.0" />
-                     </children></AnchorPane>
             </content>
           </TitledPane>
         </panes>

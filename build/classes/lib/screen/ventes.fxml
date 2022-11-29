@@ -368,11 +368,12 @@
             </Label>
          </children>
       </AnchorPane>
-      <ListView fx:id="listClient" layoutX="36.0" layoutY="173.0" prefHeight="399.0" prefWidth="492.0" style="-fx-background-color: Transparent;" AnchorPane.bottomAnchor="-2.0" AnchorPane.leftAnchor="36.0" AnchorPane.topAnchor="173.0">
+      <ListView fx:id="listClient" layoutX="36.0" layoutY="173.0" prefHeight="391.0" prefWidth="492.0" style="-fx-background-color: Transparent;" AnchorPane.bottomAnchor="6.0" AnchorPane.leftAnchor="36.0" AnchorPane.topAnchor="173.0">
          <cursor>
             <Cursor fx:constant="HAND" />
-         </cursor></ListView>
-      <ListView fx:id="listproduit_search" layoutX="34.0" layoutY="225.0" onMouseClicked="#mouse_exit_false" prefHeight="350.0" prefWidth="513.0" style="-fx-background-color: Transparent;" AnchorPane.bottomAnchor="-5.0" AnchorPane.leftAnchor="34.0" AnchorPane.topAnchor="225.0">
+         </cursor>
+      </ListView>
+      <ListView fx:id="listproduit_search" layoutX="34.0" layoutY="225.0" onMouseClicked="#mouse_exit_false" prefHeight="347.0" prefWidth="513.0" style="-fx-background-color: Transparent;" AnchorPane.bottomAnchor="-2.0" AnchorPane.leftAnchor="34.0" AnchorPane.topAnchor="225.0">
          <cursor>
             <Cursor fx:constant="HAND" />
          </cursor></ListView>

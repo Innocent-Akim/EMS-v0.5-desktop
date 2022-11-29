@@ -8,7 +8,7 @@
   </information>
   <resources>
     <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
-    <jar href="Ems.jar" size="2792765" download="eager" />
+    <jar href="Ems.jar" size="2779992" download="eager" />
     <jar href="lib\GNAvatarView-1.0-rc.jar" size="26082" download="eager" />
     <jar href="lib\GNButton-1.1.0.jar" size="194323" download="eager" />
     <jar href="lib\GNCalendar-1.0-alpha.jar" size="11402" download="eager" />
@@ -55,6 +55,8 @@
     <jar href="lib\httpmime-4.5.12.jar" size="41792" download="eager" />
     <jar href="lib\iText-2.1.7.jar" size="1130070" download="eager" />
     <jar href="lib\ibatis.jar" size="450424" download="eager" />
+    <jar href="lib\icu4j-71.1.jar" size="13963762" download="eager" />
+    <jar href="lib\icu4j-localespi-71.1.jar" size="56317" download="eager" />
     <jar href="lib\isFieldsempty.jar" size="2212" download="eager" />
     <jar href="lib\jasperreports-6.12.2.jar" size="5534074" download="eager" />
     <jar href="lib\jdt-compiler.jar" size="943977" download="eager" />

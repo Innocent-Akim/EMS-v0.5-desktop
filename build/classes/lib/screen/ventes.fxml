@@ -99,7 +99,7 @@
       </AnchorPane>
       <HBox alignment="BOTTOM_LEFT" layoutX="3.0" layoutY="47.0" prefHeight="472.0" prefWidth="341.0" style="-fx-background-color: #F7F8FB;" AnchorPane.bottomAnchor="51.0" AnchorPane.leftAnchor="3.0" AnchorPane.topAnchor="47.0">
          <children>
-            <AnchorPane prefHeight="569.0" prefWidth="339.0" style="-fx-background-color: #F7F8FB;">
+            <AnchorPane prefHeight="569.0" prefWidth="339.0" style="-fx-background-color: #fff;">
                <children>
                   <Text fill="#484778" layoutX="237.99978721141815" layoutY="15.0" strokeType="OUTSIDE" strokeWidth="0.0" text="FACTURE-ID" textAlignment="CENTER" wrappingWidth="89.9999874830246" AnchorPane.rightAnchor="25.00022530555725">
                      <font>
@@ -109,7 +109,7 @@
                   <HBox layoutX="262.0" layoutY="1.0" AnchorPane.rightAnchor="124.0" />
                   <HBox alignment="BOTTOM_LEFT" layoutX="25.0" layoutY="67.0" prefHeight="391.0" prefWidth="289.0" style="-fx-background-color: #F7F8FB;">
                      <children>
-                        <AnchorPane prefHeight="365.0" prefWidth="289.0">
+                        <AnchorPane prefHeight="365.0" prefWidth="289.0" style="-fx-background-color: fff;">
                            <children>
                               <AnchorPane layoutX="9.0" layoutY="30.0" prefHeight="14.0" prefWidth="274.0" style="-fx-background-color: #fff; -fx-border-color: #BAC3E2; -fx-border-width: 0.25;">
                                  <children>
@@ -209,9 +209,9 @@
                                     <Cursor fx:constant="HAND" />
                                  </cursor>
                               </JFXButton>
-                              <AnchorPane layoutX="14.0" layoutY="246.0" prefHeight="36.0" prefWidth="108.0" style="-fx-background-color: #fff; -fx-border-color: #BAC3E2; -fx-border-width: 0.25;">
+                              <AnchorPane layoutX="14.0" layoutY="246.0" prefHeight="36.0" prefWidth="265.0" style="-fx-background-color: #fff; -fx-border-color: #BAC3E2; -fx-border-width: 0.25;">
                                  <children>
-                                    <TextField fx:id="payer" layoutX="15.0" layoutY="1.0" prefHeight="34.0" prefWidth="91.0" promptText="50" style="-fx-background-color: #FFF;">
+                                    <TextField fx:id="payer" layoutX="15.0" layoutY="1.0" prefHeight="34.0" prefWidth="248.0" promptText="0.0" style="-fx-background-color: #FFF;">
                                        <font>
                                           <Font name="Century Gothic Bold" size="17.0" />
                                        </font>
@@ -227,24 +227,6 @@
                                     <Font name="Century Gothic" size="12.0" />
                                  </font>
                               </Text>
-                              <AnchorPane layoutX="147.0" layoutY="245.0" prefHeight="36.0" prefWidth="123.0" style="-fx-background-color: #fff; -fx-border-color: #BAC3E2; -fx-border-width: 0.25;">
-                                 <children>
-                                    <TextField fx:id="reste" layoutX="15.0" layoutY="1.0" prefHeight="34.0" prefWidth="114.0" promptText="0.0" style="-fx-background-color: #FFF;">
-                                       <font>
-                                          <Font name="Century Gothic Bold" size="17.0" />
-                                       </font>
-                                    </TextField>
-                                    <OctIconView fill="#a3a0d7" glyphName="LINK_EXTERNAL" layoutX="3.0" layoutY="24.0" size="15" />
-                                 </children>
-                                 <effect>
-                                    <DropShadow color="WHITE" />
-                                 </effect>
-                              </AnchorPane>
-                              <Text layoutX="147.0" layoutY="239.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Montant reste" wrappingWidth="107.99999624490738">
-                                 <font>
-                                    <Font name="Century Gothic" size="12.0" />
-                                 </font>
-                              </Text>
                            </children>
                         </AnchorPane>
                      </children>
@@ -254,23 +236,23 @@
                         <Font name="Century Gothic Bold" size="17.0" />
                      </font>
                   </Label>
-                  <JFXButton fx:id="print1" buttonType="RAISED" layoutX="36.0" layoutY="398.0" onAction="#imprimer_" prefHeight="27.0" prefWidth="83.0" style="-fx-background-color: #fff; -fx-border-width: 0.5px; -fx-border-radius: 5px;" text="Imprimer" textFill="#421f06">
+                  <JFXButton fx:id="print1" buttonType="RAISED" layoutX="36.0" layoutY="398.0" onAction="#imprimer_" prefHeight="27.0" prefWidth="83.0" style="-fx-background-color: #fff; -fx-border-width: 0.5px; -fx-border-radius: 5px;" text="Imprimer">
                      <font>
-                        <Font name="Century Gothic" size="11.0" />
+                        <Font name="Century Gothic Bold" size="12.0" />
                      </font>
                      <cursor>
                         <Cursor fx:constant="HAND" />
                      </cursor>
                   </JFXButton>
-                  <JFXButton fx:id="annuler_facture" buttonType="RAISED" layoutX="225.0" layoutY="397.0" onAction="#imprimer_" prefHeight="27.0" prefWidth="83.0" style="-fx-background-color: #fff; -fx-border-width: 0.5px; -fx-border-radius: 5px;" text="Annuler" textFill="#421f06">
+                  <JFXButton fx:id="annuler_facture" buttonType="RAISED" layoutX="225.0" layoutY="397.0" onAction="#imprimer_" prefHeight="27.0" prefWidth="83.0" style="-fx-background-color: #fff; -fx-border-width: 0.5px; -fx-border-radius: 5px;" text="Annuler">
                      <font>
-                        <Font name="Century Gothic" size="11.0" />
+                        <Font name="Century Gothic Bold" size="12.0" />
                      </font>
                      <cursor>
                         <Cursor fx:constant="HAND" />
                      </cursor>
                   </JFXButton>
-                  <MaterialDesignIconView fill="#421f06" glyphName="ACCOUNT_CIRCLE" layoutX="215.0" layoutY="83.0" size="25" />
+                  <MaterialDesignIconView fill="#a6a6a6" glyphName="ACCOUNT_CIRCLE" layoutX="215.0" layoutY="83.0" size="25" />
                   <Label fx:id="client_nom" contentDisplay="CENTER" layoutX="240.0" layoutY="65.0" prefHeight="16.0" prefWidth="75.0" text="1" textFill="#0d0d0d00">
                      <font>
                         <Font name="Century Gothic Bold" size="13.0" />
@@ -371,7 +353,7 @@
                   <DropShadow blurType="GAUSSIAN" color="#c6c6c6" height="6.0" offsetX="0.5" offsetY="0.5" radius="2.5" width="6.0" />
                </effect>
                <children>
-                  <Icons525View fill="#421f06" glyphName="QRCODE" layoutX="6.0" layoutY="24.0" size="20" />
+                  <Icons525View fill="#a6a6a6" glyphName="QRCODE" layoutX="6.0" layoutY="24.0" size="20" />
                </children>
             </AnchorPane>
             <Text layoutX="49.0" layoutY="25.0" strokeType="OUTSIDE" strokeWidth="0.0" text="QUANTITE DISPO" wrappingWidth="103.99999491870403">
@@ -386,17 +368,17 @@
             </Label>
          </children>
       </AnchorPane>
-      <ListView fx:id="listClient" layoutX="36.0" layoutY="173.0" prefHeight="391.0" prefWidth="492.0" style="-fx-background-color: Transparent;" AnchorPane.bottomAnchor="6.0" AnchorPane.leftAnchor="36.0" AnchorPane.topAnchor="173.0">
+      <ListView fx:id="listClient" layoutX="36.0" layoutY="173.0" prefHeight="399.0" prefWidth="492.0" style="-fx-background-color: Transparent;" AnchorPane.bottomAnchor="-2.0" AnchorPane.leftAnchor="36.0" AnchorPane.topAnchor="173.0">
          <cursor>
             <Cursor fx:constant="HAND" />
          </cursor></ListView>
-      <ListView fx:id="listproduit_search" layoutX="34.0" layoutY="225.0" onMouseClicked="#mouse_exit_false" prefHeight="346.0" prefWidth="513.0" style="-fx-background-color: Transparent;" AnchorPane.bottomAnchor="-1.0" AnchorPane.leftAnchor="34.0" AnchorPane.topAnchor="225.0">
+      <ListView fx:id="listproduit_search" layoutX="34.0" layoutY="225.0" onMouseClicked="#mouse_exit_false" prefHeight="350.0" prefWidth="513.0" style="-fx-background-color: Transparent;" AnchorPane.bottomAnchor="-5.0" AnchorPane.leftAnchor="34.0" AnchorPane.topAnchor="225.0">
          <cursor>
             <Cursor fx:constant="HAND" />
          </cursor></ListView>
-      <AnchorPane layoutX="3.0" layoutY="50.0" prefHeight="53.0" prefWidth="200.0" style="-fx-background-color: #F7F8FB;" AnchorPane.leftAnchor="3.0">
+      <AnchorPane layoutX="3.0" layoutY="50.0" prefHeight="53.0" prefWidth="200.0" AnchorPane.leftAnchor="3.0">
          <children>
-            <AnchorPane layoutY="38.0" prefHeight="6.0" prefWidth="200.0" style="-fx-background-color: #421f06;">
+            <AnchorPane layoutY="38.0" prefHeight="6.0" prefWidth="200.0" style="-fx-background-color: #A6A6A6;">
                <children>
                   <Text fill="WHITE" layoutY="12.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Taux de change Actuel" textAlignment="CENTER" wrappingWidth="199.00000558421016">
                      <font>

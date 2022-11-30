@@ -139,18 +139,18 @@
                   <Cursor fx:constant="HAND" />
                </cursor>
             </JFXButton>
-            <Label fx:id="idUpdate" layoutX="14.0" layoutY="335.0" prefHeight="17.0" prefWidth="119.0" text="Label" textFill="#ffffff00" />
+            <Label fx:id="idUpdate" layoutX="14.0" layoutY="335.0" prefHeight="17.0" prefWidth="119.0" text="0" textFill="TRANSPARENT" />
          </children>
          <effect>
             <DropShadow color="#c6c6c6" />
          </effect>
       </AnchorPane>
-      <AnchorPane layoutX="404.0" layoutY="7.0" prefHeight="40.0" prefWidth="190.0" style="-fx-background-color: #2E568C; -fx-background-radius: 4px;" AnchorPane.rightAnchor="8.0">
+      <AnchorPane layoutX="401.0" layoutY="7.0" prefHeight="40.0" prefWidth="190.0" style="-fx-background-color: DE561E; -fx-background-radius: 4px;" AnchorPane.rightAnchor="9.0">
          <effect>
             <DropShadow color="#c0d3c2" />
          </effect>
          <children>
-            <FontAwesomeIconView fill="WHITE" glyphName="TOGGLE_OFF" layoutX="17.0" layoutY="28.0" size="20" />
+            <FontAwesomeIconView fill="WHITE" glyphName="TOGGLE_OFF" layoutX="14.0" layoutY="28.0" size="20" />
             <Text fx:id="etiquette" fill="WHITE" layoutX="45.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Agents" wrappingWidth="129.00002819299698">
                <font>
                   <Font name="Arial" size="18.0" />

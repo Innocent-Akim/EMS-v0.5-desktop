@@ -26,7 +26,7 @@
          <children>
             <Label fx:id="nom" prefHeight="20.0" prefWidth="336.0" text="KIGHUNDILA WAKOMYA CHADRAC" textFill="#5a6573">
                <font>
-                  <Font size="14.0" />
+                  <Font name="Arial Black" size="12.0" />
                </font>
                <graphic>
                   <MaterialDesignIconView glyphName="ACCOUNT" size="15" />
@@ -37,7 +37,7 @@
                   <MaterialDesignIconView fill="#ff1e1e" glyphName="PHONE" size="15" />
                </graphic>
                <font>
-                  <Font size="13.0" />
+                  <Font name="Arial" size="13.0" />
                </font>
             </Label>
             <Label fx:id="adresse" prefHeight="17.0" prefWidth="244.0" text="adresse" textFill="#b6b6b6" GridPane.rowIndex="2">
@@ -50,7 +50,7 @@
             </Label>
          </children>
       </GridPane>
-      <JFXButton fx:id="modifier" layoutX="236.0" layoutY="59.0" prefHeight="17.0" prefWidth="63.0" style="-fx-background-color: #2E568C;" text="Modifier" textFill="WHITE" AnchorPane.bottomAnchor="5.0" AnchorPane.rightAnchor="6.0">
+      <JFXButton fx:id="modifier" layoutX="235.0" layoutY="65.0" prefHeight="17.0" prefWidth="63.0" style="-fx-background-color: #2E568C;" text="Modifier" textFill="WHITE" AnchorPane.bottomAnchor="6.0" AnchorPane.rightAnchor="7.0">
          <font>
             <Font name="Century Gothic" size="11.0" />
          </font>
@@ -58,7 +58,7 @@
             <Cursor fx:constant="HAND" />
          </cursor>
       </JFXButton>
-      <Label fx:id="prefixName" alignment="CENTER" layoutX="3.0" layoutY="25.0" prefHeight="31.0" prefWidth="31.0" style="-fx-background-color: #3D1909; -fx-background-radius: 20px;" text="K" textFill="WHITE" AnchorPane.leftAnchor="3.0">
+      <Label fx:id="prefixName" alignment="CENTER" layoutX="2.0" layoutY="25.0" prefHeight="31.0" prefWidth="31.0" style="-fx-background-color: #3D1909; -fx-background-radius: 20px;" text="K" textFill="WHITE" AnchorPane.leftAnchor="2.0">
          <font>
             <Font name="System Bold" size="20.0" />
          </font>
@@ -67,8 +67,11 @@
       <Label fx:id="lbl_title" layoutX="118.0" layoutY="76.0" prefHeight="17.0" prefWidth="56.0" />
       <JFXCheckBox fx:id="activeUser" checkedColor="#3d1909" layoutY="71.0" prefHeight="17.0" prefWidth="119.0" text="Active" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="0.0">
          <font>
-            <Font name="System Bold" size="12.0" />
+            <Font name="Arial Black" size="12.0" />
          </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
       </JFXCheckBox>
       <Label fx:id="index" layoutX="195.0" layoutY="68.0" text="Label" textFill="TRANSPARENT" />
       <Label fx:id="iduser" layoutX="14.0" layoutY="2.0" text="Label" textFill="TRANSPARENT" />

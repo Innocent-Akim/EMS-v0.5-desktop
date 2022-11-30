@@ -2,6 +2,27 @@
 <project-private xmlns="http://www.netbeans.org/ns/project-private/1">
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
-        <group/>
+        <group>
+            <file>file:/C:/Users/ISDR/Documents/Home/Project/Ems/Ems/src/lib/factory/Cls_agenda.java</file>
+            <file>file:/C:/Users/ISDR/Documents/Home/Project/Ems/Ems/src/lib/traitement/Acces.java</file>
+            <file>file:/C:/Users/ISDR/Documents/Home/Project/Ems/Ems/src/lib/source/ProduitsController.java</file>
+            <file>file:/C:/Users/ISDR/Documents/Home/Project/Ems/Ems/src/lib/factory/Cls_produit.java</file>
+            <file>file:/C:/Users/ISDR/Documents/Home/Project/Ems/Ems/src/declancher/View.java</file>
+            <file>file:/C:/Users/ISDR/Documents/Home/Project/Ems/Ems/src/lib/source/RapportController.java</file>
+            <file>file:/C:/Users/ISDR/Documents/Home/Project/Ems/Ems/src/lib/source/AddPersonneController.java</file>
+            <file>file:/C:/Users/ISDR/Documents/Home/Project/Ems/Ems/src/lib/source/VentesController.java</file>
+            <file>file:/C:/Users/ISDR/Documents/Home/Project/Ems/Ems/src/lib/traitement/Cls_query.java</file>
+            <file>file:/C:/Users/ISDR/Documents/Home/Project/Ems/Ems/src/lib/loadingController/LoadAgentController.java</file>
+            <file>file:/C:/Users/ISDR/Documents/Home/Project/Ems/Ems/src/lib/http/Inet.java</file>
+            <file>file:/C:/Users/ISDR/Documents/Home/Project/Ems/Ems/src/lib/source/BalanceController.java</file>
+            <file>file:/C:/Users/ISDR/Documents/Home/Project/Ems/Ems/src/lib/traitement/Allsave.java</file>
+            <file>file:/C:/Users/ISDR/Documents/Home/Project/Ems/Ems/src/lib/source/JournalController.java</file>
+            <file>file:/C:/Users/ISDR/Documents/Home/Project/Ems/Ems/src/lib/autrer/App.java</file>
+            <file>file:/C:/Users/ISDR/Documents/Home/Project/Ems/Ems/src/lib/source/FonctionController.java</file>
+            <file>file:/C:/Users/ISDR/Documents/Home/Project/Ems/Ems/src/lib/source/DashboardController.java</file>
+            <file>file:/C:/Users/ISDR/Documents/Home/Project/Ems/Ems/src/lib/factory/Cls_vente.java</file>
+            <file>file:/C:/Users/ISDR/Documents/Home/Project/Ems/Ems/src/lib/traitement/Connexion.java</file>
+            <file>file:/C:/Users/ISDR/Documents/Home/Project/Ems/Ems/src/lib/http/Http.java</file>
+        </group>
     </open-files>
 </project-private>

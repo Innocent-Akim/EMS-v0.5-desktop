@@ -42,7 +42,7 @@
             </Label>
             <Label fx:id="adresse" prefHeight="17.0" prefWidth="244.0" text="adresse" textFill="#b6b6b6" GridPane.rowIndex="2">
                <graphic>
-                  <FontAwesomeIconView fill="#f6ad2a" glyphName="SHARE_SQUARE_ALT" size="15" />
+                  <FontAwesomeIconView fill="#f6ad2a" glyphName="HAND_ALT_RIGHT" size="15" />
                </graphic>
                <font>
                   <Font size="13.0" />
@@ -50,7 +50,7 @@
             </Label>
          </children>
       </GridPane>
-      <JFXButton fx:id="modifier" layoutX="236.0" layoutY="59.0" prefHeight="17.0" prefWidth="63.0" style="-fx-background-color: F6AD2A;" text="Modifier" textFill="WHITE" AnchorPane.bottomAnchor="5.0" AnchorPane.rightAnchor="6.0">
+      <JFXButton fx:id="modifier" layoutX="236.0" layoutY="59.0" prefHeight="17.0" prefWidth="63.0" style="-fx-background-color: #2E568C;" text="Modifier" textFill="WHITE" AnchorPane.bottomAnchor="5.0" AnchorPane.rightAnchor="6.0">
          <font>
             <Font name="Century Gothic" size="11.0" />
          </font>

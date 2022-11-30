@@ -8,8 +8,6 @@
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.effect.DropShadow?>
-<?import javafx.scene.image.Image?>
-<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.ColumnConstraints?>
 <?import javafx.scene.layout.GridPane?>
@@ -53,7 +51,7 @@
                         <Cursor fx:constant="HAND" />
                      </cursor>
                   </JFXButton>
-                  <JFXButton fx:id="agent" onMouseClicked="#LoadDataForDay" prefHeight="29.0" prefWidth="90.0" style="-fx-background-color: #01a7e3;" text="Agents" textFill="WHITE">
+                  <JFXButton fx:id="agent" onMouseClicked="#LoadDataForDay" prefHeight="29.0" prefWidth="90.0" style="-fx-background-color: #2E568C;" text="Agents" textFill="WHITE">
                      <font>
                         <Font name="Century Gothic Bold" size="13.0" />
                      </font>
@@ -81,7 +79,7 @@
                               <Font name="Century Gothic" size="11.0" />
                            </font>
                         </TextField>
-                        <OctIconView fill="#01a7e3" glyphName="PERSON" layoutX="3.0" layoutY="19.0" size="15" />
+                        <OctIconView fill="#2e568c" glyphName="PERSON" layoutX="3.0" layoutY="19.0" size="15" />
                      </children>
                      <effect>
                         <DropShadow color="WHITE" />
@@ -103,7 +101,7 @@
                               <Font name="Century Gothic" size="11.0" />
                            </font>
                         </TextField>
-                        <OctIconView fill="#01a7e3" glyphName="PERSON" layoutX="3.0" layoutY="19.0" size="15" />
+                        <OctIconView fill="#2e568c" glyphName="PERSON" layoutX="3.0" layoutY="19.0" size="15" />
                      </children>
                      <effect>
                         <DropShadow color="WHITE" />
@@ -125,7 +123,7 @@
                               <Font name="Century Gothic" size="11.0" />
                            </font>
                         </TextField>
-                        <OctIconView fill="#01a7e3" glyphName="PERSON" layoutX="3.0" layoutY="19.0" size="15" />
+                        <OctIconView fill="#2e568c" glyphName="PERSON" layoutX="3.0" layoutY="19.0" size="15" />
                      </children>
                      <effect>
                         <DropShadow color="WHITE" />
@@ -133,7 +131,7 @@
                   </AnchorPane>
                </children>
             </VBox>
-            <JFXButton fx:id="btaction" buttonType="RAISED" layoutX="11.0" layoutY="175.0" onMouseClicked="#action" prefHeight="30.0" prefWidth="245.0" style="-fx-background-color: #029FD4;" styleClass="cursor" text="Enregistrer" textFill="WHITE">
+            <JFXButton fx:id="btaction" buttonType="RAISED" layoutX="11.0" layoutY="175.0" onMouseClicked="#action" prefHeight="30.0" prefWidth="245.0" style="-fx-background-color: #2E568C;" styleClass="cursor" text="Enregistrer" textFill="WHITE">
                <font>
                   <Font name="Century Gothic Bold" size="14.0" />
                </font>
@@ -142,25 +140,20 @@
                </cursor>
             </JFXButton>
             <Label fx:id="idUpdate" layoutX="14.0" layoutY="335.0" prefHeight="17.0" prefWidth="119.0" text="Label" textFill="#ffffff00" />
-            <ImageView fitHeight="171.0" fitWidth="278.0" layoutX="8.0" layoutY="242.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="84.0" AnchorPane.topAnchor="242.0">
-               <image>
-                  <Image url="@../image/user.png" />
-               </image>
-            </ImageView>
          </children>
          <effect>
             <DropShadow color="#c6c6c6" />
          </effect>
       </AnchorPane>
-      <AnchorPane layoutX="404.0" layoutY="7.0" prefHeight="40.0" prefWidth="190.0" style="-fx-background-color: #029FD4; -fx-background-radius: 4px;" AnchorPane.rightAnchor="8.0">
+      <AnchorPane layoutX="404.0" layoutY="7.0" prefHeight="40.0" prefWidth="190.0" style="-fx-background-color: #2E568C; -fx-background-radius: 4px;" AnchorPane.rightAnchor="8.0">
          <effect>
             <DropShadow color="#c0d3c2" />
          </effect>
          <children>
-            <FontAwesomeIconView fill="WHITE" glyphName="SOUNDCLOUD" layoutX="17.0" layoutY="28.0" size="20" />
+            <FontAwesomeIconView fill="WHITE" glyphName="TOGGLE_OFF" layoutX="17.0" layoutY="28.0" size="20" />
             <Text fx:id="etiquette" fill="WHITE" layoutX="45.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Agents" wrappingWidth="129.00002819299698">
                <font>
-                  <Font name="System Bold" size="18.0" />
+                  <Font name="Arial" size="18.0" />
                </font>
             </Text>
          </children>

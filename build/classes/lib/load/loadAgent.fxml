@@ -13,9 +13,9 @@
 <?import javafx.scene.layout.RowConstraints?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane id="AnchorPane" fx:id="card" prefHeight="86.0" prefWidth="305.0" style="-fx-background-color: Transparent;" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lib.loadingController.LoadAgentController">
+<AnchorPane id="AnchorPane" fx:id="card" prefHeight="85.0" prefWidth="312.0" style="-fx-background-color: Transparent;" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lib.loadingController.LoadAgentController">
    <children>
-      <GridPane hgap="5.0" layoutX="35.0" layoutY="22.0" prefHeight="39.0" prefWidth="256.0" vgap="4.0" AnchorPane.leftAnchor="35.0" AnchorPane.rightAnchor="14.0">
+      <GridPane hgap="5.0" layoutX="29.0" layoutY="14.0" prefHeight="39.0" prefWidth="275.0" vgap="4.0" AnchorPane.leftAnchor="29.0" AnchorPane.rightAnchor="8.0">
          <columnConstraints>
             <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
          </columnConstraints>
@@ -25,7 +25,7 @@
             <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
          </rowConstraints>
          <children>
-            <Label fx:id="nom" prefHeight="20.0" prefWidth="336.0" text="KIGHUNDILA WAKOMYA CHADRAC" textFill="#5a6573">
+            <Label fx:id="nom" prefHeight="18.0" prefWidth="277.0" text="KIGHUNDILA WAKOMYA CHADRAC" textFill="#5a6573">
                <font>
                   <Font name="Arial Black" size="12.0" />
                </font>
@@ -51,7 +51,7 @@
             </Label>
          </children>
       </GridPane>
-      <JFXButton fx:id="modifier" layoutX="235.0" layoutY="65.0" prefHeight="17.0" prefWidth="63.0" style="-fx-background-color: #2E568C;" text="Modifier" textFill="WHITE" AnchorPane.bottomAnchor="6.0" AnchorPane.rightAnchor="7.0">
+      <JFXButton fx:id="modifier" layoutX="242.0" layoutY="53.0" prefHeight="17.0" prefWidth="63.0" style="-fx-background-color: #2E568C;" text="Modifier" textFill="WHITE" AnchorPane.bottomAnchor="10.0" AnchorPane.rightAnchor="7.0">
          <font>
             <Font name="Century Gothic" size="11.0" />
          </font>
@@ -59,14 +59,14 @@
             <Cursor fx:constant="HAND" />
          </cursor>
       </JFXButton>
-      <Label fx:id="prefixName" alignment="CENTER" layoutX="2.0" layoutY="25.0" prefHeight="31.0" prefWidth="31.0" style="-fx-background-color: #3D1909; -fx-background-radius: 20px;" text="K" textFill="WHITE" AnchorPane.leftAnchor="2.0">
+      <Label fx:id="prefixName" alignment="CENTER" layoutX="1.0" layoutY="21.0" prefHeight="31.0" prefWidth="31.0" style="-fx-background-color: #105470; -fx-background-radius: 20px;" text="K" textFill="WHITE" AnchorPane.leftAnchor="1.0">
          <font>
             <Font name="System Bold" size="20.0" />
          </font>
       </Label>
       <Label fx:id="codeIde" layoutX="209.0" layoutY="2.0" prefHeight="17.0" prefWidth="89.0" textFill="TRANSPARENT" />
-      <Label fx:id="lbl_title" layoutX="118.0" layoutY="76.0" prefHeight="17.0" prefWidth="56.0" />
-      <JFXCheckBox fx:id="activeUser" checkedColor="#3d1909" layoutX="1.0" layoutY="71.0" prefHeight="17.0" prefWidth="73.0" text="Active" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="1.0">
+      <Label fx:id="lbl_title" layoutX="245.0" layoutY="40.0" prefHeight="17.0" prefWidth="56.0" />
+      <JFXCheckBox fx:id="activeUser" checkedColor="#3d1909" layoutX="1.0" layoutY="60.0" prefHeight="17.0" prefWidth="107.0" text="Active" AnchorPane.bottomAnchor="8.0" AnchorPane.leftAnchor="1.0">
          <font>
             <Font name="Arial Bold" size="12.0" />
          </font>
@@ -76,7 +76,7 @@
       </JFXCheckBox>
       <Label fx:id="index" layoutX="195.0" layoutY="68.0" text="Label" textFill="TRANSPARENT" />
       <Label fx:id="iduser" layoutX="14.0" layoutY="2.0" text="Label" textFill="TRANSPARENT" />
-      <Button fx:id="btn_popup" layoutX="129.0" layoutY="63.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="28.0" style="-fx-background-color: white; -fx-border-color: #A6A6A6; -fx-border-width: 0.25; -fx-background-radius: 0.5em; -fx-border-radius: 0.5em;" text="+">
+      <Button fx:id="btn_popup" layoutX="205.0" layoutY="52.0" mnemonicParsing="false" prefHeight="22.0" prefWidth="28.0" style="-fx-background-color: white; -fx-border-color: #A6A6A6; -fx-border-width: 0.25; -fx-background-radius: 0.5em; -fx-border-radius: 0.5em;" text="+" AnchorPane.bottomAnchor="6.0" AnchorPane.rightAnchor="79.0">
          <font>
             <Font name="Arial Black" size="12.0" />
          </font>
